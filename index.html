@@ -8,21 +8,81 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Reem+Kufi|Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/79bed15e9a.js"></script>
 </head>
 
+
 <body>
-    <section class="hero">
-        <div class="hero-body has-centered-text">
-            <div class="container">
-                <h1 class="title">
-                    Hero title
-                </h1>
-                <h2 class="subtitle">
-                    Hero subtitle
-                </h2>
+    <section class="hero is-fullheight">
+
+        <div class="hero-body">
+            <div class="container introduction has-text-centered">
+                <div style="font-family: 'Reem Kufi', sans-serif;font-size: 3.75em;font-weight: 600;">Hello, I'm Marco!</div>
+                <div style="font-size: 1.5rem;margin: 1.5rem 0;font-weight: 100;">All-Star Dev | Code Fanatic | Linux Hacker | Bleh</div>
+                <div class="icons-social" style="font-size: 3em;">
+                    <a target="_blank" href="https://github.com/MarcoMihaiCondrache"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://twitter.com/bit01110111"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://twitter.com/flexdinesh"><i class="fab fa-google-play"></i></a>
+                    <a target="_blank" href="https://t.me/bit0101"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+    </section>
+
+    <section class="hero is-dark animated fadeIn">
+        <div class="hero-body section about has-text-centered">
+            <div class="container" style="font-family: Roboto, sans-serif;">
+                <h1 class="has-text-white is-size-4">About</h1>
+                <br>
+                <p>
+                    My name is Marco Mihai Condrache and I like it design and create applications and websites especially with <b><a href="https://flutter.dev">Flutter</a></b>.</p>
+                <p> I love the google material design and all my apps take advantage of its guidelines.</p>
+                <br>
+                <p>Now I am 16 years old and I really hope in future to find a good job and to improve my knowledge.</p>
+                <br>
+                <p>In my free time I do sports and I read some books, but certainly I play video games :)</p>
             </div>
         </div>
     </section>
+
+    <section class="hero" id="projects">
+        <div class="hero-body section">
+            <h1 class="has-text-centered is-centered has-text-black is-size-4">Projects</h1>
+            <div style="height: 30px"></div>
+            <div class="columns is-centered">
+                <div class="column has-text-centered is-one-third">
+                    <h2 style="font-family: 'Righteous', cursive; font-size: 25px;">WeatherFy</h2>
+                    <div style="height: 40px"></div>
+                    <div class="columns">
+                        <div class="column">
+                            <img class="screenshot" src="images/light.png" style="max-width: 90%; height: auto;">
+                        </div>
+                        <div class="column">
+                            <img class="screenshot" src="images/dark.png" style="max-width: 91%; height: auto;">
+                        </div>
+                    </div>
+                    <h1 class="has-text-black" style="font-family: Roboto, sans-serif; font-weight: bold; font-size: 20px"><br/>WeatherFy is an app that lets you check the weather quickly and accurately wherever and whenever you want.</h1>
+                    <br>
+                    <a href="https://play.google.com/store/apps/details?id=com.theoctopus.weatherfy"><img src="images/google-play-badge.png" alt="" style="max-width: 40%; height: auto;"></a>
+                    <h3><a href="terms/weatherfy.html">Terms</a> | <a href="privacy/weatherfy.html">Privacy</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <hr>
+        <div class="container has-text-centered is-fluid">
+
+            <h1 class="has-text-grey">Powered by <a href="https://bulma.io/">Bulma</a></h1>
+
+            <h1 class="has-text-grey">Hosted on <a href="https://github.com/">GitHub</a></h1>
+            <br>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
