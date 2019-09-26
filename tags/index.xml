@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Hello, I&#39;m Marco!</title>
+    <link>https://marcomihaicondrache.github.io/tags/</link>
+    <description>Recent content in Tags on Hello, I&#39;m Marco!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marcomihaicondrache.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>amd</title>
+      <link>https://marcomihaicondrache.github.io/tags/amd/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcomihaicondrache.github.io/tags/amd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cpu</title>
+      <link>https://marcomihaicondrache.github.io/tags/cpu/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcomihaicondrache.github.io/tags/cpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>history</title>
+      <link>https://marcomihaicondrache.github.io/tags/history/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcomihaicondrache.github.io/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>intel</title>
+      <link>https://marcomihaicondrache.github.io/tags/intel/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcomihaicondrache.github.io/tags/intel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>animated list</title>
+      <link>https://marcomihaicondrache.github.io/tags/animated-list/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcomihaicondrache.github.io/tags/animated-list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flutter</title>
+      <link>https://marcomihaicondrache.github.io/tags/flutter/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcomihaicondrache.github.io/tags/flutter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>list</title>
+      <link>https://marcomihaicondrache.github.io/tags/list/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcomihaicondrache.github.io/tags/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pub</title>
+      <link>https://marcomihaicondrache.github.io/tags/pub/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marcomihaicondrache.github.io/tags/pub/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
