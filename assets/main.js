@@ -105,10 +105,10 @@ eval("const languageToggle = document.querySelector(\".language-toggle\");\n" +
     "languageToggle.addEventListener(\"click\",function() {\n" +
     "    if(languageToggler.innerHTML === \"IT\"){\n" +
     "        languageToggler.innerHTML = \"EN\";\n" +
-    "        location.href = location.href.replace(\"/it\", \"/en\");\n" +
+    "        location.href = location.href.replace(\"/en\", \"/it\");\n" +
     "    }else{\n" +
     "        languageToggler.innerHTML = \"IT\";\n" +
-    "        location.href = location.href.replace(\"/en\", \"/it\");\n" +
+    "        location.href = location.href.replace(\"/it\", \"/en\");\n" +
     "    }\n" +
     "});\n\n//# sourceURL=webpack:///./source/js/language.js?");
 
