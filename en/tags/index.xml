@@ -2,90 +2,90 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Hello, I&#39;m Marco!</title>
-        <link>https://marcomihaicondrache@gmail.com/en/tags/</link>
+        <link>https://marcomihaicondrache.github.io/en/tags/</link>
         <description>Recent content in Tags on Hello, I&#39;m Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
         <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="https://marcomihaicondrache@gmail.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://marcomihaicondrache.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
             <title>amd</title>
-            <link>https://marcomihaicondrache@gmail.com/en/tags/amd/</link>
+            <link>https://marcomihaicondrache.github.io/en/tags/amd/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/tags/amd/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/tags/amd/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>cpu</title>
-            <link>https://marcomihaicondrache@gmail.com/en/tags/cpu/</link>
+            <link>https://marcomihaicondrache.github.io/en/tags/cpu/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/tags/cpu/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/tags/cpu/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>history</title>
-            <link>https://marcomihaicondrache@gmail.com/en/tags/history/</link>
+            <link>https://marcomihaicondrache.github.io/en/tags/history/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/tags/history/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/tags/history/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>intel</title>
-            <link>https://marcomihaicondrache@gmail.com/en/tags/intel/</link>
+            <link>https://marcomihaicondrache.github.io/en/tags/intel/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/tags/intel/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/tags/intel/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>animated list</title>
-            <link>https://marcomihaicondrache@gmail.com/en/tags/animated-list/</link>
+            <link>https://marcomihaicondrache.github.io/en/tags/animated-list/</link>
             <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/tags/animated-list/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/tags/animated-list/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>flutter</title>
-            <link>https://marcomihaicondrache@gmail.com/en/tags/flutter/</link>
+            <link>https://marcomihaicondrache.github.io/en/tags/flutter/</link>
             <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/tags/flutter/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/tags/flutter/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>list</title>
-            <link>https://marcomihaicondrache@gmail.com/en/tags/list/</link>
+            <link>https://marcomihaicondrache.github.io/en/tags/list/</link>
             <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/tags/list/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/tags/list/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>pub</title>
-            <link>https://marcomihaicondrache@gmail.com/en/tags/pub/</link>
+            <link>https://marcomihaicondrache.github.io/en/tags/pub/</link>
             <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/tags/pub/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/tags/pub/</guid>
             <description></description>
             
         </item>

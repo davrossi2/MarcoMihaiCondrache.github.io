@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hello, I&#39;m Marco!</title>
-        <link>https://marcomihaicondrache@gmail.com/en/</link>
+        <link>https://marcomihaicondrache.github.io/en/</link>
         <description>Recent content on Hello, I&#39;m Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
         <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="https://marcomihaicondrache@gmail.com/en/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://marcomihaicondrache.github.io/en/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
             <title>Posts</title>
-            <link>https://marcomihaicondrache@gmail.com/en/post/</link>
+            <link>https://marcomihaicondrache.github.io/en/post/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/post/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/post/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>About</title>
-            <link>https://marcomihaicondrache@gmail.com/en/about/</link>
+            <link>https://marcomihaicondrache.github.io/en/about/</link>
             <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/about/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/about/</guid>
             <description>
 
 &lt;h1 id=&#34;hi-there&#34;&gt;Hi there&lt;/h1&gt;
@@ -70,16 +70,16 @@
         
         <item>
             <title>Copyright</title>
-            <link>https://marcomihaicondrache@gmail.com/en/terms/</link>
+            <link>https://marcomihaicondrache.github.io/en/terms/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/terms/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/terms/</guid>
             <description>&lt;ul&gt;
 &lt;li&gt;Theme created by &lt;a href=&#34;https://twitter.com/panr&#34;&gt;panr&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Some theme parts comes from &lt;a href=&#34;https://github.com/rhazdon&#34;&gt;rhazon&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hosted on &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Powered by &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo (Engine)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Edited and created by &lt;a href=&#34;https://marcomihaicondrache@gmail.com/&#34;&gt;Marco Mihai&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Edited and created by &lt;a href=&#34;https://marcomihaicondrache.github.io/&#34;&gt;Marco Mihai&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
             
@@ -87,20 +87,20 @@
         
         <item>
             <title>Home</title>
-            <link>https://marcomihaicondrache@gmail.com/en/home/</link>
+            <link>https://marcomihaicondrache.github.io/en/home/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/home/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/home/</guid>
             <description></description>
             
         </item>
         
         <item>
             <title>Projects</title>
-            <link>https://marcomihaicondrache@gmail.com/en/archive/</link>
+            <link>https://marcomihaicondrache.github.io/en/archive/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/archive/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/archive/</guid>
             <description></description>
             
         </item>
