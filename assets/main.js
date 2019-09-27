@@ -97,9 +97,9 @@ eval("const languageToggle = document.querySelector(\".language-toggle\");\n" +
     "const languageToggler = document.querySelector(\".language-toggler\");\n" +
     "\n" +
     "if(location.href.includes(\"/en\")){\n" +
-    "    languageToggler.innerHTML = \"EN\";\n" +
-    "}else{\n" +
     "    languageToggler.innerHTML = \"IT\";\n" +
+    "}else{\n" +
+    "    languageToggler.innerHTML = \"EN\";\n" +
     "}\n" +
     "\n" +
     "languageToggle.addEventListener(\"click\",function() {\n" +
