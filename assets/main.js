@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Add your script here\n\n//# sourceURL=webpack:///./source/js/index.js?");
+eval("// Toggle language\n\n\nconst themeToggle = document.querySelector(\".theme-toggle\");\nconst themeToggler = document.querySelector(\".theme-toggler\");\n\n\nthemeToggle.addEventListener(\"click\", () => {\nif(themeToggler.innerHTML == \"IT\"){\nthemeToggler.innerHTML = \"EN\";\nwindow.location.href = window.location.href.replace(\"it\", \"en\");\n}else{\nthemeToggler.innerHTML = \"IT\";\nwindow.location.href = window.location.href.replace(\"en\", \"it\");\n}\n});\n\n//# sourceURL=webpack:///./source/js/index.js?");
 
 /***/ }),
 

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Ciao, Sono Marco!</title>
+        <link>https://marcomihaicondrache.github.io/it/post/</link>
+        <description>Recent content in Posts on Ciao, Sono Marco!</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
+        
+        <atom:link href="https://marcomihaicondrache.github.io/it/post/index.xml" rel="self" type="application/rss+xml" />
+        
+        
+        <item>
+            <title>Cpu History</title>
+            <link>https://marcomihaicondrache.github.io/it/post/cpuhistory/</link>
+            <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/it/post/cpuhistory/</guid>
+            <description>
+
+&lt;p&gt;Prima di cominciare a raccontare la storia dei processori è meglio chiarire il significato di quest’ultimo:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;È un dispositivo hardware il cui fine è quello di eseguire ed elaborare istruzioni a partire da un’architettura sotto il controllo del sistema operativo e con una velocità determinata dalla frequenza di Clock che rappresenta una delle caratteristiche in termini di prestazioni.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Il primo microprocessore nasce grazie al genio di un italiano: il fisico Federico Faggin, ingegnere Intel, sotto richiesta della BusiCom, interessata ad un sistema elettronico per la sua nuova calcolatrice da tavolo, creano il primo microprocessore della storia il 4004 con un’architettura a 4 bit.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ANNO&lt;/th&gt;
+&lt;th&gt;DESCRIZIONE&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1823&lt;/td&gt;
+&lt;td&gt;Il barone Jons Jackob Berzelius scopre il silicio (Si), che oggi è il componente base dei processori.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1903&lt;/td&gt;
+&lt;td&gt;Nel 1903 Nikola Tesla brevettò i circuiti logici elettrici chiamati &amp;ldquo;cancelli&amp;rdquo;(Gates) o &amp;ldquo;interruttori&amp;rdquo;(Switchs).&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1947&lt;/td&gt;
+&lt;td&gt;John Bardeen, Walter Brattain e William Shockley inventano il primo transistor al Bell Laboratories il 23 dicembre 1947.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1948&lt;/td&gt;
+&lt;td&gt;John Bardeen, Walter Brattain e William Shockley brevettano il primo transistor nel 1948.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1956&lt;/td&gt;
+&lt;td&gt;John Bardeen, Walter Brattain e William Shockley hanno ricevuto il premio Nobel per la fisica per il loro lavoro sul transistor.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1958&lt;/td&gt;
+&lt;td&gt;Il primo circuito integrato fu sviluppato per la prima volta da Robert Noyce di Fairchild Semiconductor e Jack Kilby di Texas Instruments. Il primo IC fu dimostrato il 12 settembre 1958.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1960&lt;/td&gt;
+&lt;td&gt;IBM ha sviluppato il primo impianto automatico di produzione in serie per transistor a New York nel 1960.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1968&lt;/td&gt;
+&lt;td&gt;Intel Corporation è stata fondata da Robert Noyce e Gordon Moore nel 1968.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1969&lt;/td&gt;
+&lt;td&gt;AMD (Advanced Micro Devices) è stata fondata il 1 maggio 1969.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1971&lt;/td&gt;
+&lt;td&gt;Intel con l&amp;rsquo;aiuto di Federico Faggin introdusse il primo microprocessore, Intel 4004 il 15 novembre 1971. Il 4004 aveva 2.300 transistor, eseguiva 60.000 OPS (operazioni al secondo), indirizzava a 640 byte di memoria e costava $ 200,00.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;prima-dei-processori&#34;&gt;Prima dei processori&lt;/h2&gt;
+
+&lt;h4 id=&#34;prima-del-1945&#34;&gt;Prima del 1945&lt;/h4&gt;
+
+&lt;p&gt;I sistemi di elaborazione erano principalmente meccanici.
+Le macchine potevano eseguire sono le operazioni elementari.&lt;/p&gt;
+
+&lt;p&gt;Nell&amp;rsquo;Ottocento nascono le macchine programmabili cioè sistemi di elaborazione che potevano automatizzare un processo in base alle richieste dell&amp;rsquo;utente.&lt;/p&gt;
+
+&lt;p&gt;Negli anni 40&amp;rsquo; si passo ai relè che rappresentavano i numeri binari 0/1 ma possedevano ancora parti meccaniche&lt;/p&gt;
+
+&lt;p&gt;Un esempio di calcolatore meccanico lo si può trovare &lt;a href=&#34;https://www.youtube.com/watch?v=aDN4s8ElxqE&#34; title=&#34;Esempio di calcolatore meccanico&#34;&gt;qui&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;dal-45-al-75&#34;&gt;Dal 45&amp;rsquo; al 75&amp;rsquo;&lt;/h4&gt;
+
+&lt;p&gt;Inizia la produzione commerciale di macchine basate su tubi a vuoto, che però sono molto semplici e richiedono l&amp;rsquo;uso del linguaggio macchina (strettamente dipendente dalla macchina).&lt;/p&gt;
+
+&lt;p&gt;Compare il &lt;a href=&#34;https://it.wikipedia.org/wiki/Transistor&#34; title=&#34;Definizione di transistor&#34;&gt;transistor&lt;/a&gt;: più piccolo, più risparmioso e più veloce.
+Iniziano a comparire i linguaggi di alto livello.&lt;/p&gt;
+
+&lt;h4 id=&#34;legge-di-moore&#34;&gt;Legge di Moore&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Il massimo numero di transistor integrabili su un singolo circuito raddoppia ogni &lt;sup&gt;18&lt;/sup&gt;&amp;frasl;&lt;sub&gt;24&lt;/sub&gt; mesi.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Dal 1971 l&amp;rsquo;evoluzione dei processori continuò senza sosta sino ad arrivare e quelli odierni.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;federico-faggin&#34;&gt;Federico Faggin&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.ilprimatonazionale.it/wp-content/uploads/2015/07/Federico-Faggin-Intel1-800x533.jpg&#34; alt=&#34;Federico-Logo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nato a Vicenza nel 1941 è un fisico, inventore e imprenditore italiano naturalizzato statunitense.&lt;/p&gt;
+
+&lt;p&gt;Partecipò al programma per la creazione dell’Intel 4004 e dei relativi successori. Fu anche lo sviluppatore della MOS, una tecnologia che permise la creazione dei primi processori e memorie EPROM e RAM.&lt;/p&gt;
+
+&lt;p&gt;Nel 74’ fondò e diresse la Zilog, una ditta specializzata nella produzione di microprocessori.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;oggi&#34;&gt;Oggi&lt;/h2&gt;
+
+&lt;p&gt;Con il passare del tempo l’evoluzione dei processori avanzò sempre di più sino ad arrivare a quelli odierni molto performanti e in grado di eseguire numerose istruzioni complesse.&lt;/p&gt;
+
+&lt;p&gt;Sono capaci di eseguire fino a 5000 operazioni al secondo l’equivalente di 5Ghz e con un numero di core che vanno dai 2 ai 32 cioè ‘le parti del processore’ che possono eseguire più operazioni contemporaneamente.&lt;/p&gt;
+
+&lt;p&gt;Le due aziende che competono di più in questo settore sono Amd e Intel che creano processori da oltre 30 anni.
+Nonostante siano state fondate a un anno di differenza riescono entrambe a produrre ottimi processori (A nostro parere la Intel li fa meglio :) )&lt;/p&gt;
+
+&lt;h2 id=&#34;intel&#34;&gt;Intel&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.mobilesyrup.com/wp-content/uploads/2019/01/intel-9th-generation-chip-ces-2019.jpg&#34; alt=&#34;Intel-CES-Image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La &lt;strong&gt;Intel Corporation&lt;/strong&gt; è un azienda statunitense fondata nel 1968 con sede Santa Clara (California)&lt;/p&gt;
+
+&lt;p&gt;Attualmente produce dispositivi a semiconduttore, microprocessori, componenti di rete, chipset per motherboard (scheda madre), chip per schede video e molti altri circuiti integrati, ed è considerata una delle più importanti nel settore.&lt;/p&gt;
+
+&lt;h6 id=&#34;intel-according-to-wikipedia&#34;&gt;Intel according to Wikipedia&lt;/h6&gt;
+
+&lt;h2 id=&#34;amd&#34;&gt;Amd&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://cdn.mos.cms.futurecdn.net/F2u8NP9k6cDUP4KLm2tpnG.jpg&#34; alt=&#34;Amd-Image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Advanced Micro Devices, Inc. (abbreviato AMD) è una multinazionale statunitense produttrice di semiconduttori con sede a Sunnyvale, California. È uno dei leader mondiali nella produzione di CPU per il mercato consumer, workstation e server; di chip grafici integrati e discreti dopo la fusione con ATI oltre che di chipset.&lt;/p&gt;
+
+&lt;p&gt;Si classifica seconda al mondo nella produzione di microprocessori con architettura x86 dopo Intel; mentre nella produzione di chip grafici ad agosto 2015 si trova in terza posizione (con quota di mercato del 10,7%) preceduta da Intel (75,2%) e da NVIDIA (14,1%) . Nel 2009, AMD si è classificata al nono posto tra i produttori di semiconduttori in termini di entrate annue&lt;/p&gt;
+
+&lt;h6 id=&#34;amd-according-to-wikipedia&#34;&gt;AMD according to Wikipedia&lt;/h6&gt;
+
+&lt;h2 id=&#34;informazioni&#34;&gt;Informazioni&lt;/h2&gt;
+
+&lt;p&gt;Questo Post è stato scritto da Marco Mihai Condrache e Giacomo D&amp;rsquo;Aronco.
+Qui sotto le fonti.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wikipedia.com&#34; title=&#34;Sito web di wikipedia&#34;&gt;Wikipedia&lt;/a&gt; (Alcune parti del testo)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.computerhope.com&#34;&gt;ComputerHope&lt;/a&gt; (Le informazioni della tabella)&lt;/li&gt;
+&lt;li&gt;La nostra mente :)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            
+            <tag>amd</tag>
+            
+            <tag>intel</tag>
+            
+            <tag>history</tag>
+            
+            <tag>cpu</tag>
+            
+        </item>
+        
+    </channel>
+</rss>
