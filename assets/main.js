@@ -96,7 +96,7 @@
 eval("const languageToggle = document.querySelector(\".language-toggle\");\n" +
     "const languageToggler = document.querySelector(\".language-toggler\");\n" +
     "\n" +
-    "if(location.href.includes(\"en\")){\n" +
+    "if(location.href.includes(\"/en\")){\n" +
     "    languageToggler.innerHTML = \"EN\";\n" +
     "}else{\n" +
     "    languageToggler.innerHTML = \"IT\";\n" +
@@ -105,10 +105,10 @@ eval("const languageToggle = document.querySelector(\".language-toggle\");\n" +
     "languageToggle.addEventListener(\"click\",function() {\n" +
     "    if(languageToggler.innerHTML === \"IT\"){\n" +
     "        languageToggler.innerHTML = \"EN\";\n" +
-    "        location.href = location.href.replace(\"it\", \"en\");\n" +
+    "        location.href = location.href.replace(\"/it\", \"/en\");\n" +
     "    }else{\n" +
     "        languageToggler.innerHTML = \"IT\";\n" +
-    "        location.href = location.href.replace(\"en\", \"it\");\n" +
+    "        location.href = location.href.replace(\"/en\", \"/it\");\n" +
     "    }\n" +
     "});\n\n//# sourceURL=webpack:///./source/js/language.js?");
 
