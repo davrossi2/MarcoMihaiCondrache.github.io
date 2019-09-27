@@ -93,7 +93,24 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Toggle language\n\n\nconst themeToggle = document.querySelector(\".theme-toggle\");\nconst themeToggler = document.querySelector(\".theme-toggler\");\n\n\nthemeToggle.addEventListener(\"click\", () => {\nif(themeToggler.innerHTML == \"IT\"){\nthemeToggler.innerHTML = \"EN\";\nwindow.location.href = window.location.href.replace(\"it\", \"en\");\n}else{\nthemeToggler.innerHTML = \"IT\";\nwindow.location.href = window.location.href.replace(\"en\", \"it\");\n}\n});\n\n//# sourceURL=webpack:///./source/js/index.js?");
+eval("const languageToggle = document.querySelector(\".language-toggle\");\n" +
+    "const languageToggler = document.querySelector(\".language-toggler\");\n" +
+    "\n" +
+    "if(location.href.includes(\"en\")){\n" +
+    "    languageToggler.innerHTML = \"EN\";\n" +
+    "}else{\n" +
+    "    languageToggler.innerHTML = \"IT\";\n" +
+    "}\n" +
+    "\n" +
+    "languageToggle.addEventListener(\"click\",function() {\n" +
+    "    if(languageToggler.innerHTML === \"IT\"){\n" +
+    "        languageToggler.innerHTML = \"EN\";\n" +
+    "        location.href = location.href.replace(\"it\", \"en\");\n" +
+    "    }else{\n" +
+    "        languageToggler.innerHTML = \"IT\";\n" +
+    "        location.href = location.href.replace(\"en\", \"it\");\n" +
+    "    }\n" +
+    "});\n\n//# sourceURL=webpack:///./source/js/language.js?");
 
 /***/ }),
 

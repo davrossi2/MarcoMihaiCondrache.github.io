@@ -33,21 +33,6 @@
   </url>
   
   <url>
-    <loc>https://marcomihaicondrache.github.io/en/post/cpuhistory/</loc>
-    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/post/cpuhistory/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/post/cpuhistory/"
-                />
-  </url>
-  
-  <url>
     <loc>https://marcomihaicondrache.github.io/en/</loc>
     <lastmod>2019-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -74,6 +59,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://marcomihaicondrache.github.io/en/tags/history/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcomihaicondrache.github.io/en/post/cpuhistory/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://marcomihaicondrache.github.io/it/post/cpuhistory/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcomihaicondrache.github.io/en/post/cpuhistory/"
                 />
   </url>
   
