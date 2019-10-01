@@ -1,51 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Ciao, Sono Marco!</title>
-        <link>https://marcomihaicondrache.github.io/it/tags/</link>
+        <link>https://marcomihaicondrache@gmail.com/it/tags/</link>
         <description>Recent content in Tags on Ciao, Sono Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
         <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="https://marcomihaicondrache.github.io/it/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://marcomihaicondrache@gmail.com/it/tags/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
-            <title>amd</title>
-            <link>https://marcomihaicondrache.github.io/it/tags/amd/</link>
+            <title>Amd</title>
+            <link>https://marcomihaicondrache@gmail.com/it/tags/amd/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache.github.io/it/tags/amd/</guid>
+            <guid>https://marcomihaicondrache@gmail.com/it/tags/amd/</guid>
             <description></description>
             
         </item>
         
         <item>
-            <title>cpu</title>
-            <link>https://marcomihaicondrache.github.io/it/tags/cpu/</link>
+            <title>Cpu</title>
+            <link>https://marcomihaicondrache@gmail.com/it/tags/cpu/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache.github.io/it/tags/cpu/</guid>
+            <guid>https://marcomihaicondrache@gmail.com/it/tags/cpu/</guid>
             <description></description>
             
         </item>
         
         <item>
-            <title>history</title>
-            <link>https://marcomihaicondrache.github.io/it/tags/history/</link>
+            <title>History</title>
+            <link>https://marcomihaicondrache@gmail.com/it/tags/history/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache.github.io/it/tags/history/</guid>
+            <guid>https://marcomihaicondrache@gmail.com/it/tags/history/</guid>
             <description></description>
             
         </item>
         
         <item>
-            <title>intel</title>
-            <link>https://marcomihaicondrache.github.io/it/tags/intel/</link>
+            <title>Intel</title>
+            <link>https://marcomihaicondrache@gmail.com/it/tags/intel/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache.github.io/it/tags/intel/</guid>
+            <guid>https://marcomihaicondrache@gmail.com/it/tags/intel/</guid>
             <description></description>
             
         </item>

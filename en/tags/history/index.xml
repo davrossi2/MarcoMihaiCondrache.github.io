@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>history on Hello, I&#39;m Marco!</title>
-        <link>https://marcomihaicondrache.github.io/en/tags/history/</link>
-        <description>Recent content in history on Hello, I&#39;m Marco!</description>
+        <title>History on Hello, I&#39;m Marco!</title>
+        <link>https://marcomihaicondrache@gmail.com/en/tags/history/</link>
+        <description>Recent content in History on Hello, I&#39;m Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
         <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="https://marcomihaicondrache.github.io/en/tags/history/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://marcomihaicondrache@gmail.com/en/tags/history/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
             <title>History of processors</title>
-            <link>https://marcomihaicondrache.github.io/en/post/cpuhistory/</link>
+            <link>https://marcomihaicondrache@gmail.com/en/post/cpuhistory/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache.github.io/en/post/cpuhistory/</guid>
+            <guid>https://marcomihaicondrache@gmail.com/en/post/cpuhistory/</guid>
             <description>
 
 &lt;p&gt;Before starting to tell the story of the processors it is better to clarify the meaning of the latter:&lt;/p&gt;
@@ -98,7 +99,12 @@ The machines could perform the elementary operations.&lt;/p&gt;
 
 &lt;p&gt;In the 1940s we switched to relays that represented the 0/1 binary numbers but still had mechanical parts&lt;/p&gt;
 
-&lt;p&gt;An example of a mechanical calculator can be found &lt;a href=&#34;https://www.youtube.com/watch?v=aDN4s8ElxqE&#34; title=&#34;Example of mechanical calculator&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An example of a mechanical calculator can be found bellow
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/aDN4s8ElxqE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+&lt;/p&gt;
 
 &lt;h4 id=&#34;from-45-to-75&#34;&gt;From 45 &amp;lsquo;to 75&amp;rsquo;&lt;/h4&gt;
 
@@ -119,7 +125,7 @@ High-level languages begin to appear.&lt;/p&gt;
 
 &lt;h2 id=&#34;federico-faggin&#34;&gt;Federico Faggin&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.ilprimatonazionale.it/wp-content/uploads/2015/07/Federico-Faggin-Intel1-800x533.jpg&#34; alt=&#34;Federico-Logo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache@gmail.com/img/federico_faggin.jpeg&#34; alt=&#34;Federico-Logo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Born in Vicenza in 1941, he is an Italian-born physicist, inventor and entrepreneur.&lt;/p&gt;
 
@@ -136,27 +142,34 @@ High-level languages begin to appear.&lt;/p&gt;
 &lt;p&gt;They are capable of performing up to 5000 operations per second, the equivalent of 5Ghz and with a number of cores ranging from 2 to 32, that is &amp;ldquo;the parts of the processor&amp;rdquo; that can perform multiple operations simultaneously.&lt;/p&gt;
 
 &lt;p&gt;The two companies that compete the most in this sector are Amd and Intel, which have been creating processors for over 30 years.
-Although they were founded at a year of difference, both can produce excellent processors (In our opinion, Intel does them better :))&lt;/p&gt;
+Although they were founded at a year of difference, both can produce excellent processors (In our opinion, Intel does them better 😆)&lt;/p&gt;
 
 &lt;h2 id=&#34;intel&#34;&gt;Intel&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://cdn.mobilesyrup.com/wp-content/uploads/2019/01/intel-9th-generation-chip-ces-2019.jpg&#34; alt=&#34;Intel-CES-Image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache@gmail.com/img/intel-meet.jpg&#34; alt=&#34;Intel-CES-Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;La &lt;strong&gt;Intel Corporation&lt;/strong&gt; is a US company founded in 1968 with headquarters in Santa Clara (California)&lt;/p&gt;
 
 &lt;p&gt;It currently produces semiconductor devices, microprocessors, network components, chipsets for motherboards (motherboards), chips for video cards and many other integrated circuits, and is considered one of the most important in the industry.&lt;/p&gt;
 
-&lt;h6 id=&#34;intel-according-to-wikipedia&#34;&gt;Intel according to Wikipedia&lt;/h6&gt;
-
 &lt;h2 id=&#34;amd&#34;&gt;Amd&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://cdn.mos.cms.futurecdn.net/F2u8NP9k6cDUP4KLm2tpnG.jpg&#34; alt=&#34;Amd-Image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache@gmail.com/img/amd-meet.jpg&#34; alt=&#34;Amd-Image&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Advanced Micro Devices, Inc. (abbreviated AMD) is a US semiconductor manufacturer based in Sunnyvale, California. It is one of the world leaders in the production of CPUs for the consumer market, workstations and servers; of integrated and discrete graphics chips after merging with ATI as well as chipset.&lt;/p&gt;
 
 &lt;p&gt;It ranks second in the world in the production of microprocessors with x86 architecture after Intel; while in the production of graphic chips in August 2015 it is in third position (with a market share of 10.7%) preceded by Intel (75.2%) and NVIDIA (14.1%). In 2009, AMD ranked ninth among semiconductor manufacturers in terms of annual revenue&lt;/p&gt;
 
-&lt;h6 id=&#34;amd-according-to-wikipedia&#34;&gt;AMD according to Wikipedia&lt;/h6&gt;
+&lt;h2 id=&#34;stop-for-a-moment-hahahugoshortcode-0xc4204bef00-3-hbhb&#34;&gt;Stop for a moment ✋&lt;/h2&gt;
+
+&lt;p&gt;Uh if you&amp;rsquo;ve come this far it means that the article interests you a lot!&lt;/p&gt;
+
+&lt;p&gt;Before leaving, what do you think about looking at these two interesting posts?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://it.wikipedia.org/wiki/Microprocessors_Intel&#34;&gt;List of Intel processors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://it.wikipedia.org/wiki/Microprocessors_AMD&#34;&gt;List of Amd processors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;informations&#34;&gt;Informations&lt;/h2&gt;
 
@@ -166,8 +179,12 @@ Below the sources.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://wikipedia.com&#34; title=&#34;Wikipedia website&#34;&gt;Wikipedia&lt;/a&gt; (Some parts of the text)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.computerhope.com&#34;&gt;ComputerHope&lt;/a&gt; (Table information)&lt;/li&gt;
-&lt;li&gt;Our mind :)&lt;/li&gt;
+&lt;li&gt;Our mind and commitment 😊&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;We hope that the style and content of the page will be appreciated by the professors and that they can use them in their explanations.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
 </description>
             
             <tag>amd</tag>
