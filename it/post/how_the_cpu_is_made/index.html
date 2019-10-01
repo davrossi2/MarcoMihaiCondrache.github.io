@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+      <title>Com&#39;è fatta la cpu? :: Ciao, Sono Marco! — All-Star Dev | Code Fanatic | Linux Hacker | Bleh</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Qual è il suo scopo ?  È un dispositivo hardware il cui fine è quello di eseguire ed elaborare istruzioni a partire da un’architettura sotto il controllo del sistema operativo
+ È detta unità &amp;ldquo;centrale&amp;rdquo; perché coordina in maniera centralizzata tutte le altre unità di elaborazione presenti nelle architetture hardware dei computer per la gestione delle varie periferiche interne o schede elettroniche (scheda audio, scheda video, scheda di rete), es."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://marcomihaicondrache.github.io/it/post/how_the_cpu_is_made/" />
+
+
+
+
+
+<link rel="stylesheet" href="https://marcomihaicondrache.github.io/assets/style.css">
+
+
+<link rel="stylesheet" href="https://marcomihaicondrache.github.io/assets/custom-style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://marcomihaicondrache.github.io/img/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="https://marcomihaicondrache.github.io/img/favicon.png">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Com&#39;è fatta la cpu?"/>
+<meta name="twitter:description" content="Come la cpu lavora per far funzionare il pc"/>
+
+
+
+<meta property="og:title" content="Com&#39;è fatta la cpu?" />
+<meta property="og:description" content="Come la cpu lavora per far funzionare il pc" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marcomihaicondrache.github.io/it/post/how_the_cpu_is_made/" />
+
+
+
+<meta property="article:published_time" content="2019-10-01T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2019-10-01T00:00:00&#43;00:00"/>
+
+<meta property="og:site_name" content="Ciao, Sono Marco!" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+  <body class="">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="/it/home" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">$ cd /home</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/it/about">Chi sono?</a></li>
+        
+      
+        
+          <li><a href="/it/archive">Progetti</a></li>
+        
+      
+      
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/it/about">Chi sono?</a></li>
+      
+    
+      
+        <li><a href="/it/archive">Progetti</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+      <span class="language-toggle">
+        <h4 class="language-toggler">IT</h4>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  <div class="post">
+    <h2 class="post-title"><a href="https://marcomihaicondrache.github.io/it/post/how_the_cpu_is_made/">Com&rsquo;è fatta la cpu?</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">
+            2019-10-01
+        </span>
+      
+      <span class="post-author">— Scritto da Marco</span>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://marcomihaicondrache.github.io/en/tags/32bit/">32bit</a>&nbsp;
+        
+          #<a href="https://marcomihaicondrache.github.io/en/tags/64bit/">64bit</a>&nbsp;
+        
+          #<a href="https://marcomihaicondrache.github.io/en/tags/how/">how</a>&nbsp;
+        
+          #<a href="https://marcomihaicondrache.github.io/en/tags/cpu/">cpu</a>&nbsp;
+        
+      </span>
+    
+
+    
+      
+        <img src="https://marcomihaicondrache.github.io/img/cpu.png" class="post-cover" />
+      
+    
+
+    <div class="post-content">
+      
+
+<h2 id="qual-è-il-suo-scopo">Qual è il suo scopo ?</h2>
+
+<blockquote>
+<p>È un dispositivo hardware il cui fine è quello di eseguire ed elaborare istruzioni a partire da un’architettura sotto il controllo del sistema operativo</p>
+</blockquote>
+
+<p>È detta unità &ldquo;centrale&rdquo; perché coordina in maniera centralizzata tutte le altre unità di elaborazione presenti nelle architetture hardware dei computer per la gestione delle varie periferiche interne o schede elettroniche (scheda audio, scheda video, scheda di rete), es. coprocessore e processore di segnale digitale.</p>
+
+<p>In base all&rsquo;organizzazione della memoria si possono distinguere le seguenti due famiglie di CPU:</p>
+
+<ul>
+<li>con architettura di von Neumann, in cui i dati e le istruzioni risiedono nella stessa memoria (è dunque possibile avere codice automodificante). Questa architettura è la più comune, perché è molto semplice e flessibile.</li>
+<li>con architettura Harvard, in cui i dati e le istruzioni risiedono in due memorie separate. Questa architettura può garantire prestazioni migliori poiché le due memorie possono lavorare in parallelo riducendo le ale strutturali, ma è ovviamente molto più complessa da gestire. È tipicamente utilizzata nei DSP.</li>
+</ul>
+
+<h2 id="la-struttura">La struttura</h2>
+
+<p><img src="/img/architteture.gif" alt="Cpu-structure" /></p>
+
+<p>Una generica CPU contiene:</p>
+
+<ul>
+<li><p>un&rsquo;unità di controllo (anche nota con la sigla CU) che legge dalla memoria le istruzioni, se occorre legge anche i dati per l&rsquo;istruzione letta, esegue l&rsquo;istruzione e memorizza il risultato se c&rsquo;è, scrivendolo in memoria o in un registro della CPU.</p></li>
+
+<li><p>un&rsquo;unità aritmetica e logica (anche nota con l&rsquo;acronimo ALU) che si occupa di eseguire le operazioni logiche e aritmetiche;</p></li>
+
+<li><p>I registri ovvero delle piccole memorie che servono alla cpu per eseguire le istruzioni:</p>
+
+<ul>
+<li><p>il registro <strong>PC</strong> (<em>Program Counter</em>), che contiene l&rsquo;indirizzo in memoria della prossima istruzione da eseguire;</p></li>
+
+<li><p>il registro <strong>MAR</strong> (<em>Memory Address Register</em>) registra l&rsquo;indirizzo della l&rsquo;indirizzo della posizione di memoria che viene acceduta;</p></li>
+
+<li><p>il registro <strong>MDR</strong> (<em>Memory Data Register</em>) Tutti i dati e le istruzioni che dalla memoria devono essere elaborati nel processore, transitano attraverso il registro MDR e solo successivamente da questo raggiungono gli opportuni registri per l&rsquo;elaborazione vera e propria;</p></li>
+
+<li><p>il registro <strong>IR</strong> (<em>Instruction Register</em>) Questo registro ha il compito di accogliere dalla memoria (attraverso il MDR), durante una fase di fetch, l&rsquo;istruzione da eseguire, quella cioè puntata dal PC;</p></li>
+
+<li><p>registri <strong>generali</strong> (<em>R1, R2..</em>) Sono utilizzati per contenere i dati in transito per un&rsquo;elaborazione: gli addendi di un&rsquo;addizione che l&rsquo;ALU sta per effettuare, il risultato di un calcolo che l&rsquo;ALU ha effettuato, un indirizzo di memoria in cui si trova un dato che dovrà essere acceduto in seguito, ecc. Un numero elevato di tali registri conferisce maggiore flessibilità nella programmazione, ma complica la struttura del processore dal punto di vista architetturale.</p></li>
+</ul></li>
+</ul>
+
+<p>Solitamente le dimensioni dei registri e dei bus e&rsquo; uguale alla dimensione delle istruzioni che la cpu deve eseguire.
+Per esempio se la cpu esegue istruzioni a 64bit i registri saranno di 8 byte (<strong>8 * 8 = 64</strong>)</p>
+
+<h2 id="l-esecuzione-di-un-istruzione">L&rsquo;esecuzione di un&rsquo;istruzione</h2>
+
+<ol>
+<li><p>Caricamento dell&rsquo;istruzione (Instruction Fetch) dalla memoria in base all&rsquo;indirizzo fornito dai registri.</p></li>
+
+<li><p>Decodifica (Operand Assembly): una volta che la <a href="https://it.wikipedia.org/wiki/Word">word</a> è stata prelevata, viene determinata quale operazione debba essere eseguita e come ottenere gli operandi, in base ad una funzione il cui dominio è costituito dai codici operativi (tipicamente i bit alti delle <a href="https://it.wikipedia.org/wiki/Word">word</a>) ed il codominio consiste nei brani di microprogramma da eseguire.</p></li>
+
+<li><p>Esecuzione (Execute) Viene eseguita l&rsquo;istruzione: Nell&rsquo;ultimo passo dell&rsquo;esecuzione viene incrementato il PC: tipicamente di uno se l&rsquo;istruzione non era un salto condizionale, altrimenti l&rsquo;incremento dipende dall&rsquo;istruzione e dall&rsquo;esito di questa</p></li>
+</ol>
+
+<h2 id="la-sincronizzazione">La sincronizzazione</h2>
+
+<p>La cpu per eseguire le istruzioni ha bisogno di essere sincronizzata con gli altri componenti del pc come per esempio con la memoria.
+Di questo compito si occupa il clock.</p>
+
+<p>Il termine clock, In elettronica, indica un segnale periodico, generalmente un&rsquo;onda quadra, utilizzato per sincronizzare il funzionamento dei dispositivi elettronici digitali.</p>
+
+<p>La velocità o frequenza di clock è il numero di commutazioni tra i due livelli logici &ldquo;0&rdquo; e &ldquo;1&rdquo; che i circuiti all&rsquo;interno di un&rsquo;unità di calcolo o di un microprocessore sono in grado di eseguire nell&rsquo;unità di tempo di un secondo, ed è espressa in cicli al secondo, o hertz, e suoi multipli; normalmente per eseguire un&rsquo;istruzione o una semplice somma sono necessari più cicli di clock.</p>
+
+<h2 id="informazioni">Informazioni</h2>
+
+<p>Questo Post è stato scritto da Marco Mihai Condrache.
+Qui sotto le fonti.</p>
+
+<ul>
+<li><a href="https://wikipedia.com" title="Sito web di wikipedia">Wikipedia</a> (Alcune parti del testo)</li>
+<li>La nostra mente e l&rsquo;impegno 😊</li>
+</ul>
+
+<p>Speriamo che lo stile e il contenuto della pagina siano di gradimento dei professori e che possano usarle nelle loro spiegazioni.</p>
+
+<p>Grazie per la lettura !</p>
+
+    </div>
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Leggi altri post</span>
+          <hr />
+        </div>
+        <div class="pagination__buttons">
+          
+          
+            <span class="button next">
+              <a href="https://marcomihaicondrache.github.io/it/post/cpuhistory/">
+                <span class="button__text">Storia dei processori</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+    
+
+    </div>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a href="/it/home" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367"/>
+</svg>
+</span>
+    <span class="logo__text">$ cd /home</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2019 Creato da Marco Mihai</span>
+        <span><a href="/it/terms">Copyright-></a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script src="https://marcomihaicondrache.github.io/assets/main.js"></script>
+<script src="https://marcomihaicondrache.github.io/assets/prism.js"></script>
+
+
+      
+    </div>
+
+    
+  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+</html>

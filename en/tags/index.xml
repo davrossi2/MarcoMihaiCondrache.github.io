@@ -6,10 +6,30 @@
         <link>https://marcomihaicondrache.github.io/en/tags/</link>
         <description>Recent content in Tags on Hello, I&#39;m Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
         
         <atom:link href="https://marcomihaicondrache.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
         
+        
+        <item>
+            <title>32bit</title>
+            <link>https://marcomihaicondrache.github.io/en/tags/32bit/</link>
+            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/tags/32bit/</guid>
+            <description></description>
+            
+        </item>
+        
+        <item>
+            <title>64bit</title>
+            <link>https://marcomihaicondrache.github.io/en/tags/64bit/</link>
+            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/tags/64bit/</guid>
+            <description></description>
+            
+        </item>
         
         <item>
             <title>Amd</title>
@@ -34,7 +54,7 @@
         <item>
             <title>Cpu</title>
             <link>https://marcomihaicondrache.github.io/en/tags/cpu/</link>
-            <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
             
             <guid>https://marcomihaicondrache.github.io/en/tags/cpu/</guid>
             <description></description>
@@ -57,6 +77,16 @@
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
             <guid>https://marcomihaicondrache.github.io/en/tags/history/</guid>
+            <description></description>
+            
+        </item>
+        
+        <item>
+            <title>How</title>
+            <link>https://marcomihaicondrache.github.io/en/tags/how/</link>
+            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/tags/how/</guid>
             <description></description>
             
         </item>

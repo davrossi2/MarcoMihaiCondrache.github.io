@@ -25,6 +25,9 @@
 &lt;p&gt;È un dispositivo hardware il cui fine è quello di eseguire ed elaborare istruzioni a partire da un’architettura sotto il controllo del sistema operativo e con una velocità determinata dalla frequenza di Clock che rappresenta una delle caratteristiche in termini di prestazioni.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;&lt;strong&gt;Vuoi capire meglio come funziona un processore ?
+Allora vai a vedere il &lt;a href=&#34;https://marcomihaicondrache.github.io/it/post/how_the_cpu_is_made&#34;&gt;post&lt;/a&gt; che abbiamo pubblicato a riguardo!&lt;/strong&gt;&lt;/p&gt;
+
 &lt;p&gt;Il primo microprocessore nasce grazie al genio di un italiano: il fisico Federico Faggin, ingegnere Intel, sotto richiesta della BusiCom, interessata ad un sistema elettronico per la sua nuova calcolatrice da tavolo, creano il primo microprocessore della storia il 4004 con un’architettura a 4 bit.&lt;/p&gt;
 
 &lt;table&gt;
@@ -160,7 +163,7 @@ Nonostante siano state fondate a un anno di differenza riescono entrambe a produ
 
 &lt;p&gt;Si classifica seconda al mondo nella produzione di microprocessori con architettura x86 dopo Intel; mentre nella produzione di chip grafici ad agosto 2015 si trova in terza posizione (con quota di mercato del 10,7%) preceduta da Intel (75,2%) e da NVIDIA (14,1%) . Nel 2009, AMD si è classificata al nono posto tra i produttori di semiconduttori in termini di entrate annue&lt;/p&gt;
 
-&lt;h2 id=&#34;fermati-un-momento-hahahugoshortcode-0xc4206d2000-3-hbhb&#34;&gt;Fermati un momento ✋&lt;/h2&gt;
+&lt;h2 id=&#34;fermati-un-momento-hahahugoshortcode-0xc4200f0500-3-hbhb&#34;&gt;Fermati un momento ✋&lt;/h2&gt;
 
 &lt;p&gt;Uh se sei arrivato fino a questa parte vuol dire che l&amp;rsquo;articolo ti interessa molto !&lt;/p&gt;
 

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>32bit on Hello, I&#39;m Marco!</title>
+        <link>https://marcomihaicondrache.github.io/en/tags/32bit/</link>
+        <description>Recent content in 32bit on Hello, I&#39;m Marco!</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+        
+        <atom:link href="https://marcomihaicondrache.github.io/en/tags/32bit/index.xml" rel="self" type="application/rss+xml" />
+        
+        
+        <item>
+            <title>How the cpu is made?</title>
+            <link>https://marcomihaicondrache.github.io/en/post/how_the_cpu_is_made/</link>
+            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/post/how_the_cpu_is_made/</guid>
+            <description>
+
+&lt;h2 id=&#34;what-is-its-purpose&#34;&gt;What is its purpose?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It is a hardware device whose purpose is to execute and process instructions starting from an architecture under the control of the operating system&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is called a &amp;ldquo;central&amp;rdquo; unit because it centrally coordinates all the other processing units present in the computer hardware architecture for managing the various internal peripherals or electronic cards (sound card, video card, network card), eg. coprocessor and digital signal processor.&lt;/p&gt;
+
+&lt;p&gt;Based on the memory organization, the following two CPU families can be distinguished:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;with von Neumann architecture, in which data and instructions reside in the same memory (it is therefore possible to have self-modifying code). This architecture is the most common, because it is very simple and flexible.&lt;/li&gt;
+&lt;li&gt;with Harvard architecture, in which data and instructions reside in two separate memories. This architecture can guarantee better performance since the two memories can work in parallel reducing the structural wings, but it is obviously much more complex to manage. It is typically used in DSPs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache.github.io/img/architteture.gif&#34; alt=&#34;CPU-structure&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A generic CPU contains:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;a control unit (also known as CU) which reads the instructions from the memory, if necessary it also reads the data for the instruction read, executes the instruction and memorizes the result if there is, writing it in memory or in a CPU register.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;an arithmetic and logical unit (also known by the acronym ALU) that deals with performing the logical and arithmetic operations;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The registers or small memories used by the CPU to carry out the instructions:
+    
+  - the register &lt;strong&gt;PC&lt;/strong&gt; (&lt;em&gt;Program Counter&lt;/em&gt;), which contains the address in memory of the next instruction to be executed;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;  - the register &lt;strong&gt;MAR&lt;/strong&gt; (&lt;em&gt;Memory Address Register&lt;/em&gt;) records the address of the address of the memory location being accessed;&lt;/p&gt;
+
+&lt;p&gt;  - the register &lt;strong&gt;MDR&lt;/strong&gt; (&lt;em&gt;Memory Data Register&lt;/em&gt;) All the data and instructions that must be processed in the processor from the memory, pass through the MDR register and only subsequently from this reach the appropriate registers for the actual processing;&lt;/p&gt;
+
+&lt;p&gt;  - the register &lt;strong&gt;IR&lt;/strong&gt; (&lt;em&gt;Instruction Register&lt;/em&gt;) This register has the task of receiving from the memory (through the MDR), during a fetch phase, the instruction to be executed, that is the one pointed by the PC;&lt;/p&gt;
+
+&lt;p&gt;  - registers &lt;strong&gt;general&lt;/strong&gt; (&lt;em&gt;R1, R2 ..&lt;/em&gt;) They are used to contain the data in transit for an elaboration: the addends of an addition that the ALU is about to carry out, the result of a calculation that the ALU has carried out, a memory address where there is a datum that will have to be accessed later, etc. A large number of such registers confers greater flexibility in programming, but complicates the structure of the processor from an architectural point of view.
+  
+Usually the size of the registers and buses is equal to the size of the instructions that the cpu must execute.
+For example, if the cpu executes 64bit instructions, the registers will be 8 bytes (&lt;strong&gt;8 * 8 = 64&lt;/strong&gt;)
+  &lt;/p&gt;
+
+&lt;h2 id=&#34;the-execution-of-an-instruction&#34;&gt;The execution of an instruction&lt;/h2&gt;
+
+&lt;p&gt; 
+ 1. Loading of the instruction (Instruction Fetch) from the memory based on the address provided by the registers.
+ 
+ 2. Decoding (Operand Assembly): once the &lt;a href=&#34;https://it.wikipedia.org/wiki/Word&#34;&gt;word&lt;/a&gt; has been taken, it is determined which operation should be performed and how to obtain the operands, based on a function whose domain consists of the operating codes (typically the high bits of the &lt;a href=&#34;https://it.wikipedia.org/wiki/Word&#34;&gt;word&lt;/a&gt; and the codomain consists of the microprograms to be executed.
+ 
+ 3. Execution (Execute) The instruction is executed: In the last step of the execution the PC is incremented: typically of one if the instruction was not a conditional jump, otherwise the increase depends on the instruction and the outcome of this
+ &lt;/p&gt;
+
+&lt;h2 id=&#34;synchronization&#34;&gt;Synchronization&lt;/h2&gt;
+
+&lt;p&gt;The cpu to execute the instructions needs to be synchronized with the other components of the PC such as with the memory.
+This task takes care of the clock.&lt;/p&gt;
+
+&lt;p&gt;The term clock, In electronics, indicates a periodic signal, generally a square wave, used to synchronize the functioning of digital electronic devices.&lt;/p&gt;
+
+&lt;p&gt;The clock speed or frequency is the number of commutations between the two logic levels &amp;ldquo;0&amp;rdquo; and &amp;ldquo;1&amp;rdquo; that the circuits inside a computing unit or a microprocessor are able to perform in the time unit of a second, and is expressed in cycles per second, or hertz, and its multiples; normally to execute an instruction or a simple sum more clock cycles are needed.&lt;/p&gt;
+
+&lt;h2 id=&#34;informations&#34;&gt;Informations&lt;/h2&gt;
+
+&lt;p&gt;This Post was written by Marco Mihai Condrache.
+Below the sources.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wikipedia.com&#34; title=&#34;Wikipedia website&#34;&gt;Wikipedia&lt;/a&gt; (Some parts of the text)&lt;/li&gt;
+&lt;li&gt;Our mind and commitment 😊&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We hope that the style and content of the page will be appreciated by the professors and that they can use them in their explanations.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+</description>
+            
+            <tag>32bit</tag>
+            
+            <tag>64bit</tag>
+            
+            <tag>how</tag>
+            
+            <tag>cpu</tag>
+            
+        </item>
+        
+    </channel>
+</rss>
