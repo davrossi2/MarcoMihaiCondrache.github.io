@@ -3,20 +3,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Animated List on Hello, I&#39;m Marco!</title>
-        <link>https://marcomihaicondrache@gmail.com/en/tags/animated-list/</link>
+        <link>https://marcomihaicondrache.github.io/en/tags/animated-list/</link>
         <description>Recent content in Animated List on Hello, I&#39;m Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
         <lastBuildDate>Sat, 14 Sep 2019 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="https://marcomihaicondrache@gmail.com/en/tags/animated-list/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://marcomihaicondrache.github.io/en/tags/animated-list/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
             <title>Animated List View Scroll</title>
-            <link>https://marcomihaicondrache@gmail.com/en/post/animated_list_view_scroll/</link>
+            <link>https://marcomihaicondrache.github.io/en/post/animated_list_view_scroll/</link>
             <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache@gmail.com/en/post/animated_list_view_scroll/</guid>
+            <guid>https://marcomihaicondrache.github.io/en/post/animated_list_view_scroll/</guid>
             <description>
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/animated_list_view_scroll&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/stars/MarcoMIhaiCondrache/animated_list_view_scroll?style=social&#34; alt=&#34;GitHub stars&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
