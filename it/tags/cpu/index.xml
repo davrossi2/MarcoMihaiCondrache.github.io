@@ -259,7 +259,32 @@ Nonostante siano state fondate a un anno di differenza riescono entrambe a produ
 
 &lt;p&gt;Si classifica seconda al mondo nella produzione di microprocessori con architettura x86 dopo Intel; mentre nella produzione di chip grafici ad agosto 2015 si trova in terza posizione (con quota di mercato del 10,7%) preceduta da Intel (75,2%) e da NVIDIA (14,1%) . Nel 2009, AMD si è classificata al nono posto tra i produttori di semiconduttori in termini di entrate annue&lt;/p&gt;
 
-&lt;h2 id=&#34;fermati-un-momento-hahahugoshortcode-0xc4200f0500-3-hbhb&#34;&gt;Fermati un momento ✋&lt;/h2&gt;
+&lt;h2 id=&#34;ma-i-processori-degli-smartphone&#34;&gt;Ma i processori degli smartphone ?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache.github.io/img/proc-smartphone.jpg&#34; alt=&#34;Proc-smartphone&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I processori di cui abbiamo parlato fin&amp;rsquo;ora sono principalmente presenti nei pc.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Quando si parla di processori per smartphone si parla generalmente di architettura &lt;a href=&#34;https://it.wikipedia.org/wiki/Architettura_ARM&#34;&gt;&lt;strong&gt;ARM&lt;/strong&gt;&lt;/a&gt;. La società inglese detiene infatti il 95% del mercato globale e i suoi processori (che in realtà sono SoC ovvero &lt;em&gt;System-on-a-Chip&lt;/em&gt;) vengono utilizzati non solo negli smartphone ma anche in molte altre categorie di prodotti.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ARM non produce in proprio i processori per smartphone e per gli altri dispositivi ma concede ad altre aziende, i diritti di licenza per realizzare in massa i SoC progettati e sviluppati in laboratorio.
+Qualcomm, MediaTek, Samsung, HiSilicon (quest&amp;rsquo;ultima direttamente controllata da Huawei), Apple, NVidia e Texas Instruments sono solo alcune delle tantissime aziende che utilizzano la proprietà intellettuale ARM per realizzare fisicamente i processori.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Qualcomm:&lt;/strong&gt; quelli di questa azienda basata negli Stati Uniti sono i processori smartphone più amati in assoluto nel mondo Android, e si chiamano Snapdragon. Vengono spesso preferiti per le loro prestazioni migliori della concorrenza e perchè sono i più adatti al modding.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;MediaTek:&lt;/strong&gt; questi processori smartphone sono invece molto diffusi tra gli smartphone economici con Android, e il campo in cui prevalgono è quello dei dispositivi low cost. Nella fascia alta MediaTek è stata schiacciata dalla concorrenza di Qualcomm: il vantaggio dei dispositivi con processori di questo brand è il fatto che costano in generale di meno.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Apple:&lt;/strong&gt; i processori smartphone di Apple, prodotti fisicamente in prevalenza da TSMC, sono presenti esclusivamente sugli iPhone e sugli iPad di Apple. Sono sempre potentissimi perchè vengono realizzati tutti per essere di fascia alta, e non hanno mai avuto prestazioni scadenti.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Samsung:&lt;/strong&gt; questi processori smartphone invece si trovano sui dispositivi Samsung Galaxy e si chiamano Exynos, ma occasionalmente Samsung potrebbe collaborare con altre aziende per inserirli sui loro terminali. E’ già successo ad esempio con diversi smartphone Meizu. Samsung produce processori smartphone sia di fascia economica che top di gamma: i primi potete trovarli su terminali delle serie Galaxy J e A, i secondi sui Galaxy S e Note.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Huawei:&lt;/strong&gt; si chiamano Kirin i processori smartphone di Huawei, e si trovano sui dispositivi Huawei e Honor. Anche in questo caso ce ne sono di fascia economica e alta, ma al momento non sono presenti su altri dispositivi oltre a quelli sopra citati.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;fermati-un-momento-hahahugoshortcode-0xc420af0000-3-hbhb&#34;&gt;Fermati un momento ✋&lt;/h2&gt;
 
 &lt;p&gt;Uh se sei arrivato fino a questa parte vuol dire che l&amp;rsquo;articolo ti interessa molto !&lt;/p&gt;
 
@@ -278,6 +303,7 @@ Qui sotto le fonti.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://wikipedia.com&#34; title=&#34;Sito web di wikipedia&#34;&gt;Wikipedia&lt;/a&gt; (Alcune parti del testo)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.computerhope.com&#34;&gt;ComputerHope&lt;/a&gt; (Le informazioni della tabella)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tech4d.it&#34;&gt;Tech4d&lt;/a&gt; (Lista dei processori mobile)&lt;/li&gt;
 &lt;li&gt;La nostra mente e l&amp;rsquo;impegno 😊&lt;/li&gt;
 &lt;/ul&gt;
 
