@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Hello, I&#39;m Marco!</title>
-        <link>https://marcomihaicondrache.github.io/en/post/</link>
-        <description>Recent content in Posts on Hello, I&#39;m Marco!</description>
+        <title>Turing on Hello, I&#39;m Marco!</title>
+        <link>https://marcomihaicondrache.github.io/en/tags/turing/</link>
+        <description>Recent content in Turing on Hello, I&#39;m Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
         <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="https://marcomihaicondrache.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://marcomihaicondrache.github.io/en/tags/turing/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
@@ -506,187 +506,6 @@ current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STRING[&lt;span
             <tag>MicroBit</tag>
             
             <tag>Sequence</tag>
-            
-        </item>
-        
-        <item>
-            <title>History of processors</title>
-            <link>https://marcomihaicondrache.github.io/en/post/cpuhistory/</link>
-            <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/en/post/cpuhistory/</guid>
-            <description>&lt;p&gt;Before starting to tell the story of the processors it is better to clarify the meaning of the latter:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It is a hardware device whose purpose is to execute and process instructions starting from an architecture under the control of the operating system and with a speed determined by the Clock frequency which represents one of the characteristics in terms of performance.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The first microprocessor is born thanks to the genius of an Italian: the physicist Federico Faggin, Intel engineer, under request of BusiCom, interested in an electronic system for his new desktop calculator, create the first microprocessor of the history 4004 with an architecture in 4 bits.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;YEAR&lt;/th&gt;
-&lt;th&gt;DESCRIPTION&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;1823&lt;/td&gt;
-&lt;td&gt;Baron Jons Jackob Berzelius discovers silicon (Si), which today is the basic component of the processors.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1903&lt;/td&gt;
-&lt;td&gt;In 1903 Nikola Tesla patented electrical logic circuits called &amp;ldquo;gates&amp;rdquo; or &amp;ldquo;switches&amp;rdquo;.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1947&lt;/td&gt;
-&lt;td&gt;John Bardeen, Walter Brattain and William Shockley invent the first transistor at Bell Laboratories on December 23, 1947.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1948&lt;/td&gt;
-&lt;td&gt;John Bardeen, Walter Brattain and William Shockley patented the first transistor in 1948.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1956&lt;/td&gt;
-&lt;td&gt;John Bardeen, Walter Brattain and William Shockley received the Nobel Prize in Physics for their work on the transistor.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1958&lt;/td&gt;
-&lt;td&gt;The first integrated circuit was developed for the first time by Robert Noyce of Fairchild Semiconductor and Jack Kilby of Texas Instruments. The first IC was shown on 12 September 1958.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1960&lt;/td&gt;
-&lt;td&gt;IBM developed the first automatic mass production transistor plant in New York in 1960.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1968&lt;/td&gt;
-&lt;td&gt;Intel Corporation was founded by Robert Noyce and Gordon Moore in 1968.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1969&lt;/td&gt;
-&lt;td&gt;AMD (Advanced Micro Devices) was founded on May 1, 1969.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1971&lt;/td&gt;
-&lt;td&gt;Intel with the help of Federico Faggin introduced the first microprocessor, Intel 4004 on November 15, 1971. The 4004 had 2,300 transistors, ran 60,000 OPS (operations per second), addressed 640 bytes of memory and cost $ 200.00.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;before-the-processors&#34;&gt;Before the processors&lt;/h2&gt;
-&lt;h4 id=&#34;before-1945&#34;&gt;Before 1945&lt;/h4&gt;
-&lt;p&gt;The processing systems were mainly mechanical.
-The machines could perform the elementary operations.&lt;/p&gt;
-&lt;p&gt;In the nineteenth century programmable machines were born, that is processing systems that could automate a process based on the user&#39;s requests.&lt;/p&gt;
-&lt;p&gt;In the 1940s we switched to relays that represented the 0/1 binary numbers but still had mechanical parts&lt;/p&gt;
-&lt;p&gt;An example of a mechanical calculator can be found &lt;a href=&#34;https://www.youtube.com/watch?v=aDN4s8ElxqE&#34; title=&#34;Example of mechanical calculator&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;from-45-to-75&#34;&gt;From 45 &amp;lsquo;to 75&amp;rsquo;&lt;/h4&gt;
-&lt;p&gt;Commercial production of machines based on vacuum tubes begins, but they are very simple and require the use of machine language (strictly dependent on the machine).&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://it.wikipedia.org/wiki/Transistor&#34; title=&#34;Definition of transistor&#34;&gt;transistor&lt;/a&gt; appears : smaller, more economical and faster.
-High-level languages begin to appear.&lt;/p&gt;
-&lt;h4 id=&#34;moore-theory&#34;&gt;Moore theory&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The maximum number of transistors that can be integrated on a single circuit doubles every 18/24 months.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;From 1971 the evolution of the processors continued unabated up until and today.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;federico-faggin&#34;&gt;Federico Faggin&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/qMsM4Xvh/Federico-Faggin-Intel1-800x533.jpg&#34; alt=&#34;Federico-Faggin.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Born in Vicenza in 1941, he is an Italian-born physicist, inventor and entrepreneur.&lt;/p&gt;
-&lt;p&gt;He participated in the program for the creation of the Intel 4004 and its successors. He was also the developer of MOS, a technology that allowed the creation of the first EPROM and RAM processors and memories.&lt;/p&gt;
-&lt;p&gt;In 74 ’he founded and directed the Zilog, a company specialized in the production of microprocessors.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;today&#34;&gt;Today&lt;/h2&gt;
-&lt;p&gt;With the passage of time the evolution of the processors progressed more and more until reaching the very performing ones today and able to execute numerous complex instructions.&lt;/p&gt;
-&lt;p&gt;They are capable of performing up to 5000 operations per second, the equivalent of 5Ghz and with a number of cores ranging from 2 to 32, that is &amp;ldquo;the parts of the processor&amp;rdquo; that can perform multiple operations simultaneously.&lt;/p&gt;
-&lt;p&gt;The two companies that compete the most in this sector are Amd and Intel, which have been creating processors for over 30 years.
-Although they were founded at a year of difference, both can produce excellent processors (In our opinion, Intel does them better :))&lt;/p&gt;
-&lt;h2 id=&#34;intel&#34;&gt;Intel&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/7Y0M4cz3/intel-9th-generation-chip-ces-2019.jpg&#34; alt=&#34;Intel-CES-Image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;La &lt;strong&gt;Intel Corporation&lt;/strong&gt; is a US company founded in 1968 with headquarters in Santa Clara (California)&lt;/p&gt;
-&lt;p&gt;It currently produces semiconductor devices, microprocessors, network components, chipsets for motherboards (motherboards), chips for video cards and many other integrated circuits, and is considered one of the most important in the industry.&lt;/p&gt;
-&lt;h6 id=&#34;intel-according-to-wikipedia&#34;&gt;Intel according to Wikipedia&lt;/h6&gt;
-&lt;h2 id=&#34;amd&#34;&gt;Amd&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/k5653r69/F2u8-NP9k6c-DUP4-KLm2tpn-G.jpg&#34; alt=&#34;Amd-Image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Advanced Micro Devices, Inc. (abbreviated AMD) is a US semiconductor manufacturer based in Sunnyvale, California. It is one of the world leaders in the production of CPUs for the consumer market, workstations and servers; of integrated and discrete graphics chips after merging with ATI as well as chipset.&lt;/p&gt;
-&lt;p&gt;It ranks second in the world in the production of microprocessors with x86 architecture after Intel; while in the production of graphic chips in August 2015 it is in third position (with a market share of 10.7%) preceded by Intel (75.2%) and NVIDIA (14.1%). In 2009, AMD ranked ninth among semiconductor manufacturers in terms of annual revenue&lt;/p&gt;
-&lt;h6 id=&#34;amd-according-to-wikipedia&#34;&gt;AMD according to Wikipedia&lt;/h6&gt;
-&lt;h2 id=&#34;informations&#34;&gt;Informations&lt;/h2&gt;
-&lt;p&gt;This Post was written by Marco Mihai Condrache and Giacomo D&#39;Aronco.
-Below the sources.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://wikipedia.com&#34; title=&#34;Wikipedia website&#34;&gt;Wikipedia&lt;/a&gt; (Some parts of the text)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.computerhope.com&#34;&gt;ComputerHope&lt;/a&gt; (Table information)&lt;/li&gt;
-&lt;li&gt;Our mind :)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-            
-            <tag>amd</tag>
-            
-            <tag>intel</tag>
-            
-            <tag>history</tag>
-            
-            <tag>cpu</tag>
-            
-        </item>
-        
-        <item>
-            <title>Animated List View Scroll</title>
-            <link>https://marcomihaicondrache.github.io/en/post/animated_list_view_scroll/</link>
-            <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/en/post/animated_list_view_scroll/</guid>
-            <description>&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/animated_list_view_scroll&#34;&gt;&lt;img src=&#34;https://img.shields.io/github/stars/MarcoMIhaiCondrache/animated_list_view_scroll?style=social&#34; alt=&#34;GitHub stars&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://pub.dev/packages/animated_list_view_scroll&#34;&gt;&lt;img src=&#34;https://img.shields.io/pub/v/animated_list_view_scroll&#34; alt=&#34;Pub&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;installing&#34;&gt;Installing&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;dependencies:
-  animated_list_view_scroll: any
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;import&#34;&gt;Import&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-dart&#34; data-lang=&#34;dart&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;package:animated_list_view_scroll/animated_list_view_scroll.dart&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;how-to-use&#34;&gt;How To Use&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-dart&#34; data-lang=&#34;dart&#34;&gt;AnimatedListViewScroll(
-        itemCount: &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;, &lt;span style=&#34;color:#75715e&#34;&gt;//REQUIRED
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        itemHeight: &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;, &lt;span style=&#34;color:#75715e&#34;&gt;//REQUIRED (Total height of a single item must contains optional padding or margin)
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        animationOnReverse: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
-        animationDuration: Duration(milliseconds: &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;),
-        itemBuilder: (context, index) {
-          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; AnimatedListViewItem(
-            key: GlobalKey(), &lt;span style=&#34;color:#75715e&#34;&gt;//REQUIRED
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            index: index, &lt;span style=&#34;color:#75715e&#34;&gt;//REQUIRED
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            animationBuilder: (context, index, controller) {
-              Animation&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Offset&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; animation &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Tween&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;Offset&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(begin: Offset(&lt;span style=&#34;color:#ae81ff&#34;&gt;1.0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;), end: Offset.zero).animate(controller);
-              &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; SlideTransition(
-                position: animation,
-                child: Container(
-                  height: &lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;,
-                  child: Card(
-                    child: Text(index.toString()),
-                  ),
-                ),
-              );
-            },
-          );
-        },
-      );
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;showcase&#34;&gt;Showcase&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/animated_list_view_scroll/blob/master/example.gif&#34;&gt;Example -&amp;gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;bugsrequests&#34;&gt;Bugs/Requests&lt;/h2&gt;
-&lt;p&gt;If you encounter any problems feel free to open an issue. If you feel the library is
-missing a feature, please raise a ticket on Github and I&#39;ll look into it.
-Pull request are also welcome.&lt;/p&gt;
-&lt;h2 id=&#34;note&#34;&gt;Note&lt;/h2&gt;
-&lt;p&gt;For help getting started with Flutter, view our online
-&lt;a href=&#34;https://flutter.io/&#34;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For help on editing plugin code, view the &lt;a href=&#34;https://flutter.io/platform-plugins/#edit-code&#34;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Apache 2.0 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/animated_list_view_scroll/blob/master/LICENSE&#34;&gt;License&lt;/a&gt;&lt;/p&gt;
-</description>
-            
-            <tag>flutter</tag>
-            
-            <tag>pub</tag>
-            
-            <tag>list</tag>
-            
-            <tag>animated list</tag>
             
         </item>
         
