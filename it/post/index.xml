@@ -20,18 +20,16 @@
 TODO: Aggiungi la spiegazione dell&#39;array simile agli stati
 TODO: Aggiungi implementazione Dart
 --&gt;
-&lt;div style=&#34;background:#212020 !important;color: inherit !important;border-radius: 8px; padding: 8px;&#34;&gt;
-&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/issues&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub issues&#34; src=&#34;https://img.shields.io/github/issues/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/issues&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub issues&#34; src=&#34;https://img.shields.io/github/issues/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub license&#34; src=&#34;https://img.shields.io/github/license/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/network&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub forks&#34; src=&#34;https://img.shields.io/github/forks/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers&#34;&gt;&lt;img alt=&#34;GitHub stars&#34; src=&#34;https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
-&lt;div style=&#34;margin: 5px; clear:both;&#34;&gt;&lt;/div&gt;
+&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers&#34;&gt;&lt;img alt=&#34;GitHub stars&#34; src=&#34;https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;TuringAutomaton è un progetto opensource disponibile sotto licenza GNU General Public License v3.0.&lt;br&gt;TuringAutomaton è scritto in C, Java, Python, Dart, MicroBit (Javascript) e Calc.&lt;br&gt;Il progetto è disponibile in italiano e inglese.&lt;/p&gt;
 &lt;p&gt;Il progetto si trova al seguente link:&lt;/p&gt;
-&lt;p&gt;      &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;TuringAutomaton è perfetto per testare la Macchina di Turing e implementarla in base al proprio utilizzo.&lt;/p&gt;
 &lt;p&gt;Gli script sono estremamente ottimizzati e veloci pronti all&#39;uso.&lt;/p&gt;
-&lt;p&gt;Leggi di piu e contribuisci su Github&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Leggi di piu e contribuisci su Github.&lt;/p&gt;
 &lt;h3 id=&#34;capitoli-documentazione&#34;&gt;Capitoli documentazione:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#progetto&#34;&gt;Progettazione&lt;/a&gt;
