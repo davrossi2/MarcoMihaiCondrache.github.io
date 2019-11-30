@@ -1,19 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marcomihaicondrache.github.io/en/post/how_the_cpu_is_made/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <loc>https://marcomihaicondrache.github.io/en/tags/amd/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/post/how_the_cpu_is_made/"
+                href="https://marcomihaicondrache.github.io/it/tags/amd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/post/how_the_cpu_is_made/"
+                href="https://marcomihaicondrache.github.io/en/tags/amd/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcomihaicondrache.github.io/en/tags/cpu/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://marcomihaicondrache.github.io/it/tags/cpu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcomihaicondrache.github.io/en/tags/cpu/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcomihaicondrache.github.io/en/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://marcomihaicondrache.github.io/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcomihaicondrache.github.io/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcomihaicondrache.github.io/en/tags/history/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://marcomihaicondrache.github.io/it/tags/history/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcomihaicondrache.github.io/en/tags/history/"
                 />
   </url>
   
@@ -33,6 +78,51 @@
   </url>
   
   <url>
+    <loc>https://marcomihaicondrache.github.io/en/tags/intel/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://marcomihaicondrache.github.io/it/tags/intel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcomihaicondrache.github.io/en/tags/intel/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcomihaicondrache.github.io/en/post/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://marcomihaicondrache.github.io/it/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcomihaicondrache.github.io/en/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcomihaicondrache.github.io/en/tags/</loc>
+    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://marcomihaicondrache.github.io/it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcomihaicondrache.github.io/en/tags/"
+                />
+  </url>
+  
+  <url>
     <loc>https://marcomihaicondrache.github.io/en/about/</loc>
     <lastmod>2019-09-14T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -48,67 +138,32 @@
   </url>
   
   <url>
+    <loc>https://marcomihaicondrache.github.io/en/tags/animated-list/</loc>
+    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marcomihaicondrache.github.io/en/post/animated_list_view_scroll/</loc>
     <lastmod>2019-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/32bit/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/tags/32bit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/tags/32bit/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/64bit/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/tags/64bit/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/tags/64bit/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/amd/</loc>
-    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/tags/amd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/tags/amd/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/animated-list/</loc>
+    <loc>https://marcomihaicondrache.github.io/en/tags/flutter/</loc>
     <lastmod>2019-09-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://marcomihaicondrache.github.io/en/tags/list/</loc>
+    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcomihaicondrache.github.io/en/tags/pub/</loc>
+    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://marcomihaicondrache.github.io/en/categories/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -136,60 +191,6 @@
   </url>
   
   <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/cpu/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/tags/cpu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/tags/cpu/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/flutter/</loc>
-    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/history/</loc>
-    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/tags/history/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/tags/history/"
-                />
-  </url>
-  
-  <url>
     <loc>https://marcomihaicondrache.github.io/en/home/</loc>
     <xhtml:link
                 rel="alternate"
@@ -204,60 +205,6 @@
   </url>
   
   <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/how/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/tags/how/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/tags/how/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/intel/</loc>
-    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/tags/intel/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/tags/intel/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/list/</loc>
-    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/post/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/post/"
-                />
-  </url>
-  
-  <url>
     <loc>https://marcomihaicondrache.github.io/en/archive/</loc>
     <xhtml:link
                 rel="alternate"
@@ -268,28 +215,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://marcomihaicondrache.github.io/en/archive/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/pub/</loc>
-    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcomihaicondrache.github.io/en/tags/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://marcomihaicondrache.github.io/it/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://marcomihaicondrache.github.io/en/tags/"
                 />
   </url>
   

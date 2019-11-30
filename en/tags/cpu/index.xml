@@ -1,110 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Cpu on Hello, I&#39;m Marco!</title>
+        <title>cpu on Hello, I&#39;m Marco!</title>
         <link>https://marcomihaicondrache.github.io/en/tags/cpu/</link>
-        <description>Recent content in Cpu on Hello, I&#39;m Marco!</description>
+        <description>Recent content in cpu on Hello, I&#39;m Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
         
         <atom:link href="https://marcomihaicondrache.github.io/en/tags/cpu/index.xml" rel="self" type="application/rss+xml" />
         
-        
-        <item>
-            <title>How the cpu is made?</title>
-            <link>https://marcomihaicondrache.github.io/en/post/how_the_cpu_is_made/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/en/post/how_the_cpu_is_made/</guid>
-            <description>
-
-&lt;h2 id=&#34;what-is-its-purpose&#34;&gt;What is its purpose?&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It is a hardware device whose purpose is to execute and process instructions starting from an architecture under the control of the operating system&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It is called a &amp;ldquo;central&amp;rdquo; unit because it centrally coordinates all the other processing units present in the computer hardware architecture for managing the various internal peripherals or electronic cards (sound card, video card, network card), eg. coprocessor and digital signal processor.&lt;/p&gt;
-
-&lt;p&gt;Based on the memory organization, the following two CPU families can be distinguished:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;with von Neumann architecture, in which data and instructions reside in the same memory (it is therefore possible to have self-modifying code). This architecture is the most common, because it is very simple and flexible.&lt;/li&gt;
-&lt;li&gt;with Harvard architecture, in which data and instructions reside in two separate memories. This architecture can guarantee better performance since the two memories can work in parallel reducing the structural wings, but it is obviously much more complex to manage. It is typically used in DSPs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache.github.io/img/architteture.gif&#34; alt=&#34;CPU-structure&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A generic CPU contains:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;a control unit (also known as CU) which reads the instructions from the memory, if necessary it also reads the data for the instruction read, executes the instruction and memorizes the result if there is, writing it in memory or in a CPU register.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;an arithmetic and logical unit (also known by the acronym ALU) that deals with performing the logical and arithmetic operations;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The registers or small memories used by the CPU to carry out the instructions:
-    
-  - the register &lt;strong&gt;PC&lt;/strong&gt; (&lt;em&gt;Program Counter&lt;/em&gt;), which contains the address in memory of the next instruction to be executed;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;  - the register &lt;strong&gt;MAR&lt;/strong&gt; (&lt;em&gt;Memory Address Register&lt;/em&gt;) records the address of the address of the memory location being accessed;&lt;/p&gt;
-
-&lt;p&gt;  - the register &lt;strong&gt;MDR&lt;/strong&gt; (&lt;em&gt;Memory Data Register&lt;/em&gt;) All the data and instructions that must be processed in the processor from the memory, pass through the MDR register and only subsequently from this reach the appropriate registers for the actual processing;&lt;/p&gt;
-
-&lt;p&gt;  - the register &lt;strong&gt;IR&lt;/strong&gt; (&lt;em&gt;Instruction Register&lt;/em&gt;) This register has the task of receiving from the memory (through the MDR), during a fetch phase, the instruction to be executed, that is the one pointed by the PC;&lt;/p&gt;
-
-&lt;p&gt;  - registers &lt;strong&gt;general&lt;/strong&gt; (&lt;em&gt;R1, R2 ..&lt;/em&gt;) They are used to contain the data in transit for an elaboration: the addends of an addition that the ALU is about to carry out, the result of a calculation that the ALU has carried out, a memory address where there is a datum that will have to be accessed later, etc. A large number of such registers confers greater flexibility in programming, but complicates the structure of the processor from an architectural point of view.
-  
-Usually the size of the registers and buses is equal to the size of the instructions that the cpu must execute.
-For example, if the cpu executes 64bit instructions, the registers will be 8 bytes (&lt;strong&gt;8 * 8 = 64&lt;/strong&gt;)
-  &lt;/p&gt;
-
-&lt;h2 id=&#34;the-execution-of-an-instruction&#34;&gt;The execution of an instruction&lt;/h2&gt;
-
-&lt;p&gt; 
- 1. Loading of the instruction (Instruction Fetch) from the memory based on the address provided by the registers.
- 
- 2. Decoding (Operand Assembly): once the &lt;a href=&#34;https://it.wikipedia.org/wiki/Word&#34;&gt;word&lt;/a&gt; has been taken, it is determined which operation should be performed and how to obtain the operands, based on a function whose domain consists of the operating codes (typically the high bits of the &lt;a href=&#34;https://it.wikipedia.org/wiki/Word&#34;&gt;word&lt;/a&gt; and the codomain consists of the microprograms to be executed.
- 
- 3. Execution (Execute) The instruction is executed: In the last step of the execution the PC is incremented: typically of one if the instruction was not a conditional jump, otherwise the increase depends on the instruction and the outcome of this
- &lt;/p&gt;
-
-&lt;h2 id=&#34;synchronization&#34;&gt;Synchronization&lt;/h2&gt;
-
-&lt;p&gt;The cpu to execute the instructions needs to be synchronized with the other components of the PC such as with the memory.
-This task takes care of the clock.&lt;/p&gt;
-
-&lt;p&gt;The term clock, In electronics, indicates a periodic signal, generally a square wave, used to synchronize the functioning of digital electronic devices.&lt;/p&gt;
-
-&lt;p&gt;The clock speed or frequency is the number of commutations between the two logic levels &amp;ldquo;0&amp;rdquo; and &amp;ldquo;1&amp;rdquo; that the circuits inside a computing unit or a microprocessor are able to perform in the time unit of a second, and is expressed in cycles per second, or hertz, and its multiples; normally to execute an instruction or a simple sum more clock cycles are needed.&lt;/p&gt;
-
-&lt;h2 id=&#34;informations&#34;&gt;Informations&lt;/h2&gt;
-
-&lt;p&gt;This Post was written by Marco Mihai Condrache.
-Below the sources.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://wikipedia.com&#34; title=&#34;Wikipedia website&#34;&gt;Wikipedia&lt;/a&gt; (Some parts of the text)&lt;/li&gt;
-&lt;li&gt;Our mind and commitment 😊&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We hope that the style and content of the page will be appreciated by the professors and that they can use them in their explanations.&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading!&lt;/p&gt;
-</description>
-            
-            <tag>32bit</tag>
-            
-            <tag>64bit</tag>
-            
-            <tag>how</tag>
-            
-            <tag>cpu</tag>
-            
-        </item>
         
         <item>
             <title>History of processors</title>
@@ -112,19 +16,11 @@ Below the sources.&lt;/p&gt;
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
             <guid>https://marcomihaicondrache.github.io/en/post/cpuhistory/</guid>
-            <description>
-
-&lt;p&gt;Before starting to tell the story of the processors it is better to clarify the meaning of the latter:&lt;/p&gt;
-
+            <description>&lt;p&gt;Before starting to tell the story of the processors it is better to clarify the meaning of the latter:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;It is a hardware device whose purpose is to execute and process instructions starting from an architecture under the control of the operating system and with a speed determined by the Clock frequency which represents one of the characteristics in terms of performance.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Do you want to better understand how a processor works?
-Then go see the &lt;a href=&#34;https://marcomihaicondrache.github.io/en/post/how_the_cpu_is_made&#34;&gt;post&lt;/a&gt; that we published about it!&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;The first microprocessor is born thanks to the genius of an Italian: the physicist Federico Faggin, Intel engineer, under request of BusiCom, interested in an electronic system for his new desktop calculator, create the first microprocessor of the history 4004 with an architecture in 4 bits.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -132,182 +28,95 @@ Then go see the &lt;a href=&#34;https://marcomihaicondrache.github.io/en/post/ho
 &lt;th&gt;DESCRIPTION&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;1823&lt;/td&gt;
 &lt;td&gt;Baron Jons Jackob Berzelius discovers silicon (Si), which today is the basic component of the processors.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1903&lt;/td&gt;
 &lt;td&gt;In 1903 Nikola Tesla patented electrical logic circuits called &amp;ldquo;gates&amp;rdquo; or &amp;ldquo;switches&amp;rdquo;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1947&lt;/td&gt;
 &lt;td&gt;John Bardeen, Walter Brattain and William Shockley invent the first transistor at Bell Laboratories on December 23, 1947.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1948&lt;/td&gt;
 &lt;td&gt;John Bardeen, Walter Brattain and William Shockley patented the first transistor in 1948.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1956&lt;/td&gt;
 &lt;td&gt;John Bardeen, Walter Brattain and William Shockley received the Nobel Prize in Physics for their work on the transistor.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1958&lt;/td&gt;
 &lt;td&gt;The first integrated circuit was developed for the first time by Robert Noyce of Fairchild Semiconductor and Jack Kilby of Texas Instruments. The first IC was shown on 12 September 1958.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1960&lt;/td&gt;
 &lt;td&gt;IBM developed the first automatic mass production transistor plant in New York in 1960.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1968&lt;/td&gt;
 &lt;td&gt;Intel Corporation was founded by Robert Noyce and Gordon Moore in 1968.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1969&lt;/td&gt;
 &lt;td&gt;AMD (Advanced Micro Devices) was founded on May 1, 1969.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;1971&lt;/td&gt;
 &lt;td&gt;Intel with the help of Federico Faggin introduced the first microprocessor, Intel 4004 on November 15, 1971. The 4004 had 2,300 transistors, ran 60,000 OPS (operations per second), addressed 640 bytes of memory and cost $ 200.00.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h2 id=&#34;before-the-processors&#34;&gt;Before the processors&lt;/h2&gt;
-
 &lt;h4 id=&#34;before-1945&#34;&gt;Before 1945&lt;/h4&gt;
-
 &lt;p&gt;The processing systems were mainly mechanical.
 The machines could perform the elementary operations.&lt;/p&gt;
-
-&lt;p&gt;In the nineteenth century programmable machines were born, that is processing systems that could automate a process based on the user&amp;rsquo;s requests.&lt;/p&gt;
-
+&lt;p&gt;In the nineteenth century programmable machines were born, that is processing systems that could automate a process based on the user&#39;s requests.&lt;/p&gt;
 &lt;p&gt;In the 1940s we switched to relays that represented the 0/1 binary numbers but still had mechanical parts&lt;/p&gt;
-
-&lt;p&gt;An example of a mechanical calculator can be found bellow
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/aDN4s8ElxqE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-&lt;/p&gt;
-
+&lt;p&gt;An example of a mechanical calculator can be found &lt;a href=&#34;https://www.youtube.com/watch?v=aDN4s8ElxqE&#34; title=&#34;Example of mechanical calculator&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;from-45-to-75&#34;&gt;From 45 &amp;lsquo;to 75&amp;rsquo;&lt;/h4&gt;
-
 &lt;p&gt;Commercial production of machines based on vacuum tubes begins, but they are very simple and require the use of machine language (strictly dependent on the machine).&lt;/p&gt;
-
 &lt;p&gt;The &lt;a href=&#34;https://it.wikipedia.org/wiki/Transistor&#34; title=&#34;Definition of transistor&#34;&gt;transistor&lt;/a&gt; appears : smaller, more economical and faster.
 High-level languages begin to appear.&lt;/p&gt;
-
 &lt;h4 id=&#34;moore-theory&#34;&gt;Moore theory&lt;/h4&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;The maximum number of transistors that can be integrated on a single circuit doubles every &lt;sup&gt;18&lt;/sup&gt;&amp;frasl;&lt;sub&gt;24&lt;/sub&gt; months.&lt;/p&gt;
+&lt;p&gt;The maximum number of transistors that can be integrated on a single circuit doubles every 18/24 months.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;From 1971 the evolution of the processors continued unabated up until and today.&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;h2 id=&#34;federico-faggin&#34;&gt;Federico Faggin&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache.github.io/img/federico_faggin.jpeg&#34; alt=&#34;Federico-Logo&#34; /&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/qMsM4Xvh/Federico-Faggin-Intel1-800x533.jpg&#34; alt=&#34;Federico-Faggin.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Born in Vicenza in 1941, he is an Italian-born physicist, inventor and entrepreneur.&lt;/p&gt;
-
 &lt;p&gt;He participated in the program for the creation of the Intel 4004 and its successors. He was also the developer of MOS, a technology that allowed the creation of the first EPROM and RAM processors and memories.&lt;/p&gt;
-
 &lt;p&gt;In 74 ’he founded and directed the Zilog, a company specialized in the production of microprocessors.&lt;/p&gt;
-
-&lt;hr /&gt;
-
+&lt;hr&gt;
 &lt;h2 id=&#34;today&#34;&gt;Today&lt;/h2&gt;
-
 &lt;p&gt;With the passage of time the evolution of the processors progressed more and more until reaching the very performing ones today and able to execute numerous complex instructions.&lt;/p&gt;
-
 &lt;p&gt;They are capable of performing up to 5000 operations per second, the equivalent of 5Ghz and with a number of cores ranging from 2 to 32, that is &amp;ldquo;the parts of the processor&amp;rdquo; that can perform multiple operations simultaneously.&lt;/p&gt;
-
 &lt;p&gt;The two companies that compete the most in this sector are Amd and Intel, which have been creating processors for over 30 years.
-Although they were founded at a year of difference, both can produce excellent processors (In our opinion, Intel does them better 😆)&lt;/p&gt;
-
+Although they were founded at a year of difference, both can produce excellent processors (In our opinion, Intel does them better :))&lt;/p&gt;
 &lt;h2 id=&#34;intel&#34;&gt;Intel&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache.github.io/img/intel-meet.jpg&#34; alt=&#34;Intel-CES-Image&#34; /&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/7Y0M4cz3/intel-9th-generation-chip-ces-2019.jpg&#34; alt=&#34;Intel-CES-Image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;La &lt;strong&gt;Intel Corporation&lt;/strong&gt; is a US company founded in 1968 with headquarters in Santa Clara (California)&lt;/p&gt;
-
 &lt;p&gt;It currently produces semiconductor devices, microprocessors, network components, chipsets for motherboards (motherboards), chips for video cards and many other integrated circuits, and is considered one of the most important in the industry.&lt;/p&gt;
-
+&lt;h6 id=&#34;intel-according-to-wikipedia&#34;&gt;Intel according to Wikipedia&lt;/h6&gt;
 &lt;h2 id=&#34;amd&#34;&gt;Amd&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache.github.io/img/amd-meet.jpg&#34; alt=&#34;Amd-Image&#34; /&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/k5653r69/F2u8-NP9k6c-DUP4-KLm2tpn-G.jpg&#34; alt=&#34;Amd-Image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Advanced Micro Devices, Inc. (abbreviated AMD) is a US semiconductor manufacturer based in Sunnyvale, California. It is one of the world leaders in the production of CPUs for the consumer market, workstations and servers; of integrated and discrete graphics chips after merging with ATI as well as chipset.&lt;/p&gt;
-
 &lt;p&gt;It ranks second in the world in the production of microprocessors with x86 architecture after Intel; while in the production of graphic chips in August 2015 it is in third position (with a market share of 10.7%) preceded by Intel (75.2%) and NVIDIA (14.1%). In 2009, AMD ranked ninth among semiconductor manufacturers in terms of annual revenue&lt;/p&gt;
-
-&lt;h2 id=&#34;but-the-smartphone-processors&#34;&gt;But the smartphone processors?&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://marcomihaicondrache.github.io/img/proc-smartphone.jpg&#34; alt=&#34;Proc-smartphone&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The processors we talked about so far are mainly found in PCs.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;When we talk about smartphone processors we generally talk about architecture &lt;a href=&#34;https://it.wikipedia.org/wiki/Architettura_ARM&#34;&gt;&lt;strong&gt;ARM&lt;/strong&gt;&lt;/a&gt;. The English company in fact holds 95% of the global market and its processors (which are actually SoCs that are &lt;em&gt;System-on-a-Chip&lt;/em&gt;) are used not only in smartphones but also in many other product categories.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;ARM does not manufacture its own smartphone processors or other devices, but grants other companies the license rights to mass produce the SoCs designed and developed in the laboratory.
-Qualcomm, MediaTek, Samsung, HiSilicon (the latter directly controlled by Huawei), Apple, NVidia and Texas Instruments are just some of the many companies that use ARM intellectual property to physically build the processors.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Qualcomm:&lt;/strong&gt; those of this company based in the United States are the most loved smartphone processors ever in the Android world, and they are called Snapdragon. They are often preferred for their better competition performance and because they are the most suitable for modding.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;MediaTek:&lt;/strong&gt; these smartphone processors are very popular among cheap smartphones with Android, and the field in which they prevail is low cost devices. In the high-end MediaTek was crushed by the competition of Qualcomm: the advantage of devices with processors of this brand is the fact that they generally cost less.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Apple:&lt;/strong&gt; Apple&amp;rsquo;s smartphone processors, physically produced mainly by TSMC, are only present on Apple&amp;rsquo;s iPhones and iPads. They are always very powerful because they are all made to be high-end, and have never had poor performance.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Samsung:&lt;/strong&gt; these smartphone processors instead are found on Samsung Galaxy devices and are called Exynos, but occasionally Samsung could collaborate with other companies to insert them on their terminals. It has already happened for example with several Meizu smartphones. Samsung produces both affordable and top of the range smartphone processors: the former can be found on Galaxy J and A series terminals, the latter on Galaxy S and Note.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Huawei:&lt;/strong&gt; they are called Kirin smartphone processors from Huawei, and are found on Huawei and Honor devices. Also in this case there are high-end and economic ones, but at the moment they are not present on other devices besides those mentioned above.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;stop-for-a-moment-hahahugoshortcode-0xc420190f00-3-hbhb&#34;&gt;Stop for a moment ✋&lt;/h2&gt;
-
-&lt;p&gt;Uh if you&amp;rsquo;ve come this far it means that the article interests you a lot!&lt;/p&gt;
-
-&lt;p&gt;Before leaving, what do you think about looking at these two interesting posts?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://it.wikipedia.org/wiki/Microprocessors_Intel&#34;&gt;List of Intel processors&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://it.wikipedia.org/wiki/Microprocessors_AMD&#34;&gt;List of Amd processors&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
+&lt;h6 id=&#34;amd-according-to-wikipedia&#34;&gt;AMD according to Wikipedia&lt;/h6&gt;
 &lt;h2 id=&#34;informations&#34;&gt;Informations&lt;/h2&gt;
-
-&lt;p&gt;This Post was written by Marco Mihai Condrache and Giacomo D&amp;rsquo;Aronco.
+&lt;p&gt;This Post was written by Marco Mihai Condrache and Giacomo D&#39;Aronco.
 Below the sources.&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://wikipedia.com&#34; title=&#34;Wikipedia website&#34;&gt;Wikipedia&lt;/a&gt; (Some parts of the text)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.computerhope.com&#34;&gt;ComputerHope&lt;/a&gt; (Table information)&lt;/li&gt;
-&lt;li&gt;Our mind and commitment 😊&lt;/li&gt;
+&lt;li&gt;Our mind :)&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;We hope that the style and content of the page will be appreciated by the professors and that they can use them in their explanations.&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading!&lt;/p&gt;
 </description>
             
             <tag>amd</tag>

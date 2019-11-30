@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Turing on Ciao, Sono Marco!</title>
+        <link>https://marcomihaicondrache.github.io/it/tags/turing/</link>
+        <description>Recent content in Turing on Ciao, Sono Marco!</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+        
+        <atom:link href="https://marcomihaicondrache.github.io/it/tags/turing/index.xml" rel="self" type="application/rss+xml" />
+        
+        
+        <item>
+            <title>Macchina di Turing: Automa</title>
+            <link>https://marcomihaicondrache.github.io/it/post/turing/</link>
+            <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/it/post/turing/</guid>
+            <description>&lt;!---
+TODO: Aggiungi la spiegazione dell&#39;array simile agli stati
+TODO: Aggiungi implementazione Dart
+--&gt;
+&lt;div style=&#34;background:#212020 !important;color: inherit !important;border-radius: 8px; padding: 8px;&#34;&gt;
+&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/issues&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub issues&#34; src=&#34;https://img.shields.io/github/issues/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub license&#34; src=&#34;https://img.shields.io/github/license/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/network&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub forks&#34; src=&#34;https://img.shields.io/github/forks/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers&#34;&gt;&lt;img alt=&#34;GitHub stars&#34; src=&#34;https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
+&lt;div style=&#34;margin: 5px; clear:both;&#34;&gt;&lt;/div&gt;
+&lt;p&gt;TuringAutomaton è un progetto opensource disponibile sotto licenza GNU General Public License v3.0.&lt;br&gt;TuringAutomaton è scritto in C, Java, Python, Dart, MicroBit (Javascript) e Calc.&lt;br&gt;Il progetto è disponibile in italiano e inglese.&lt;/p&gt;
+&lt;p&gt;Il progetto si trova al seguente link:&lt;/p&gt;
+&lt;p&gt;      &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TuringAutomaton è perfetto per testare la Macchina di Turing e implementarla in base al proprio utilizzo.&lt;/p&gt;
+&lt;p&gt;Gli script sono estremamente ottimizzati e veloci pronti all&#39;uso.&lt;/p&gt;
+&lt;p&gt;Leggi di piu e contribuisci su Github&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;capitoli-documentazione&#34;&gt;Capitoli documentazione:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#progetto&#34;&gt;Progettazione&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#insiemi&#34;&gt;Insiemi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tabella-transizione-degli-stati&#34;&gt;Transizione degli Stati&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tabella-transformazione-delle-uscite&#34;&gt;Transformazione delle Uscite&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#uml&#34;&gt;UML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#modello-calc&#34;&gt;Modello Calc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#implementazione-microbit&#34;&gt;Implementazione Microbit&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#funzionamento&#34;&gt;Funzionamento&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#codice-e-spiegazione&#34;&gt;Codice e spiegazione&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#codice-sorgente&#34;&gt;Codice sorgente&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;Video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#implementazione-in-c&#34;&gt;Implementazione in C&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#funzionamento1&#34;&gt;Funzionamento&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#codice-e-spiegazione1&#34;&gt;Codice e spiegazione&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#codice-sorgente1&#34;&gt;Codice sorgente&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#implementazione-in-java&#34;&gt;Implementazione in Java&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#funzionamento2&#34;&gt;Funzionamento&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#codice-e-spiegazione2&#34;&gt;Codice e spiegazione&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#codice-sorgente2&#34;&gt;Codice sorgente&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#implementazione-in-python&#34;&gt;Implementazione in Python&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#funzionamento3&#34;&gt;Funzionamento&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#codice-e-spiegazione3&#34;&gt;Codice e spiegazione&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#codice-sorgente3&#34;&gt;Codice sorgente&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Implementazione PHP (cooming soon)&lt;/li&gt;
+&lt;li&gt;Considerazioni finali&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;progetto&#34;&gt;Progetto&lt;/h1&gt;
+&lt;p&gt;Il nostro progetto era quello di creare un automa sulla base del concetto della Macchina di Turing con gli elementi &lt;code&gt; A B C &lt;/code&gt; in ingresso per la formazione delle sequenze.
+La sequenza da riconoscere e&amp;rsquo; &lt;mark&gt; AACBB &lt;/mark&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Un &lt;strong&gt;automa&lt;/strong&gt; è un sistema dinamico discreto (nella scansione del tempo e nella descrizione del suo stato) e tempo-invariante (il sistema si comporta alla stessa maniera indipendentemente dall&#39;istante di tempo in cui agisce).
+Quando l&#39;automa si trova in un dato stato, esso può accettare solo un sottoinsieme dei simboli del suo alfabeto.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;insiemi&#34;&gt;Insiemi&lt;/h2&gt;
+&lt;p&gt;Siamo partiti quindi a definire i diversi insiemi e le diverse tabelle di transizione / trasformazione.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;I&lt;/strong&gt; = { lettera }&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;V&lt;sub&gt;I&lt;/sub&gt;&lt;/strong&gt; = { A, B, C }&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O&lt;/strong&gt; = { stringa }&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;V&lt;sub&gt;O&lt;/sub&gt;&lt;/strong&gt; = { AACBB, no }&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S&lt;/strong&gt; = { attesa, a, aa, aac, aacb }&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tabella-transizione-degli-stati&#34;&gt;Tabella Transizione degli Stati&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;V&lt;sub&gt;I&lt;/sub&gt; / S&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;attesa&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;a&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;aa&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;aac&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;aacb&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;aa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;aa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;attesa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;attesa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;attesa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;aacb&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;attesa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;attesa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;attesa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;aac&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;attesa&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;attesa&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;tabella-trasformazione-delle-uscite&#34;&gt;Tabella Trasformazione delle Uscite&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;V&lt;sub&gt;I&lt;/sub&gt; / S&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;attesa&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;a&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;aa&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;aac&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;aacb&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;aacbb&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;no&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;uml&#34;&gt;UML&lt;/h2&gt;
+&lt;p&gt;Per avere un idea piu chiara e consultabile abbiamo creato un modello UML per la trasformazione dell&#39;automa&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/qvDZD9X0/staruml-model-image.png&#34; alt=&#34;staruml-model-image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Il modello e&amp;rsquo; stato creato con un programma open source, come tutto il progetto.
+Il programma in questione e&amp;rsquo; &lt;a href=&#34;http://staruml.io&#34;&gt;StarUML&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;modello-calc&#34;&gt;Modello Calc&lt;/h1&gt;
+&lt;p&gt;Il tutto e&amp;rsquo; stato messo insieme e abbiamo creato un modello in calc in modo da poterne testare le funzionalita&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png&#34; alt=&#34;Modello Calc&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sono stati creati due fogli di calcolo. Uno per la descrizione dove sono state implementate la varie tabelle e la descrizione visiva in Uml.
+Un&#39;altro foglio invece mostra l&#39;evoluzione dell&#39;automa nel tempo in seguito all&#39;ingresso ricevuto.&lt;/p&gt;
+&lt;h1 id=&#34;implementazione-microbit&#34;&gt;Implementazione Microbit&lt;/h1&gt;
+&lt;p&gt;Lo stesso programma è stato implementato su un dispositivo fisico: MicroBit.
+Una schedina programmabile, semplice e intuitiva da utilizzare che ci ha permesso di testare il funzionamento dell&#39;automa&lt;/p&gt;
+&lt;p&gt;Il codice è stato ottimizato per rendere riconoscibile qualsiasi sequenza con un massimo di tre caratteri (Limitati dalle funzionalita di microbit. In futuro sarà magari possibile estendere questo limite).&lt;/p&gt;
+&lt;h3 id=&#34;funzionamento&#34;&gt;Funzionamento&lt;/h3&gt;
+&lt;p&gt;Il funzionamento del programma è piuttosto semplice:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nel tasto A è associata la prima lettera in questo caso &lt;strong&gt;&amp;ldquo;A&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Nel tasto b è associata la seconda lettera in questo caso &lt;strong&gt;&amp;ldquo;B&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Con il movimento è associata la terza lettere in questo caso &lt;strong&gt;&amp;ldquo;C&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/ZRWp6dsy/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png&#34; alt=&#34;MicroBit Input&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Il tipo di output può essere a &amp;ldquo;numero&amp;rdquo; (come nell&#39;immagine che seguira) ovvero viene identificato il numero di volte che la sequenza viene riconosciuta all&#39;interno dell&#39;Array.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/LsdqYWKL/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-1-remove.png&#34; alt=&#34;MicroBit Output 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;oppure può essere a &amp;ldquo;stringa&amp;rdquo; (come nell&#39;immagine che seguira) ovvero viene mostrato a schermo l&#39;intero array cioè l&#39;intera stringa e si mostra con l&#39;avanzamento dei caratteri una faccina sorridente a stringa indetificata&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/50KbvHYT/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png&#34; alt=&#34;MicroBit Output 1&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;codice-e-spiegazione&#34;&gt;Codice e spiegazione&lt;/h3&gt;
+&lt;p&gt;Di seguito è riportato il codice sorgento del meccanisco usato per far funzionare microbit&lt;/p&gt;
+&lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input&lt;/p&gt;
+&lt;p&gt;Nella variabile &lt;mark&gt;outputType&lt;/mark&gt; sono accettati due valori &amp;ldquo;string&amp;rdquo; o &amp;ldquo;stringCount&amp;rdquo; che determinano il tipo di output&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * AUTHOR: Condrache Marco Mihai
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * CLASS: 3^A DATE: 28/11/2019
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * DESCRIPTION: Program for the automaton based on the concept of turing machine
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * ? GITHUB: https: //github.com/MarcoMihaiCondrache
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; */&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;// listen for the buttons A
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;input&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;onButtonPressed&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Button&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;A&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;pushArray&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt;)
+})
+&lt;span style=&#34;color:#75715e&#34;&gt;// B
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;input&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;onButtonPressed&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Button&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;B&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;pushArray&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;B&amp;#34;&lt;/span&gt;)
+})
+&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkArray&lt;/span&gt;() {
+    &lt;span style=&#34;color:#75715e&#34;&gt;// Check array function
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// check if the inserted string has the string
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Parameters:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;//
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;// Return:
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;includes&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;STRING&lt;/span&gt;)) {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;stringCount&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;basic&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;showIcon&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;IconNames&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Happy&lt;/span&gt;)
+    }
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;outputType&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;string&amp;#34;&lt;/span&gt;) {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;basic&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;clearScreen&lt;/span&gt;()
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;basic&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;showString&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;))
+    }
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;stringCount&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;outputType&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;string&lt;/span&gt;[] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
+&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;STRING&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;AACBB&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pushArray&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;) {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;removeAt&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;);
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;);
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;checkArray&lt;/span&gt;()
+}
+&lt;span style=&#34;color:#a6e22e&#34;&gt;outputType&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stringCount&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;// string or stringCount
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// listen the shake for the c value
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;input&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;onShake&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;pushArray&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C&amp;#34;&lt;/span&gt;)
+})
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;STRING&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;index&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;) {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;state&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;push&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
+}
+&lt;span style=&#34;color:#75715e&#34;&gt;// show counter if the output type is set to
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// stringCount
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;basic&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;forever&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; () {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;outputType&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stringCount&amp;#34;&lt;/span&gt;) {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;basic&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;showNumber&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;stringCount&lt;/span&gt;)
+    }
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente&#34;&gt;Codice sorgente&lt;/h4&gt;
+&lt;p&gt;Il codice precompilato e pronto a essere caricato e&amp;rsquo; disponibile sulla repo di github&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;implementazione-in-c&#34;&gt;Implementazione in C&lt;/h1&gt;
+&lt;h3 id=&#34;funzionamento1&#34;&gt;Funzionamento&lt;/h3&gt;
+&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta.
+Se l&#39;esito è positivo verra stampata la stringa &amp;ldquo;Sequence found!&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/44V2nPcK/Screenshot-from-2019-11-29-22-09-00.png&#34; alt=&#34;C work&#34;&gt;&lt;/p&gt;
+&lt;p&gt;L&#39;array dove verranno salvati tutti i caratteri sarà della stessa dimensione della stringa da trovare
+di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&gt;
+&lt;h3 id=&#34;codice-e-spiegazione1&#34;&gt;Codice e spiegazione&lt;/h3&gt;
+&lt;p&gt;Di seguito è riportato il codice sorgente&lt;/p&gt;
+&lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input&lt;/p&gt;
+&lt;p&gt;Nella variabile &lt;mark&gt;STRING_LENGTH&lt;/mark&gt; è definita la lunghezza della stringa (&lt;strong&gt;Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;Nel metodo main() vengono richiesti di volta in volta i parametri e pushati all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;pushArray(char)&lt;/mark&gt; la quale shifta di 1 l&#39;array a sinistra&lt;/p&gt;
+&lt;p&gt;La funzione &lt;mark&gt;resetArray()&lt;/mark&gt; pulisce l&#39;array e viene utilizzato per inizializzarlo&lt;/p&gt;
+&lt;p&gt;La funzione &lt;mark&gt;checkArray()&lt;/mark&gt; controlla la stringa all&#39;interno dell&#39;array e ne stampa l&#39;esito&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    * AUTHOR: Condrache Marco Mihai
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    * CLASS: 3^A 
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    * DATE: 28/11/2019
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    * DESCRIPTION: Program for the automaton based on the concept of turing machine
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    * ? GITHUB: https: //github.com/MarcoMihaiCondrache
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;*/&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;string.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;define STRING &amp;#34;aacbb&amp;#34; &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// STRING that will be searched into the array
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;define STRING_LENGTH 5&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;// Declaring variables
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; word[STRING_LENGTH];
+&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;resetArray&lt;/span&gt;();
+&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pushArray&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt;);
+&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkArray&lt;/span&gt;();
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; argc, &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;argv[])
+{
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STRING[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+    resetArray();
+    &lt;span style=&#34;color:#75715e&#34;&gt;// ask for the chars
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (strchr(STRING, current) &lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; NULL)
+    {
+        printf(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Insert char: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;);
+        scanf(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%1s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;current);
+        pushArray(current);
+        checkArray();
+    }
+}
+
+&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * Method that reset array to * values
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * @return void
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; */&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;resetArray&lt;/span&gt;()
+{
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; STRING_LENGTH; i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;)
+    {
+        word[i] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;;
+    }
+}
+&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * Method that shift by 1 the array and append the value
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * @param char The value to append
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * @return void
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; */&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pushArray&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; value)
+{
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; STRING_LENGTH &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;)
+    {
+        word[i] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; word[i &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;];
+    }
+    word[STRING_LENGTH &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; value;
+}
+&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * Check if the array containts the STRING value
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * @return void
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; */&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkArray&lt;/span&gt;()
+{
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (strncmp(word, STRING, strlen(STRING)) &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+    {
+        printf(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Sequence found!&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente1&#34;&gt;Codice sorgente&lt;/h4&gt;
+&lt;p&gt;Il codice precompilato e pronto a essere caricato e&amp;rsquo; disponibile sulla repo di github&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;implementazione-in-java&#34;&gt;Implementazione in Java&lt;/h1&gt;
+&lt;h3 id=&#34;funzionamento2&#34;&gt;Funzionamento&lt;/h3&gt;
+&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta. Se l&#39;esito è positivo verra stampata la stringa “Sequence found!”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/hPLsgXY9/Screenshot-from-2019-11-30-11-24-14.png&#34; alt=&#34;Java work&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;codice-e-spiegazione2&#34;&gt;Codice e spiegazione&lt;/h3&gt;
+&lt;p&gt;Di seguito è riportato il codice sorgente&lt;/p&gt;
+&lt;p&gt;La classe &lt;mark&gt;TuringAutomaton&lt;/mark&gt; è la classe dove sono definiti i metodi per il funzionamento dell&#39;automa
+Il metodo &lt;mark&gt;main&lt;/mark&gt; contiene l&#39;inzio del programma quindi deve essere richiamato per inizializzare il programma e&amp;rsquo; di tipo statico e pubblico&lt;/p&gt;
+&lt;p&gt;Nella variabile costante &lt;mark&gt;STRING_TO_FIND&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input&lt;/p&gt;
+&lt;p&gt;Il metodo &lt;mark&gt;pushInArray&lt;/mark&gt; viene richiamato per inserire il carattere all&#39;interno dell&#39;array secondo il concetto LIFO&lt;/p&gt;
+&lt;p&gt;Il metodo &lt;mark&gt;checkArray&lt;/mark&gt; viene richiamato per controllare nell&#39;array la stringa e ne restituisce l&#39;esito&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.Scanner&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * Program based on the Turing Machine concept (console)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * &amp;lt;br&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * https://github.com/MarcoMihaiCondrache/TuringAutomaton
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; *
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * @author  Condrache Marco Mihai
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * @version 1.0
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * @since   2019-11-28
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; */&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TuringAutomaton&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * The final string that contains the string to find
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     */&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;final&lt;/span&gt; String STRING_TO_FIND &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;aacbb&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; args&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        String current&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#75715e&#34;&gt;// full word to compare
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; word &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;STRING_TO_FIND&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            word&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#75715e&#34;&gt;// insert and check the word with the new char
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            Scanner reader &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Scanner&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;in&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Insert char: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; reader&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;nextLine&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            word &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pushInArray&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;word&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; current&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;checkWord&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;word&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Sequence found!\n&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;STRING_TO_FIND&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;contains&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;current&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;current&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * Method to check if the list contains
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * the STRING_TO_FIND and return true or false.
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     *
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * @param  list The array to join to compare
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * @return  if the string contains the cost
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * @since 1.0
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     */&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;boolean&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkWord&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; list&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        StringBuilder sb &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; StringBuilder&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String s &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; list&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            sb&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; sb&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;toString&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;contains&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;STRING_TO_FIND&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;/***
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * Method to push into array using LIFO concept
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     *
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * @param list The array to push in
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * @param charT The char to insert
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     * @return return the complete list
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;     */&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;pushInArray&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ArrayList&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; list&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String charT&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;remove&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        list&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;charT&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; list&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente2&#34;&gt;Codice sorgente&lt;/h4&gt;
+&lt;p&gt;Il codice precompilato e pronto a essere caricato e&amp;rsquo; disponibile sulla repo di github&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;implementazione-in-python&#34;&gt;Implementazione in Python&lt;/h1&gt;
+&lt;h3 id=&#34;funzionamento3&#34;&gt;Funzionamento&lt;/h3&gt;
+&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta.
+Se l&#39;esito è positivo verra stampata la stringa &amp;ldquo;Sequence found&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png&#34; alt=&#34;Python work&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;codice-e-spiegazione3&#34;&gt;Codice e spiegazione&lt;/h3&gt;
+&lt;p&gt;Di seguito è riportato il codice sorgente&lt;/p&gt;
+&lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input&lt;/p&gt;
+&lt;p&gt;Vengono richiesti di volta in volta i parametri e pushati all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;push_array(char)&lt;/mark&gt; la quale shifta di 1 l&#39;array a sinistra&lt;/p&gt;
+&lt;p&gt;La funzione &lt;mark&gt;check_array()&lt;/mark&gt; controlla la stringa all&#39;interno dell&#39;array e ne restituisce l&#39;esito&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    * AUTHOR: Condrache Marco Mihai&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    * CLASS: 3^A&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    * DATE: 28/11/2019&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    * DESCRIPTION: Program based on the Turing Machine concept (console)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    ? GITHUB: https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Define STRING variable to find inside characters&lt;/span&gt;
+STRING &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;aacbb&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Define word variable that will contain the insert string&lt;/span&gt;
+word &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; len(STRING)
+&lt;span style=&#34;color:#75715e&#34;&gt;# Define current variable that will contain the current char&lt;/span&gt;
+current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STRING[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]
+
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;push_array&lt;/span&gt;(char):
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    Push into array with Lifo concept&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    :param char: The char to insert into the array&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    :return:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+    word&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pop(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+    word&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(char)
+
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;check_array&lt;/span&gt;():
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    Check if the array contains the sequence&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    :return bool: Return the condition&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; STRING &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join(word)
+
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; current &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; STRING:
+    &lt;span style=&#34;color:#75715e&#34;&gt;# Ask the char&lt;/span&gt;
+    current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; str(input(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Insert char: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;))
+    &lt;span style=&#34;color:#75715e&#34;&gt;# Insert it into the array&lt;/span&gt;
+    push_array(current)
+    &lt;span style=&#34;color:#75715e&#34;&gt;# Check and eventually clear the array&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; check_array():
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Sequence found&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# If the while statement exits means that it has received an invalid char&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Invalid char&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente3&#34;&gt;Codice sorgente&lt;/h4&gt;
+&lt;p&gt;Il codice precompilato e pronto a essere caricato e&amp;rsquo; disponibile sulla repo di github&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+</description>
+            
+            <tag>Turing</tag>
+            
+            <tag>Automa</tag>
+            
+            <tag>MicroBit</tag>
+            
+            <tag>Sequenza</tag>
+            
+        </item>
+        
+    </channel>
+</rss>

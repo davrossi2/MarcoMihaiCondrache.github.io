@@ -1,38 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Ciao, Sono Marco!</title>
         <link>https://marcomihaicondrache.github.io/it/tags/</link>
         <description>Recent content in Tags on Ciao, Sono Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
         
         <atom:link href="https://marcomihaicondrache.github.io/it/tags/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
-            <title>32bit</title>
-            <link>https://marcomihaicondrache.github.io/it/tags/32bit/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            <title>Automa</title>
+            <link>https://marcomihaicondrache.github.io/it/tags/automa/</link>
+            <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache.github.io/it/tags/32bit/</guid>
+            <guid>https://marcomihaicondrache.github.io/it/tags/automa/</guid>
             <description></description>
             
         </item>
         
         <item>
-            <title>64bit</title>
-            <link>https://marcomihaicondrache.github.io/it/tags/64bit/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            <title>MicroBit</title>
+            <link>https://marcomihaicondrache.github.io/it/tags/microbit/</link>
+            <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
             
-            <guid>https://marcomihaicondrache.github.io/it/tags/64bit/</guid>
+            <guid>https://marcomihaicondrache.github.io/it/tags/microbit/</guid>
             <description></description>
             
         </item>
         
         <item>
-            <title>Amd</title>
+            <title>Sequenza</title>
+            <link>https://marcomihaicondrache.github.io/it/tags/sequenza/</link>
+            <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/it/tags/sequenza/</guid>
+            <description></description>
+            
+        </item>
+        
+        <item>
+            <title>Turing</title>
+            <link>https://marcomihaicondrache.github.io/it/tags/turing/</link>
+            <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/it/tags/turing/</guid>
+            <description></description>
+            
+        </item>
+        
+        <item>
+            <title>amd</title>
             <link>https://marcomihaicondrache.github.io/it/tags/amd/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
@@ -42,9 +61,9 @@
         </item>
         
         <item>
-            <title>Cpu</title>
+            <title>cpu</title>
             <link>https://marcomihaicondrache.github.io/it/tags/cpu/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
             <guid>https://marcomihaicondrache.github.io/it/tags/cpu/</guid>
             <description></description>
@@ -52,7 +71,7 @@
         </item>
         
         <item>
-            <title>History</title>
+            <title>history</title>
             <link>https://marcomihaicondrache.github.io/it/tags/history/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
@@ -62,17 +81,7 @@
         </item>
         
         <item>
-            <title>How</title>
-            <link>https://marcomihaicondrache.github.io/it/tags/how/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/it/tags/how/</guid>
-            <description></description>
-            
-        </item>
-        
-        <item>
-            <title>Intel</title>
+            <title>intel</title>
             <link>https://marcomihaicondrache.github.io/it/tags/intel/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             

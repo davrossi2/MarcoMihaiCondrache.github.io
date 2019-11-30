@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Hello, I&#39;m Marco!</title>
         <link>https://marcomihaicondrache.github.io/en/tags/</link>
         <description>Recent content in Tags on Hello, I&#39;m Marco!</description>
         <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
         
         <atom:link href="https://marcomihaicondrache.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
         
         
         <item>
-            <title>32bit</title>
-            <link>https://marcomihaicondrache.github.io/en/tags/32bit/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/en/tags/32bit/</guid>
-            <description></description>
-            
-        </item>
-        
-        <item>
-            <title>64bit</title>
-            <link>https://marcomihaicondrache.github.io/en/tags/64bit/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/en/tags/64bit/</guid>
-            <description></description>
-            
-        </item>
-        
-        <item>
-            <title>Amd</title>
+            <title>amd</title>
             <link>https://marcomihaicondrache.github.io/en/tags/amd/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
@@ -42,19 +21,9 @@
         </item>
         
         <item>
-            <title>Animated List</title>
-            <link>https://marcomihaicondrache.github.io/en/tags/animated-list/</link>
-            <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/en/tags/animated-list/</guid>
-            <description></description>
-            
-        </item>
-        
-        <item>
-            <title>Cpu</title>
+            <title>cpu</title>
             <link>https://marcomihaicondrache.github.io/en/tags/cpu/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
             <guid>https://marcomihaicondrache.github.io/en/tags/cpu/</guid>
             <description></description>
@@ -62,17 +31,7 @@
         </item>
         
         <item>
-            <title>Flutter</title>
-            <link>https://marcomihaicondrache.github.io/en/tags/flutter/</link>
-            <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/en/tags/flutter/</guid>
-            <description></description>
-            
-        </item>
-        
-        <item>
-            <title>History</title>
+            <title>history</title>
             <link>https://marcomihaicondrache.github.io/en/tags/history/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
@@ -82,17 +41,7 @@
         </item>
         
         <item>
-            <title>How</title>
-            <link>https://marcomihaicondrache.github.io/en/tags/how/</link>
-            <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-            
-            <guid>https://marcomihaicondrache.github.io/en/tags/how/</guid>
-            <description></description>
-            
-        </item>
-        
-        <item>
-            <title>Intel</title>
+            <title>intel</title>
             <link>https://marcomihaicondrache.github.io/en/tags/intel/</link>
             <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
             
@@ -102,7 +51,27 @@
         </item>
         
         <item>
-            <title>List</title>
+            <title>animated list</title>
+            <link>https://marcomihaicondrache.github.io/en/tags/animated-list/</link>
+            <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/tags/animated-list/</guid>
+            <description></description>
+            
+        </item>
+        
+        <item>
+            <title>flutter</title>
+            <link>https://marcomihaicondrache.github.io/en/tags/flutter/</link>
+            <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/tags/flutter/</guid>
+            <description></description>
+            
+        </item>
+        
+        <item>
+            <title>list</title>
             <link>https://marcomihaicondrache.github.io/en/tags/list/</link>
             <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
             
@@ -112,7 +81,7 @@
         </item>
         
         <item>
-            <title>Pub</title>
+            <title>pub</title>
             <link>https://marcomihaicondrache.github.io/en/tags/pub/</link>
             <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
             
