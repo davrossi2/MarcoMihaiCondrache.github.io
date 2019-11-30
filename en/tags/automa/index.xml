@@ -34,12 +34,12 @@ TODO: Aggiungi implementazione Dart
 &lt;li&gt;&lt;a href=&#34;#project&#34;&gt;Project&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#sets&#34;&gt;Sets&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#table-transition-of-states&#34;&gt;Transition of States&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#table-transformation-of-outputs&#34;&gt;Output Transformation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#state-transition-table&#34;&gt;Transition of States&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#output-transformation-table&#34;&gt;Output Transformation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#uml&#34;&gt;UML&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#model-calc&#34;&gt;Calc Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#calc-model&#34;&gt;Calc Model&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#microbit-implementation&#34;&gt;Microbit implementation&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#operation&#34;&gt;Operation&lt;/a&gt;&lt;/li&gt;
@@ -433,7 +433,7 @@ The &lt;mark&gt;main&lt;/mark&gt; method contains the beginning of the program s
         &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; list&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
     &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente&#34;&gt;Codice sorgente&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;source-code2&#34;&gt;Source Code&lt;/h4&gt;
 &lt;p&gt;The pre-filled code ready to be uploaded is available on the github repo&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementation-in-python&#34;&gt;Implementation in Python&lt;/h1&gt;
@@ -494,7 +494,7 @@ current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STRING[&lt;span
 &lt;span style=&#34;color:#75715e&#34;&gt;# If the while statement exits means that it has received an invalid char&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Invalid char&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;source-code2&#34;&gt;Source code&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;source-code3&#34;&gt;Source code&lt;/h4&gt;
 &lt;p&gt;The pre-filled code ready to be uploaded is available on the github repo&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </description>
