@@ -24,9 +24,8 @@ TODO: Aggiungi implementazione Dart
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub license&#34; src=&#34;https://img.shields.io/github/license/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/network&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub forks&#34; src=&#34;https://img.shields.io/github/forks/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers&#34;&gt;&lt;img alt=&#34;GitHub stars&#34; src=&#34;https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;TuringAutomaton è un progetto opensource disponibile sotto licenza GNU General Public License v3.0.&lt;br&gt;TuringAutomaton è scritto in C, Java, Python, Dart, MicroBit (Javascript) e Calc.&lt;br&gt;Il progetto è disponibile in italiano e inglese.&lt;/p&gt;
-&lt;p&gt;Il progetto si trova al seguente link:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TuringAutomaton&lt;/strong&gt; è un progetto opensource disponibile sotto licenza &lt;strong&gt;GNU General Public License v3.0&lt;/strong&gt;.&lt;br&gt;TuringAutomaton è scritto in C, Java, Python, Dart, MicroBit (Javascript) e Calc.&lt;br&gt;Il progetto è disponibile in italiano e inglese.&lt;/p&gt;
+&lt;p&gt;Il progetto si trova su &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;TuringAutomaton è perfetto per testare la Macchina di Turing e implementarla in base al proprio utilizzo.&lt;/p&gt;
 &lt;p&gt;Gli script sono estremamente ottimizzati e veloci pronti all&#39;uso.&lt;/p&gt;
 &lt;p&gt;Leggi di piu e contribuisci su Github.&lt;/p&gt;
@@ -268,7 +267,7 @@ Una schedina programmabile, semplice e intuitiva da utilizzare che ci ha permess
 })
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente&#34;&gt;Codice sorgente&lt;/h4&gt;
 &lt;p&gt;Il codice precompilato e pronto a essere caricato e&amp;rsquo; disponibile sulla repo di github&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-c&#34;&gt;Implementazione in C&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento1&#34;&gt;Funzionamento&lt;/h3&gt;
 &lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta.
@@ -353,7 +352,7 @@ di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente1&#34;&gt;Codice sorgente&lt;/h4&gt;
 &lt;p&gt;Il codice precompilato e pronto a essere caricato e&amp;rsquo; disponibile sulla repo di github&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-java&#34;&gt;Implementazione in Java&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento2&#34;&gt;Funzionamento&lt;/h3&gt;
 &lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta. Se l&#39;esito è positivo verra stampata la stringa “Sequence found!”&lt;/p&gt;
@@ -436,7 +435,7 @@ Il metodo &lt;mark&gt;main&lt;/mark&gt; contiene l&#39;inzio del programma quind
 &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente2&#34;&gt;Codice sorgente&lt;/h4&gt;
 &lt;p&gt;Il codice precompilato e pronto a essere caricato e&amp;rsquo; disponibile sulla repo di github&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-python&#34;&gt;Implementazione in Python&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento3&#34;&gt;Funzionamento&lt;/h3&gt;
 &lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta.
@@ -497,7 +496,7 @@ current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STRING[&lt;span
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente3&#34;&gt;Codice sorgente&lt;/h4&gt;
 &lt;p&gt;Il codice precompilato e pronto a essere caricato e&amp;rsquo; disponibile sulla repo di github&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;https://github.com/MarcoMihaiCondrache/TuringAutomaton&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </description>
             
             <tag>Turing</tag>
