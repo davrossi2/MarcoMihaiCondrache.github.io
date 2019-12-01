@@ -153,11 +153,7 @@ Read more and contribute to Github."/>
     
 
     <div class="post-content">
-      <!---
-TODO: Aggiungi la spiegazione dell'array simile agli stati
-TODO: Aggiungi implementazione Dart
--->
-<p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/issues" style="float:left; margin-right: 5px;"><img alt="GitHub issues" src="https://img.shields.io/github/issues/MarcoMihaiCondrache/TuringAutomaton"></a>
+      <p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/issues" style="float:left; margin-right: 5px;"><img alt="GitHub issues" src="https://img.shields.io/github/issues/MarcoMihaiCondrache/TuringAutomaton"></a>
 <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton" style="float:left; margin-right: 5px;"><img alt="GitHub license" src="https://img.shields.io/github/license/MarcoMihaiCondrache/TuringAutomaton"></a>
 <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/network" style="float:left; margin-right: 5px;"><img alt="GitHub forks" src="https://img.shields.io/github/forks/MarcoMihaiCondrache/TuringAutomaton"></a>
 <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton"></a></p>
@@ -276,6 +272,7 @@ When the automaton is in a given state, it can accept only a subset of the symbo
 </tr>
 </tbody>
 </table>
+<p>Here are the various steps that the automaton makes based on the state it is in and the input received.</p>
 <h2 id="output-transformation-table">Output Transformation Table</h2>
 <table>
 <thead>
@@ -315,11 +312,12 @@ When the automaton is in a given state, it can accept only a subset of the symbo
 </tr>
 </tbody>
 </table>
+<p>In this other table, instead, it shows what value the automaton will send as a result of the state it is in and the input received</p>
 <h2 id="uml">UML</h2>
 <p>To get a clearer and searchable idea we have created a UML model for automating the automaton</p>
+<p>The 5 states of the automaton and the relative transitions marked by the entrance and exits are shown
+according to the tables built above.</p>
 <p><img src="https://i.postimg.cc/qvDZD9X0/staruml-model-image.png" alt="staruml-model-image.png"></p>
-<p>The model was created with an open source program, like the whole project.
-The program in question is <a href="http://staruml.io">StarUML</a></p>
 <h1 id="calc-model">Calc Model</h1>
 <p>Everything was put together and we created a model in calc so that we could test its functionality.</p>
 <p><img src="https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png" alt="Calc Model"></p>
@@ -328,7 +326,7 @@ Another sheet shows the evolution of the automaton over time following the input
 <h1 id="microbit-implementation">Microbit implementation</h1>
 <p>The same program was implemented on a physical device: MicroBit.
 A programmable card, simple and intuitive to use that allowed us to test the functioning of the automaton</p>
-<p>The code has been optimized to make any sequence recognizable with up to three characters (limited by microbit functionality. In the future it will perhaps be possible to extend this limit).</p>
+<p>The code has been optimized to make any sequence recognizable with up to three characters (<strong>limited by microbit functionality. In the future it will perhaps be possible to extend this limit</strong>).</p>
 <h3 id="operation">Operation</h3>
 <p>The operation of the program is quite simple:</p>
 <ul>
@@ -337,14 +335,15 @@ A programmable card, simple and intuitive to use that allowed us to test the fun
 <li>With the movement the third letter is associated in this case __ &ldquo;C&rdquo; __</li>
 </ul>
 <p><img src="https://i.postimg.cc/ZRWp6dsy/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png" alt="MicroBit Input"></p>
-<p>The type of output can be &ldquo;number&rdquo; (as in the image that follows) or the number of times the sequence is recognized within the array is identified.</p>
+<p>The type of output can be &ldquo;number&rdquo; (as in the image that follows) the number of times the sequence is recognized within the array is identified.</p>
 <p><img src="https://i.postimg.cc/LsdqYWKL/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-1-remove.png" alt="MicroBit Output 1"></p>
-<p>Or it can be a &ldquo;string&rdquo; (as in the image that follows) or the entire array is shown on the screen, that is the entire string and a smiley face with an undefined string is shown with the progress of the characters</p>
+<p>Or it can be a &ldquo;string&rdquo; (as in the image that follows) the entire array is shown on the screen, that is the entire string and during the progress of chars a smile face will be showed at recognised string</p>
 <p><img src="https://i.postimg.cc/50KbvHYT/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png" alt="MicroBit Output 1"></p>
 <h3 id="code-and-explanation">Code and explanation</h3>
 <p>Below is the source code of the mechanism used to operate microbit</p>
 <p>The constant variable <mark>STRING</mark> contains the string to be checked in the input sequence</p>
 <p>In the variable <mark>outputType</mark> two values ​​&quot;string&rdquo; or &ldquo;stringCount&rdquo; are accepted which determine the type of output</p>
+<p>The array represents the state of the automaton in fact every time a value is entered it changes according to its previous state.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/**
 </span><span style="color:#75715e"> * AUTHOR: Condrache Marco Mihai
 </span><span style="color:#75715e"> * CLASS: 3^A DATE: 28/11/2019
@@ -489,7 +488,7 @@ consequently the longer the string will be, the more memory will be occupied.</p
 }
 </code></pre></div><h4 id="source-code1">Source code</h4>
 <p>The pre-filled code ready to be uploaded is available on the github repo</p>
-<p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton">Github</a></p>
+<p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/C">Github</a></p>
 <h1 id="implementation-in-java">Implementation in Java</h1>
 <h3 id="operation2">Operation</h3>
 <p>The program will ask you from time to time to insert a character, which will be inserted into an array which will in turn be examined to find the string requested. If the result is positive, the string &ldquo;Sequence found!&rdquo;</p>
@@ -572,7 +571,7 @@ The <mark>main</mark> method contains the beginning of the program so it must be
 <span style="color:#f92672">}</span>
 </code></pre></div><h4 id="source-code2">Source Code</h4>
 <p>The pre-filled code ready to be uploaded is available on the github repo</p>
-<p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton">Github</a></p>
+<p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java">Github</a></p>
 <h1 id="implementation-in-python">Implementation in Python</h1>
 <h3 id="operation3">Operation</h3>
 <p>The program will ask you from time to time to insert a character, which will be inserted into an array which will in turn be examined to find the string requested.
@@ -633,7 +632,76 @@ current <span style="color:#f92672">=</span> STRING[<span style="color:#ae81ff">
 
 </code></pre></div><h4 id="source-code3">Source code</h4>
 <p>The pre-filled code ready to be uploaded is available on the github repo</p>
-<p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton">Github</a></p>
+<p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Python">Github</a></p>
+<h1 id="implementation-in-dart">Implementation in Dart</h1>
+<h3 id="operation4">Operation</h3>
+<p>The program will ask you from time to time to insert a character, which will be inserted into an array which will in turn be examined to find the string requested.
+If the result is positive, the string &ldquo;Sequence found&rdquo; will be printed</p>
+<p><img src="https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png" alt="Dart work"></p>
+<h3 id="code-and-explanation4">Code and Explanation</h3>
+<p>Below is the source code</p>
+<p>The constant variable <mark>STRING</mark> contains the string to be checked in the input sequence</p>
+<p>The <mark>check_array ()</mark> function checks the string inside the array and returns the outcome</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;dart:io&#39;</span>;
+
+<span style="color:#75715e">/// Constant string that have the value to find inside the array
+</span><span style="color:#75715e"></span><span style="color:#75715e">/// Type: [String]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">STRING</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;aacbb&#34;</span>;
+
+<span style="color:#75715e">/// Main method that request the char every time
+</span><span style="color:#75715e"></span><span style="color:#75715e">/// Return: [void]
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>() {
+  <span style="color:#75715e">/// Generate a list with empty space to prevent [Segmentation Fault]
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">List</span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">word</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">List</span>.<span style="color:#a6e22e">generate</span>(<span style="color:#a6e22e">STRING</span>.<span style="color:#a6e22e">length</span>, (<span style="color:#a6e22e">index</span>) =&gt; <span style="color:#e6db74">&#34;&#34;</span>);
+
+  <span style="color:#75715e">/// First char of the string
+</span><span style="color:#75715e"></span>  String <span style="color:#a6e22e">current</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">STRING</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;&#34;</span>)[<span style="color:#ae81ff">0</span>];
+  <span style="color:#66d9ef">do</span> {
+    <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Insert char: &#34;</span>);
+    <span style="color:#a6e22e">current</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">stdin</span>.<span style="color:#a6e22e">readLineSync</span>();
+
+    <span style="color:#75715e">/// Save chars with the LIFO concept
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">word</span>.<span style="color:#a6e22e">removeAt</span>(<span style="color:#ae81ff">0</span>);
+    <span style="color:#a6e22e">word</span>.<span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">current</span>);
+
+    <span style="color:#75715e">/// Check the string
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">checkArray</span>(<span style="color:#a6e22e">word</span>)) {
+      <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Sequence found!&#34;</span>);
+    }
+  } <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">STRING</span>.<span style="color:#a6e22e">contains</span>(<span style="color:#a6e22e">current</span>));
+}
+
+<span style="color:#75715e">/// Method that check if the array contains the [STRING]
+</span><span style="color:#75715e"></span><span style="color:#75715e">/// Param: [List&lt;String&gt; array]
+</span><span style="color:#75715e"></span><span style="color:#75715e">/// Return: [bool]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">bool</span> <span style="color:#a6e22e">checkArray</span>(<span style="color:#a6e22e">List</span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">array</span>) {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">array</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#f92672">==</span> <span style="color:#a6e22e">STRING</span> <span style="color:#f92672">?</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>;
+}
+</code></pre></div><h4 id="source-code4">Source code</h4>
+<p>The pre-filled code ready to be uploaded is available on the github repo</p>
+<p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Dart">Github</a></p>
+<h1 id="final-consideration">Final consideration</h1>
+<p>The project ends here and we believe that the scope of use is very wide.
+We have done our best to ensure complete compatibility with all languages ​​and allow a physical test.</p>
+<p>We therefore conclude by saying that the project was beautiful and challenging but brought us so much satisfaction.</p>
+<p>Everything was done with open source software to guarantee full support from the community.</p>
+<p>All the files can therefore be downloaded from <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton">Github</a></p>
+<h2 id="used-software">Used Software</h2>
+<ul>
+<li>SO: <strong><a href="https://www.archlinux.org/">Arch Linux</a></strong></li>
+<li>UML Editor: <strong><a href="http://staruml.io">StarUml</a></strong></li>
+<li>Calc: <strong><a href="https://libreoffice.org">LibreOffice</a></strong></li>
+<li>Python Editor: <strong><a href="https://www.jetbrains.com/pycharm/">PyCharm</a></strong> (JetBrains)</li>
+<li>Dart Editor: <strong><a href="https://code.visualstudio.com/">Visual Studio Code</a></strong></li>
+<li>C Editor: <strong><a href="https://code.visualstudio.com/">Visual Studio Code</a></strong></li>
+<li>Java Editor: <strong><a href="https://www.jetbrains.com/idea/">IntelliJ</a></strong> (JetBrains)</li>
+<li>MicroBit (Javascript): <strong><a href="https://makecode.microbit.org/">Online Editor</a></strong></li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Automaton definition: <strong><a href="https://wikipedia.org">Wikipedia</a></strong></li>
+<li>Images: The images has been uploaded on <strong><a href="https://postimages.org">PostImages</a></strong></li>
+</ul>
 
     </div>
     

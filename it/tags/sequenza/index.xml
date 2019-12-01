@@ -16,11 +16,7 @@
             <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
             
             <guid>https://marcomihaicondrache.github.io/it/post/turing/</guid>
-            <description>&lt;!---
-TODO: Aggiungi la spiegazione dell&#39;array simile agli stati
-TODO: Aggiungi implementazione Dart
---&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/issues&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub issues&#34; src=&#34;https://img.shields.io/github/issues/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
+            <description>&lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/issues&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub issues&#34; src=&#34;https://img.shields.io/github/issues/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub license&#34; src=&#34;https://img.shields.io/github/license/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/network&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub forks&#34; src=&#34;https://img.shields.io/github/forks/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers&#34;&gt;&lt;img alt=&#34;GitHub stars&#34; src=&#34;https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;&lt;/p&gt;
