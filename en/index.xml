@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hello, I&#39;m Marco!</title>
+        <link>https://marcomihaicondrache.github.io/en/</link>
+        <description>Recent content on Hello, I&#39;m Marco!</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+        
+        <atom:link href="https://marcomihaicondrache.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+        
+        
+        <item>
+            <title>Posts</title>
+            <link>https://marcomihaicondrache.github.io/en/post/</link>
+            <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/post/</guid>
+            <description></description>
+            
+        </item>
+        
+        <item>
+            <title>About</title>
+            <link>https://marcomihaicondrache.github.io/en/about/</link>
+            <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/about/</guid>
+            <description>&lt;h1 id=&#34;hi-there&#34;&gt;Hi there&lt;/h1&gt;
+&lt;p&gt;My name is &lt;strong&gt;Marco Mihai Condrache&lt;/strong&gt; and I like to design and create applications and websites especially with Flutter.&lt;/p&gt;
+&lt;p&gt;I love the google material design and all my apps take advantage of its guidelines.&lt;/p&gt;
+&lt;p&gt;Now I am 16 years old and I really hope in future to find a good job and to improve my knowledge.&lt;/p&gt;
+&lt;p&gt;In my free time I do sports and I read some books, but certainly I play video games :)&lt;/p&gt;
+&lt;h1 id=&#34;my-skills&#34;&gt;My Skills&lt;/h1&gt;
+&lt;p&gt;I&#39;m familiar with:&lt;/p&gt;
+&lt;h3 id=&#34;design&#34;&gt;Design&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Adobe XD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;development&#34;&gt;Development&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML5&lt;/li&gt;
+&lt;li&gt;CSS3&lt;/li&gt;
+&lt;li&gt;Javascript&lt;/li&gt;
+&lt;li&gt;Dart&lt;/li&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;li&gt;PHP&lt;/li&gt;
+&lt;li&gt;Xml&lt;/li&gt;
+&lt;li&gt;Sql&lt;/li&gt;
+&lt;li&gt;Hugo&lt;/li&gt;
+&lt;li&gt;Bulma&lt;/li&gt;
+&lt;li&gt;Bootstrap 4&lt;/li&gt;
+&lt;li&gt;Flutter&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            
+        </item>
+        
+        <item>
+            <title>Copyright</title>
+            <link>https://marcomihaicondrache.github.io/en/terms/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/terms/</guid>
+            <description>&lt;ul&gt;
+&lt;li&gt;Theme created by &lt;a href=&#34;https://twitter.com/panr&#34;&gt;panr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some theme parts comes from &lt;a href=&#34;https://github.com/rhazdon&#34;&gt;rhazon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hosted on &lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Powered by &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo (Engine)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Edited and created by &lt;a href=&#34;https://marcomihaicondrache.github.io/&#34;&gt;Marco Mihai&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            
+        </item>
+        
+        <item>
+            <title>Home</title>
+            <link>https://marcomihaicondrache.github.io/en/home/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/home/</guid>
+            <description></description>
+            
+        </item>
+        
+        <item>
+            <title>Projects</title>
+            <link>https://marcomihaicondrache.github.io/en/archive/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>https://marcomihaicondrache.github.io/en/archive/</guid>
+            <description></description>
+            
+        </item>
+        
+    </channel>
+</rss>
