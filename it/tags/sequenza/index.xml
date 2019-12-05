@@ -197,7 +197,7 @@ secondo le tabelle costruite sopra.&lt;/p&gt;
 &lt;h1 id=&#34;modello-calc&#34;&gt;Modello Calc&lt;/h1&gt;
 &lt;p&gt;Il tutto e&amp;rsquo; stato messo insieme e abbiamo creato un modello in calc in modo da poterne testare le funzionalita&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Sono stati creati due fogli di calcolo. Uno per la descrizione dove sono state implementate la varie tabelle e la descrizione visiva in Uml.
-Un&#39;altro foglio invece mostra l&#39;evoluzione dell&#39;automa nel tempo in seguito all&#39;ingresso ricevuto.&lt;/p&gt;
+Un altro foglio invece mostra l&#39;evoluzione dell&#39;automa nel tempo in seguito all&#39;ingresso ricevuto.&lt;/p&gt;
 &lt;p&gt;Siamo andati a prendere attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) i valori nelle tabelle della descrizione in base a cio che veniva fornito nel foglio dell&#39;evoluzione.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png&#34; alt=&#34;Modello Calc&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-microbit&#34;&gt;Implementazione Microbit&lt;/h1&gt;
