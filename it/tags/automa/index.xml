@@ -108,7 +108,7 @@ richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.
 &lt;h2 id=&#34;insiemi&#34;&gt;Insiemi&lt;/h2&gt;
 &lt;p&gt;Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.&lt;/p&gt;
-&lt;p&gt;Il primo insieme definisce il tipo di ingresso accettato dall&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; che in questo caso è &lt;strong&gt;lettera&lt;/strong&gt; perché &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo; sono tutte lettere.&lt;/p&gt;
+&lt;p&gt;Il primo definisce il tipo di ingresso accettato dall&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; che in questo caso è &lt;strong&gt;lettera&lt;/strong&gt; perché &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo; sono tutte lettere.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Valori Input contiene i valori che l&#39;ingresso può assumere cioè, come già detto, i valori &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Output invece indica il tipo di output che il sistema invierà in uscita.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Valori Output rappresenta invece i valori che possono fluire in Output.&lt;/p&gt;
@@ -201,7 +201,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;In quest&#39;altro schema troviamo invece la trasformazione delle uscite, ovvero il valore che il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso ricevuto.&lt;/p&gt;
-&lt;p&gt;Per esempio, se si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perché l&#39;ingresso inserito non permette l&#39;individuazione della stringa.&lt;/p&gt;
+&lt;p&gt;Per esempio, se si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perché l&#39;ingresso recepito non permette l&#39;individuazione della stringa.&lt;/p&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML&lt;/h2&gt;
 &lt;p&gt;Per descrivere al meglio l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; è stato creato un modello UML, nel quale vengono riportati le 5 situazioni (nodi) e le relative transizioni, segnate dall&#39;ingresso e dalle uscite secondo le tabelle costruite sopra.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;ATTESA&amp;rdquo;, in questo caso, è indicato come stato iniziale.&lt;/p&gt;
@@ -209,14 +209,14 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;h1 id=&#34;modello-calc&#34;&gt;Modello Calc&lt;/h1&gt;
 &lt;p&gt;Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.&lt;/p&gt;
 &lt;p&gt;Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML.
-L&#39;altro invece mostra l&#39;evoluzione del sistema nel tempo in seguito all&#39;ingresso ricevuto.&lt;/p&gt;
+L&#39;altro invece mostra l&#39;evoluzione del sistema nel tempo in seguito all&#39;ingresso.&lt;/p&gt;
 &lt;p&gt;Attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) sono stati presi i valori nelle tabelle della descrizione per la formazione della tabella con l&#39;evoluzione dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png&#34; alt=&#34;Modello Calc&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Il file Calc è disponibile sulla repo di &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Calc&#34;&gt;Github&lt;/a&gt; oppure è scaricabile &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/archive/master.zip&#34;&gt;qui&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-microbit&#34;&gt;Implementazione Microbit&lt;/h1&gt;
 &lt;p&gt;Lo stesso programma è stato implementato su un dispositivo fisico: MicroBit.&lt;br&gt;
 Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata testata l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Il codice è stato ottimizzato per rendere riconoscibile qualsiasi sequenza con un massimo di tre caratteri per la formazione della stringa (Limitati dalle funzionalità di microbit. In futuro sarà magari possibile estendere questo limite).&lt;/p&gt;
+&lt;p&gt;Il codice è stato ottimizzato per distingure qualsiasi sequenza con un massimo di tre caratteri per la formazione (Limitati dalle funzionalità di microbit. In futuro sarà magari possibile estendere questo limite).&lt;/p&gt;
 &lt;h3 id=&#34;funzionamento1&#34;&gt;Funzionamento&lt;/h3&gt;
 &lt;p&gt;Il funzionamento del programma è piuttosto semplice:&lt;/p&gt;
 &lt;ul&gt;
@@ -225,9 +225,9 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;li&gt;Con il movimento è associata la terza lettere in questo caso &lt;strong&gt;&amp;ldquo;C&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/ZRWp6dsy/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png&#34; alt=&#34;MicroBit Input&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Il tipo di output può essere a &amp;ldquo;numero&amp;rdquo; (come nell&#39;immagine che seguirà) cioè viene identificato il numero di volte che la sequenza viene riconosciuta all&#39;interno dell&#39;array.&lt;/p&gt;
+&lt;p&gt;Il tipo di output può essere a &amp;ldquo;numero&amp;rdquo; identificando il numero di volte che la sequenza viene distinta all&#39;interno dell&#39;array.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/LsdqYWKL/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-1-remove.png&#34; alt=&#34;MicroBit Output 1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;oppure può essere a &amp;ldquo;stringa&amp;rdquo; (come nell&#39;immagine che seguirà) ovvero viene mostrato a schermo l&#39;intero array, più precisamente, l&#39;intera stringa e si mostra con l&#39;avanzamento dei caratteri una faccina sorridente a stringa identificata.&lt;/p&gt;
+&lt;p&gt;oppure può essere a &amp;ldquo;stringa&amp;rdquo; ovvero viene mostrato a schermo l&#39;intero array, più precisamente, l&#39;intera stringa e si mostra con l&#39;avanzamento dei caratteri una faccina sorridente a stringa identificata.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/50KbvHYT/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png&#34; alt=&#34;MicroBit Output 1&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;video&#34;&gt;Video&lt;/h3&gt;
 &lt;p&gt;Di seguito è riportato un breve video nel quale viene mostrato il comportamento dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; su microbit.&lt;/p&gt;

@@ -244,7 +244,7 @@ richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.
 <h2 id="insiemi">Insiemi</h2>
 <p>Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.</p>
-<p>Il primo insieme definisce il tipo di ingresso accettato dall&rsquo;<strong>automa</strong> che in questo caso è <strong>lettera</strong> perché &ldquo;A&rdquo;, &ldquo;B&rdquo; e &ldquo;C&rdquo; sono tutte lettere.</p>
+<p>Il primo definisce il tipo di ingresso accettato dall&rsquo;<strong>automa</strong> che in questo caso è <strong>lettera</strong> perché &ldquo;A&rdquo;, &ldquo;B&rdquo; e &ldquo;C&rdquo; sono tutte lettere.</p>
 <p>L'insieme Valori Input contiene i valori che l'ingresso può assumere cioè, come già detto, i valori &ldquo;A&rdquo;, &ldquo;B&rdquo; e &ldquo;C&rdquo;.</p>
 <p>L'insieme Output invece indica il tipo di output che il sistema invierà in uscita.</p>
 <p>L'insieme Valori Output rappresenta invece i valori che possono fluire in Output.</p>
@@ -337,7 +337,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 </tbody>
 </table>
 <p>In quest'altro schema troviamo invece la trasformazione delle uscite, ovvero il valore che il sistema manderà in uscita in seguito allo stato in cui si trova e all'ingresso ricevuto.</p>
-<p>Per esempio, se si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong>, esso manderà in output la stringa <em>no</em> perché l'ingresso inserito non permette l'individuazione della stringa.</p>
+<p>Per esempio, se si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong>, esso manderà in output la stringa <em>no</em> perché l'ingresso recepito non permette l'individuazione della stringa.</p>
 <h2 id="uml">UML</h2>
 <p>Per descrivere al meglio l&rsquo;<strong>automa</strong> è stato creato un modello UML, nel quale vengono riportati le 5 situazioni (nodi) e le relative transizioni, segnate dall'ingresso e dalle uscite secondo le tabelle costruite sopra.</p>
 <p>&ldquo;ATTESA&rdquo;, in questo caso, è indicato come stato iniziale.</p>
@@ -345,14 +345,14 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 <h1 id="modello-calc">Modello Calc</h1>
 <p>Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.</p>
 <p>Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML.
-L'altro invece mostra l'evoluzione del sistema nel tempo in seguito all'ingresso ricevuto.</p>
+L'altro invece mostra l'evoluzione del sistema nel tempo in seguito all'ingresso.</p>
 <p>Attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) sono stati presi i valori nelle tabelle della descrizione per la formazione della tabella con l'evoluzione dell&rsquo;<strong>automa</strong>.</p>
 <p><img src="https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png" alt="Modello Calc"></p>
 <p>Il file Calc è disponibile sulla repo di <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Calc">Github</a> oppure è scaricabile <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/archive/master.zip">qui</a></p>
 <h1 id="implementazione-microbit">Implementazione Microbit</h1>
 <p>Lo stesso programma è stato implementato su un dispositivo fisico: MicroBit.<br>
 Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata testata l&rsquo;<strong>automa</strong>.</p>
-<p>Il codice è stato ottimizzato per rendere riconoscibile qualsiasi sequenza con un massimo di tre caratteri per la formazione della stringa (Limitati dalle funzionalità di microbit. In futuro sarà magari possibile estendere questo limite).</p>
+<p>Il codice è stato ottimizzato per distingure qualsiasi sequenza con un massimo di tre caratteri per la formazione (Limitati dalle funzionalità di microbit. In futuro sarà magari possibile estendere questo limite).</p>
 <h3 id="funzionamento1">Funzionamento</h3>
 <p>Il funzionamento del programma è piuttosto semplice:</p>
 <ul>
@@ -361,9 +361,9 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 <li>Con il movimento è associata la terza lettere in questo caso <strong>&ldquo;C&rdquo;</strong></li>
 </ul>
 <p><img src="https://i.postimg.cc/ZRWp6dsy/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png" alt="MicroBit Input"></p>
-<p>Il tipo di output può essere a &ldquo;numero&rdquo; (come nell'immagine che seguirà) cioè viene identificato il numero di volte che la sequenza viene riconosciuta all'interno dell'array.</p>
+<p>Il tipo di output può essere a &ldquo;numero&rdquo; identificando il numero di volte che la sequenza viene distinta all'interno dell'array.</p>
 <p><img src="https://i.postimg.cc/LsdqYWKL/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-1-remove.png" alt="MicroBit Output 1"></p>
-<p>oppure può essere a &ldquo;stringa&rdquo; (come nell'immagine che seguirà) ovvero viene mostrato a schermo l'intero array, più precisamente, l'intera stringa e si mostra con l'avanzamento dei caratteri una faccina sorridente a stringa identificata.</p>
+<p>oppure può essere a &ldquo;stringa&rdquo; ovvero viene mostrato a schermo l'intero array, più precisamente, l'intera stringa e si mostra con l'avanzamento dei caratteri una faccina sorridente a stringa identificata.</p>
 <p><img src="https://i.postimg.cc/50KbvHYT/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png" alt="MicroBit Output 1"></p>
 <h3 id="video">Video</h3>
 <p>Di seguito è riportato un breve video nel quale viene mostrato il comportamento dell&rsquo;<strong>automa</strong> su microbit.</p>
