@@ -22,12 +22,12 @@
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/network&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub forks&#34; src=&#34;https://img.shields.io/github/forks/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers&#34;&gt;&lt;img alt=&#34;GitHub stars&#34; src=&#34;https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TuringAutomaton&lt;/strong&gt; è un progetto open source disponibile sotto licenza &lt;strong&gt;GNU General Public License v3.0&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Questo progetto si basa sugli automi e per cominciare è meglio dire qualcosa a riguardo.&lt;/p&gt;
-&lt;p&gt;In teoria dei sistemi dinamici, un &lt;strong&gt;automa&lt;/strong&gt; è un sistema dinamico discreto (nella scansione del tempo e nella descrizione del suo stato) e tempo-invariante (il sistema si comporta alla stessa maniera indipendentemente dall&#39;istante di tempo in cui agisce).&lt;/p&gt;
-&lt;p&gt;Un &lt;strong&gt;automa&lt;/strong&gt; è quindi un sistema che si evolve nel tempo cambiando il suo stato in relazione a quello attuale.&lt;/p&gt;
-&lt;p&gt;Quando l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova in un dato stato, esso può cambiare il suo stato solo ricevendo un sottoinsieme dei simboli del suo &lt;a href=&#34;#insiemi&#34;&gt;alfabeto&lt;/a&gt; cioè quel insieme che contiene gli elementi che l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; può accettare.&lt;br&gt;L&#39;evoluzione di un &lt;strong&gt;automa&lt;/strong&gt; parte da un particolare stato detto stato iniziale.&lt;/p&gt;
-&lt;p&gt;In genere gli automi sono deterministici proprio come TuringAutomaton, ovvero dato uno stato ed un simbolo in ingresso è possibile una sola transizione. Esistono comunque anche automi non deterministici, o stocastici.&lt;/p&gt;
-&lt;p&gt;Un &lt;strong&gt;automa&lt;/strong&gt; a stati finiti o macchina a stati finiti è un tipo di &lt;strong&gt;automa&lt;/strong&gt; che permette di descrivere con precisione e in maniera formale il comportamento di molti sistemi.&lt;br&gt;Grazie alla sua semplicità e chiarezza questo modello è molto diffuso nell&#39;ingegneria e nelle scienze, soprattutto nel campo dell&#39;informatica e della ricerca operativa.&lt;br&gt;&lt;br&gt;
+&lt;p&gt;Questo progetto si basa sugli automi, e per cominciare, è meglio dire qualcosa a riguardo.&lt;/p&gt;
+&lt;p&gt;In teoria dei sistemi dinamici, un &lt;strong&gt;automa&lt;/strong&gt; è un sistema dinamico discreto (nella scansione del tempo e nella descrizione del suo stato), e tempo-invariante (il sistema si comporta alla stessa maniera indipendentemente dall&#39;istante di tempo in cui agisce).&lt;/p&gt;
+&lt;p&gt;Un &lt;strong&gt;automa&lt;/strong&gt; è quindi un&#39;apparato che si evolve nel tempo, cambiando la sua condizione in relazione a quello attuale.&lt;/p&gt;
+&lt;p&gt;Quando l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova in un certo stato, esso lo può cambiare solo ricevendo un sottoinsieme dei simboli del suo &lt;a href=&#34;#insiemi&#34;&gt;alfabeto&lt;/a&gt;, cioè quel insieme che contiene gli elementi che l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; può accettare.&lt;br&gt;L&#39;evoluzione di un &lt;strong&gt;automa&lt;/strong&gt; parte da una particolare condizione detta &amp;ldquo;stato iniziale&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;In genere gli automi sono deterministici, proprio come TuringAutomaton, ovvero dato uno stato ed un simbolo in ingresso è possibile una sola transizione. Esistono comunque anche automi non deterministici, o stocastici.&lt;/p&gt;
+&lt;p&gt;Una macchina a stati finiti è un tipo di &lt;strong&gt;automa&lt;/strong&gt; che permette di descrivere con precisione e in maniera formale il comportamento di molti sistemi.&lt;br&gt;Grazie alla sua semplicità e chiarezza questo modello è molto diffuso nell&#39;ingegneria e nelle scienze, soprattutto nel campo dell&#39;informatica e della ricerca operativa.&lt;br&gt;&lt;br&gt;
 Un &lt;strong&gt;automa&lt;/strong&gt; a stati finiti può essere utilizzato sia per modellare un sistema esistente che per modellare un nuovo sistema formale in grado di risolvere alcuni problemi esistenti.&lt;br&gt;La rappresentazione grafica di un &lt;strong&gt;automa&lt;/strong&gt; a stati finiti è il grafo.&lt;/p&gt;
 &lt;p&gt;Un&#39;applicazione tipica degli automi è il riconoscimento di sequenze di simboli, come avviene per esempio nei compilatori e negli interpreti dei linguaggi di programmazione per riconoscere la correttezza sintattica delle istruzioni (operazione detta parsing).&lt;/p&gt;
 &lt;p&gt;TuringAutomaton è proprio un &lt;strong&gt;automa&lt;/strong&gt; riconoscitore di sequenza che prende forma dalle basi della &lt;a href=&#34;https://it.wikipedia.org/wiki/Macchina_di_Turing&#34;&gt;Macchina di Turing&lt;/a&gt; per svolgere le sue operazioni.
@@ -237,8 +237,8 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;/div&gt;
 
 &lt;h3 id=&#34;codice-e-spiegazione&#34;&gt;Codice e spiegazione&lt;/h3&gt;
-&lt;p&gt;Di seguito è riportato il codice sorgento del meccanismo usato per far funzionare microbit.&lt;/p&gt;
-&lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input che come da regole definite è &amp;ldquo;AACBB&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Qui sotto è presente il codice sorgente del meccanismo usato per far funzionare microbit.&lt;/p&gt;
+&lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input che come da regole è &amp;ldquo;AACBB&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Nella variabile &lt;mark&gt;outputType&lt;/mark&gt; sono accettati due valori &amp;ldquo;string&amp;rdquo; o &amp;ldquo;stringCount&amp;rdquo; che determinano il tipo di output&lt;/p&gt;
 &lt;p&gt;L&#39;array rappresenta lo stato dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; infatti ogni volta che viene inserito un valore cambia secondo il suo valore precedente.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
@@ -310,11 +310,11 @@ Se l&#39;esito è positivo verrà stampata la stringa &amp;ldquo;Sequence found!
 &lt;p&gt;L&#39;array nel quale verranno salvati tutti i caratteri sarà della stessa dimensione della stringa da trovare
 di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione1&#34;&gt;Codice e spiegazione&lt;/h3&gt;
-&lt;p&gt;Di seguito è riportato il codice sorgente&lt;/p&gt;
+&lt;p&gt;Qui è riportato il codice sorgente&lt;/p&gt;
 &lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input&lt;/p&gt;
 &lt;p&gt;Nella variabile &lt;mark&gt;STRING_LENGTH&lt;/mark&gt; è definita la lunghezza della stringa (&lt;strong&gt;Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa&lt;/strong&gt;)&lt;/p&gt;
 &lt;p&gt;Nel metodo main() vengono richiesti di volta in volta i parametri e pushati all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;pushArray(char)&lt;/mark&gt; la quale shifta di 1 l&#39;array a sinistra per inserire il nuovo carattere&lt;/p&gt;
-&lt;p&gt;La funzione &lt;mark&gt;resetArray()&lt;/mark&gt; pulisce l&#39;array e può anche essere utilizzata per inizializzare l&#39;array.&lt;/p&gt;
+&lt;p&gt;La funzione &lt;mark&gt;resetArray()&lt;/mark&gt; pulisce l&#39;array e può anche essere utilizzata per inizializzarlo.&lt;/p&gt;
 &lt;p&gt;La funzione &lt;mark&gt;checkArray()&lt;/mark&gt; controlla la stringa all&#39;interno dell&#39;array e ne stampa l&#39;esito&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    * AUTHOR: Condrache Marco Mihai
@@ -389,7 +389,7 @@ di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/C&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-java&#34;&gt;Implementazione in Java&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento3&#34;&gt;Funzionamento&lt;/h3&gt;
-&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta. Se l&#39;esito è positivo verrà stampata la stringa “Sequence found!”&lt;/p&gt;
+&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta. Se l&#39;esito è positivo verrà stampata la stringa “Sequence found!”&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/hPLsgXY9/Screenshot-from-2019-11-30-11-24-14.png&#34; alt=&#34;Java work&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione2&#34;&gt;Codice e spiegazione&lt;/h3&gt;
 &lt;p&gt;Di seguito è riportato il codice sorgente&lt;/p&gt;
@@ -472,7 +472,7 @@ Il metodo &lt;mark&gt;main&lt;/mark&gt; contiene l&#39;inzio del programma quind
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-python&#34;&gt;Implementazione in Python&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento4&#34;&gt;Funzionamento&lt;/h3&gt;
-&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta.
+&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta.
 Se l&#39;esito è positivo verra stampata la stringa &amp;ldquo;Sequence found&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png&#34; alt=&#34;Python work&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione3&#34;&gt;Codice e spiegazione&lt;/h3&gt;
@@ -533,7 +533,7 @@ current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STRING[&lt;span
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-dart&#34;&gt;Implementazione in Dart&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento5&#34;&gt;Funzionamento&lt;/h3&gt;
-&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta.
+&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta.
 Se l&#39;esito è positivo verra stampata la stringa &amp;ldquo;Sequence found&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png&#34; alt=&#34;Dart work&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione4&#34;&gt;Codice e spiegazione&lt;/h3&gt;

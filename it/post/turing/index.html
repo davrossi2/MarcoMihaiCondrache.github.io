@@ -8,8 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 <meta name="description" content="Introduzione    
 TuringAutomaton è un progetto open source disponibile sotto licenza GNU General Public License v3.0.
-Questo progetto si basa sugli automi e per cominciare è meglio dire qualcosa a riguardo.
-In teoria dei sistemi dinamici, un automa è un sistema dinamico discreto (nella scansione del tempo e nella descrizione del suo stato) e tempo-invariante (il sistema si comporta alla stessa maniera indipendentemente dall&#39;istante di tempo in cui agisce)."/>
+Questo progetto si basa sugli automi, e per cominciare, è meglio dire qualcosa a riguardo.
+In teoria dei sistemi dinamici, un automa è un sistema dinamico discreto (nella scansione del tempo e nella descrizione del suo stato), e tempo-invariante (il sistema si comporta alla stessa maniera indipendentemente dall&#39;istante di tempo in cui agisce)."/>
 <meta name="keywords" content=""/>
 <meta name="robots" content="noodp"/>
 <link rel="canonical" href="https://marcomihaicondrache.github.io/it/post/turing/" />
@@ -158,12 +158,12 @@ In teoria dei sistemi dinamici, un automa è un sistema dinamico discreto (nella
 <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/network" style="float:left; margin-right: 5px;"><img alt="GitHub forks" src="https://img.shields.io/github/forks/MarcoMihaiCondrache/TuringAutomaton"></a>
 <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton"></a></p>
 <p><strong>TuringAutomaton</strong> è un progetto open source disponibile sotto licenza <strong>GNU General Public License v3.0</strong>.<br></p>
-<p>Questo progetto si basa sugli automi e per cominciare è meglio dire qualcosa a riguardo.</p>
-<p>In teoria dei sistemi dinamici, un <strong>automa</strong> è un sistema dinamico discreto (nella scansione del tempo e nella descrizione del suo stato) e tempo-invariante (il sistema si comporta alla stessa maniera indipendentemente dall'istante di tempo in cui agisce).</p>
-<p>Un <strong>automa</strong> è quindi un sistema che si evolve nel tempo cambiando il suo stato in relazione a quello attuale.</p>
-<p>Quando l&rsquo;<strong>automa</strong> si trova in un dato stato, esso può cambiare il suo stato solo ricevendo un sottoinsieme dei simboli del suo <a href="#insiemi">alfabeto</a> cioè quel insieme che contiene gli elementi che l&rsquo;<strong>automa</strong> può accettare.<br>L'evoluzione di un <strong>automa</strong> parte da un particolare stato detto stato iniziale.</p>
-<p>In genere gli automi sono deterministici proprio come TuringAutomaton, ovvero dato uno stato ed un simbolo in ingresso è possibile una sola transizione. Esistono comunque anche automi non deterministici, o stocastici.</p>
-<p>Un <strong>automa</strong> a stati finiti o macchina a stati finiti è un tipo di <strong>automa</strong> che permette di descrivere con precisione e in maniera formale il comportamento di molti sistemi.<br>Grazie alla sua semplicità e chiarezza questo modello è molto diffuso nell'ingegneria e nelle scienze, soprattutto nel campo dell'informatica e della ricerca operativa.<br><br>
+<p>Questo progetto si basa sugli automi, e per cominciare, è meglio dire qualcosa a riguardo.</p>
+<p>In teoria dei sistemi dinamici, un <strong>automa</strong> è un sistema dinamico discreto (nella scansione del tempo e nella descrizione del suo stato), e tempo-invariante (il sistema si comporta alla stessa maniera indipendentemente dall'istante di tempo in cui agisce).</p>
+<p>Un <strong>automa</strong> è quindi un'apparato che si evolve nel tempo, cambiando la sua condizione in relazione a quello attuale.</p>
+<p>Quando l&rsquo;<strong>automa</strong> si trova in un certo stato, esso lo può cambiare solo ricevendo un sottoinsieme dei simboli del suo <a href="#insiemi">alfabeto</a>, cioè quel insieme che contiene gli elementi che l&rsquo;<strong>automa</strong> può accettare.<br>L'evoluzione di un <strong>automa</strong> parte da una particolare condizione detta &ldquo;stato iniziale&rdquo;.</p>
+<p>In genere gli automi sono deterministici, proprio come TuringAutomaton, ovvero dato uno stato ed un simbolo in ingresso è possibile una sola transizione. Esistono comunque anche automi non deterministici, o stocastici.</p>
+<p>Una macchina a stati finiti è un tipo di <strong>automa</strong> che permette di descrivere con precisione e in maniera formale il comportamento di molti sistemi.<br>Grazie alla sua semplicità e chiarezza questo modello è molto diffuso nell'ingegneria e nelle scienze, soprattutto nel campo dell'informatica e della ricerca operativa.<br><br>
 Un <strong>automa</strong> a stati finiti può essere utilizzato sia per modellare un sistema esistente che per modellare un nuovo sistema formale in grado di risolvere alcuni problemi esistenti.<br>La rappresentazione grafica di un <strong>automa</strong> a stati finiti è il grafo.</p>
 <p>Un'applicazione tipica degli automi è il riconoscimento di sequenze di simboli, come avviene per esempio nei compilatori e negli interpreti dei linguaggi di programmazione per riconoscere la correttezza sintattica delle istruzioni (operazione detta parsing).</p>
 <p>TuringAutomaton è proprio un <strong>automa</strong> riconoscitore di sequenza che prende forma dalle basi della <a href="https://it.wikipedia.org/wiki/Macchina_di_Turing">Macchina di Turing</a> per svolgere le sue operazioni.
@@ -373,8 +373,8 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 </div>
 
 <h3 id="codice-e-spiegazione">Codice e spiegazione</h3>
-<p>Di seguito è riportato il codice sorgento del meccanismo usato per far funzionare microbit.</p>
-<p>Nella variabile costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input che come da regole definite è &ldquo;AACBB&rdquo;.</p>
+<p>Qui sotto è presente il codice sorgente del meccanismo usato per far funzionare microbit.</p>
+<p>Nella variabile costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input che come da regole è &ldquo;AACBB&rdquo;.</p>
 <p>Nella variabile <mark>outputType</mark> sono accettati due valori &ldquo;string&rdquo; o &ldquo;stringCount&rdquo; che determinano il tipo di output</p>
 <p>L'array rappresenta lo stato dell&rsquo;<strong>automa</strong> infatti ogni volta che viene inserito un valore cambia secondo il suo valore precedente.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/**
@@ -446,11 +446,11 @@ Se l'esito è positivo verrà stampata la stringa &ldquo;Sequence found!&rdquo;<
 <p>L'array nel quale verranno salvati tutti i caratteri sarà della stessa dimensione della stringa da trovare
 di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.</p>
 <h3 id="codice-e-spiegazione1">Codice e spiegazione</h3>
-<p>Di seguito è riportato il codice sorgente</p>
+<p>Qui è riportato il codice sorgente</p>
 <p>Nella variabile costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input</p>
 <p>Nella variabile <mark>STRING_LENGTH</mark> è definita la lunghezza della stringa (<strong>Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa</strong>)</p>
 <p>Nel metodo main() vengono richiesti di volta in volta i parametri e pushati all'interno dell'array con la relativa funzione <mark>pushArray(char)</mark> la quale shifta di 1 l'array a sinistra per inserire il nuovo carattere</p>
-<p>La funzione <mark>resetArray()</mark> pulisce l'array e può anche essere utilizzata per inizializzare l'array.</p>
+<p>La funzione <mark>resetArray()</mark> pulisce l'array e può anche essere utilizzata per inizializzarlo.</p>
 <p>La funzione <mark>checkArray()</mark> controlla la stringa all'interno dell'array e ne stampa l'esito</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">/**
 </span><span style="color:#75715e">    * AUTHOR: Condrache Marco Mihai
@@ -525,7 +525,7 @@ di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.</p>
 <p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/C">Github</a></p>
 <h1 id="implementazione-in-java">Implementazione in Java</h1>
 <h3 id="funzionamento3">Funzionamento</h3>
-<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta. Se l'esito è positivo verrà stampata la stringa “Sequence found!”</p>
+<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta. Se l'esito è positivo verrà stampata la stringa “Sequence found!”</p>
 <p><img src="https://i.postimg.cc/hPLsgXY9/Screenshot-from-2019-11-30-11-24-14.png" alt="Java work"></p>
 <h3 id="codice-e-spiegazione2">Codice e spiegazione</h3>
 <p>Di seguito è riportato il codice sorgente</p>
@@ -608,7 +608,7 @@ Il metodo <mark>main</mark> contiene l'inzio del programma quindi deve essere ri
 <p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java">Github</a></p>
 <h1 id="implementazione-in-python">Implementazione in Python</h1>
 <h3 id="funzionamento4">Funzionamento</h3>
-<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta.
+<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta.
 Se l'esito è positivo verra stampata la stringa &ldquo;Sequence found&rdquo;</p>
 <p><img src="https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png" alt="Python work"></p>
 <h3 id="codice-e-spiegazione3">Codice e spiegazione</h3>
@@ -669,7 +669,7 @@ current <span style="color:#f92672">=</span> STRING[<span style="color:#ae81ff">
 <p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java">Github</a></p>
 <h1 id="implementazione-in-dart">Implementazione in Dart</h1>
 <h3 id="funzionamento5">Funzionamento</h3>
-<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa rischiesta.
+<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta.
 Se l'esito è positivo verra stampata la stringa &ldquo;Sequence found&rdquo;</p>
 <p><img src="https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png" alt="Dart work"></p>
 <h3 id="codice-e-spiegazione4">Codice e spiegazione</h3>
