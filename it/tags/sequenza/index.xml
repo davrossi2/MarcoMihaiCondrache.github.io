@@ -237,7 +237,7 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 
 &lt;h3 id=&#34;codice-e-spiegazione&#34;&gt;Codice e spiegazione&lt;/h3&gt;
 &lt;p&gt;Il codice sorgente è formato da 59 righe (inclusi i commenti) che possono essere ulteriormente ridotte;&lt;/p&gt;
-&lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input che come da regole è &amp;ldquo;AACBB&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Nella costante &lt;mark&gt;STRING&lt;/mark&gt; è indicata la stringa da controllare nella sequenza di input che come da regole è &amp;ldquo;AACBB&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;In &lt;mark&gt;outputType&lt;/mark&gt; sono accettati due valori &amp;ldquo;string&amp;rdquo; o &amp;ldquo;stringCount&amp;rdquo; che determinano il tipo di output.&lt;/p&gt;
 &lt;p&gt;L&#39;array rappresenta lo stato del sistema infatti, ogni volta che viene inserito un valore, cambia secondo il suo valore precedente.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
