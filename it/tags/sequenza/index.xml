@@ -104,7 +104,7 @@ Analizza infatti carattere per carattere costruendo una stringa che confronta co
 &lt;h1 id=&#34;funzionamento&#34;&gt;Funzionamento&lt;/h1&gt;
 &lt;p&gt;L&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; ha bisogno di alcune informazioni primarie per svolgere il suo compito,
 richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.&lt;br&gt;
-È stato definito come alfabeto da gestire, l&#39;insieme &lt;code&gt; A B C &lt;/code&gt; per la formazione delle sequenze è stata presa in considerazione &lt;mark&gt; AACBB &lt;/mark&gt; come sequenza da riconoscere.&lt;/p&gt;
+È stato definito come alfabeto da gestire, l&#39;insieme &lt;code&gt; A B C &lt;/code&gt;  e per la formazione delle sequenze è stata presa in considerazione &lt;mark&gt; AACBB &lt;/mark&gt; come sequenza da riconoscere.&lt;/p&gt;
 &lt;h2 id=&#34;insiemi&#34;&gt;Insiemi&lt;/h2&gt;
 &lt;p&gt;Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.&lt;/p&gt;
