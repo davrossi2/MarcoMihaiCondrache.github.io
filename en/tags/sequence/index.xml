@@ -20,11 +20,19 @@
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub license&#34; src=&#34;https://img.shields.io/github/license/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/network&#34; style=&#34;float:left; margin-right: 5px;&#34;&gt;&lt;img alt=&#34;GitHub forks&#34; src=&#34;https://img.shields.io/github/forks/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;
 &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/stargazers&#34;&gt;&lt;img alt=&#34;GitHub stars&#34; src=&#34;https://img.shields.io/github/stars/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TuringAutomaton&lt;/strong&gt; is an open source project available under license &lt;strong&gt;GNU General Public License v3.0&lt;/strong&gt;. &lt;br&gt; TuringAutomaton is written in C, Java, Python, Dart, MicroBit (Javascript) and Calc. &lt;br&gt; The project is available in Italian and English.&lt;/p&gt;
-&lt;p&gt;The files and the project are located on &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;TuringAutomaton is perfect for testing the Turing Machine and implementing it based on its own use.&lt;/p&gt;
-&lt;p&gt;The scripts are extremely optimized and quick to use.&lt;/p&gt;
-&lt;p&gt;Read more and contribute to Github.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TuringAutomaton&lt;/strong&gt; is an open source project available under the &lt;strong&gt;GNU General Public License v3.0&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This project is based on automata and to start with it is better to say something about it.&lt;/p&gt;
+&lt;p&gt;In dynamical systems theory, an &lt;strong&gt;automaton&lt;/strong&gt; is a discrete dynamic system (in the time and description of its state) and time-invariant (the system behaves in the same way regardless of the instant of time in which it acts).&lt;/p&gt;
+&lt;p&gt;An &lt;strong&gt;automaton&lt;/strong&gt; is therefore a system that evolves over time by changing its state in relation to the current one.&lt;/p&gt;
+&lt;p&gt;When the &lt;strong&gt;automaton&lt;/strong&gt; is in a given state, it can change its state only by receiving a subset of the symbols of its &lt;a href=&#34;#sets&#34;&gt;alphabet&lt;/a&gt; that is, that set containing the elements that the &lt;strong&gt;automaton&lt;/strong&gt; can accept. &lt;br&gt; The evolution of an &lt;strong&gt;automaton&lt;/strong&gt; starts from a particular state called initial state.&lt;/p&gt;
+&lt;p&gt;Typically, automata are deterministic, just like TuringAutomaton, meaning that only one transition is possible given an input status and symbol. However, there are also non-deterministic or stochastic automata.&lt;/p&gt;
+&lt;p&gt;A finite-state &lt;strong&gt;automaton&lt;/strong&gt; or finite-state machine is a type of &lt;strong&gt;automaton&lt;/strong&gt; that allows the behavior of many systems to be described accurately and formally. &lt;br&gt; Thanks to its simplicity and clarity, this model is widespread in engineering and sciences, especially in the field of computer science and operational research. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A typical application of automata is the recognition of symbol sequences, as happens for example in compilers and interpreters of programming languages ​​to recognize the syntactical correctness of the instructions (operation called parsing).&lt;/p&gt;
+&lt;p&gt;TuringAutomaton is just a &lt;strong&gt;automaton&lt;/strong&gt; sequence recognizer that takes shape from the basics of the &lt;a href=&#34;https://it.wikipedia.org/wiki/Macchina_di_Turing&#34;&gt;Turing Machine&lt;/a&gt; to carry out its operations.
+In fact, it analyzes character by character by constructing a string that compares with the one set to find the sequence.&lt;/p&gt;
+&lt;p&gt;TuringAutomaton is available in C, Java, Python, Dart, MicroBit (Javascript), Calc and UML. &lt;br&gt; The documentation can be used both in Italian and in English.&lt;/p&gt;
+&lt;p&gt;All programs have been optimized and prepared to reflect the &lt;strong&gt;automaton&lt;/strong&gt; function.&lt;/p&gt;
+&lt;p&gt;You can contribute and find the project files on &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;documentation-index&#34;&gt;Documentation Index:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#project&#34;&gt;Project&lt;/a&gt;
