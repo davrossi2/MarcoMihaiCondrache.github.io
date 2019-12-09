@@ -240,11 +240,11 @@ Analizza infatti carattere per carattere costruendo una stringa che confronta co
 <h1 id="funzionamento">Funzionamento</h1>
 <p>L&rsquo;<strong>automa</strong> ha bisogno di alcune informazioni primarie per svolgere il suo compito,
 richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.<br>
-È stato definito come alfabeto da gestire, l'insieme <code> A B C </code> per la formazione delle sequenze e, come sequenza da riconoscere, è stata presa in considerazione <mark> AACBB </mark>.</p>
+È stato definito come alfabeto da gestire, l'insieme <code> A B C </code> per la formazione delle sequenze è stata presa in considerazione <mark> AACBB </mark> come sequenza da riconoscere.</p>
 <h2 id="insiemi">Insiemi</h2>
 <p>Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.</p>
-<p>Il primo insieme definisce il tipo di ingresso accettato dall&rsquo;<strong>automa</strong> che in questo caso è <strong>lettera</strong> perché &ldquo;A&rdquo;, &ldquo;B&rdquo;, e &ldquo;C&rdquo; sono tutte lettere.</p>
+<p>Il primo insieme definisce il tipo di ingresso accettato dall&rsquo;<strong>automa</strong> che in questo caso è <strong>lettera</strong> perché &ldquo;A&rdquo;, &ldquo;B&rdquo; e &ldquo;C&rdquo; sono tutte lettere.</p>
 <p>L'insieme Valori Input contiene i valori che l'ingresso può assumere cioè, come già detto, i valori &ldquo;A&rdquo;, &ldquo;B&rdquo; e &ldquo;C&rdquo;.</p>
 <p>L'insieme Output invece indica il tipo di output che il sistema invierà in uscita.</p>
 <p>L'insieme Valori Output rappresenta invece i valori che possono fluire in Output.</p>
@@ -296,7 +296,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 </tbody>
 </table>
 <p>Questa tabella descrive come l&rsquo;<strong>automa</strong> cambi il suo stato in base all'ingresso ricevuto.</p>
-<p>Per esempio se l&rsquo;<strong>automa</strong> si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong>, esso ritorna nello stato iniziale perché quell'ingresso non fa parte della stringa da rilevare.</p>
+<p>Per esempio, se si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong>, esso ritorna nello stato iniziale perché quell'ingresso non fa parte della stringa da rilevare.</p>
 <h2 id="tabella-trasformazione-delle-uscite">Tabella Trasformazione delle Uscite</h2>
 <table>
 <thead>
@@ -336,17 +336,16 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 </tr>
 </tbody>
 </table>
-<p>In quest'altro schema troviamo invece la trasformazione delle uscite cioè quale valore il sistema manderà in uscita in seguito allo stato in cui si trova e all'ingresso ricevuto.</p>
-<p>Per esempio se l&rsquo;<strong>automa</strong> si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong> esso manderà in output la stringa <em>no</em> perché l'ingresso inserito non permette l'individuazione della stringa.</p>
+<p>In quest'altro schema troviamo invece la trasformazione delle uscite, ovvero il valore che il sistema manderà in uscita in seguito allo stato in cui si trova e all'ingresso ricevuto.</p>
+<p>Per esempio, se si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong>, esso manderà in output la stringa <em>no</em> perché l'ingresso inserito non permette l'individuazione della stringa.</p>
 <h2 id="uml">UML</h2>
-<p>Per descrivere al meglio l&rsquo;<strong>automa</strong> è stato creato un modello UML nel quale vengono riportati i 5 stati dell&rsquo;<strong>automa</strong> (nodi) e le relative transizioni, segnate dall'ingresso e dalle uscite
-secondo le tabelle costruite sopra.</p>
-<p>&ldquo;ATTESA&rdquo; è anche indicato come stato iniziale cioè lo stato dal quale l&rsquo;<strong>automa</strong> comincerà ad evolversi.</p>
+<p>Per descrivere al meglio l&rsquo;<strong>automa</strong> è stato creato un modello UML, nel quale vengono riportati le 5 situazioni (nodi) e le relative transizioni, segnate dall'ingresso e dalle uscite secondo le tabelle costruite sopra.</p>
+<p>&ldquo;ATTESA&rdquo;, in questo caso, è indicato come stato iniziale.</p>
 <p><img src="https://i.postimg.cc/qvDZD9X0/staruml-model-image.png" alt="staruml-model-image.png"></p>
 <h1 id="modello-calc">Modello Calc</h1>
 <p>Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.</p>
 <p>Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML.
-L'altro foglio invece mostra l'evoluzione dell&rsquo;<strong>automa</strong> nel tempo in seguito all'ingresso ricevuto.</p>
+L'altro invece mostra l'evoluzione del sistema nel tempo in seguito all'ingresso ricevuto.</p>
 <p>Attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) sono stati presi i valori nelle tabelle della descrizione per la formazione della tabella con l'evoluzione dell&rsquo;<strong>automa</strong>.</p>
 <p><img src="https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png" alt="Modello Calc"></p>
 <p>Il file Calc è disponibile sulla repo di <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Calc">Github</a> oppure è scaricabile <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/archive/master.zip">qui</a></p>

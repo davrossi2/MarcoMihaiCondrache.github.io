@@ -104,11 +104,11 @@ Analizza infatti carattere per carattere costruendo una stringa che confronta co
 &lt;h1 id=&#34;funzionamento&#34;&gt;Funzionamento&lt;/h1&gt;
 &lt;p&gt;L&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; ha bisogno di alcune informazioni primarie per svolgere il suo compito,
 richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.&lt;br&gt;
-È stato definito come alfabeto da gestire, l&#39;insieme &lt;code&gt; A B C &lt;/code&gt; per la formazione delle sequenze e, come sequenza da riconoscere, è stata presa in considerazione &lt;mark&gt; AACBB &lt;/mark&gt;.&lt;/p&gt;
+È stato definito come alfabeto da gestire, l&#39;insieme &lt;code&gt; A B C &lt;/code&gt; per la formazione delle sequenze è stata presa in considerazione &lt;mark&gt; AACBB &lt;/mark&gt; come sequenza da riconoscere.&lt;/p&gt;
 &lt;h2 id=&#34;insiemi&#34;&gt;Insiemi&lt;/h2&gt;
 &lt;p&gt;Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.&lt;/p&gt;
-&lt;p&gt;Il primo insieme definisce il tipo di ingresso accettato dall&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; che in questo caso è &lt;strong&gt;lettera&lt;/strong&gt; perché &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo;, e &amp;ldquo;C&amp;rdquo; sono tutte lettere.&lt;/p&gt;
+&lt;p&gt;Il primo insieme definisce il tipo di ingresso accettato dall&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; che in questo caso è &lt;strong&gt;lettera&lt;/strong&gt; perché &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo; sono tutte lettere.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Valori Input contiene i valori che l&#39;ingresso può assumere cioè, come già detto, i valori &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Output invece indica il tipo di output che il sistema invierà in uscita.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Valori Output rappresenta invece i valori che possono fluire in Output.&lt;/p&gt;
@@ -160,7 +160,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Questa tabella descrive come l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; cambi il suo stato in base all&#39;ingresso ricevuto.&lt;/p&gt;
-&lt;p&gt;Per esempio se l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso ritorna nello stato iniziale perché quell&#39;ingresso non fa parte della stringa da rilevare.&lt;/p&gt;
+&lt;p&gt;Per esempio, se si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso ritorna nello stato iniziale perché quell&#39;ingresso non fa parte della stringa da rilevare.&lt;/p&gt;
 &lt;h2 id=&#34;tabella-trasformazione-delle-uscite&#34;&gt;Tabella Trasformazione delle Uscite&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -200,17 +200,16 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;In quest&#39;altro schema troviamo invece la trasformazione delle uscite cioè quale valore il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso ricevuto.&lt;/p&gt;
-&lt;p&gt;Per esempio se l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt; esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perché l&#39;ingresso inserito non permette l&#39;individuazione della stringa.&lt;/p&gt;
+&lt;p&gt;In quest&#39;altro schema troviamo invece la trasformazione delle uscite, ovvero il valore che il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso ricevuto.&lt;/p&gt;
+&lt;p&gt;Per esempio, se si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perché l&#39;ingresso inserito non permette l&#39;individuazione della stringa.&lt;/p&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML&lt;/h2&gt;
-&lt;p&gt;Per descrivere al meglio l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; è stato creato un modello UML nel quale vengono riportati i 5 stati dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; (nodi) e le relative transizioni, segnate dall&#39;ingresso e dalle uscite
-secondo le tabelle costruite sopra.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;ATTESA&amp;rdquo; è anche indicato come stato iniziale cioè lo stato dal quale l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; comincerà ad evolversi.&lt;/p&gt;
+&lt;p&gt;Per descrivere al meglio l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; è stato creato un modello UML, nel quale vengono riportati le 5 situazioni (nodi) e le relative transizioni, segnate dall&#39;ingresso e dalle uscite secondo le tabelle costruite sopra.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;ATTESA&amp;rdquo;, in questo caso, è indicato come stato iniziale.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/qvDZD9X0/staruml-model-image.png&#34; alt=&#34;staruml-model-image.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;modello-calc&#34;&gt;Modello Calc&lt;/h1&gt;
 &lt;p&gt;Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.&lt;/p&gt;
 &lt;p&gt;Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML.
-L&#39;altro foglio invece mostra l&#39;evoluzione dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; nel tempo in seguito all&#39;ingresso ricevuto.&lt;/p&gt;
+L&#39;altro invece mostra l&#39;evoluzione del sistema nel tempo in seguito all&#39;ingresso ricevuto.&lt;/p&gt;
 &lt;p&gt;Attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) sono stati presi i valori nelle tabelle della descrizione per la formazione della tabella con l&#39;evoluzione dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png&#34; alt=&#34;Modello Calc&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Il file Calc è disponibile sulla repo di &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Calc&#34;&gt;Github&lt;/a&gt; oppure è scaricabile &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/archive/master.zip&#34;&gt;qui&lt;/a&gt;&lt;/p&gt;
