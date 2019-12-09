@@ -441,16 +441,16 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 <h1 id="implementazione-in-c">Implementazione in C</h1>
 <h3 id="funzionamento2">Funzionamento</h3>
 <p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che sarà esaminato per trovare la stringa richiesta.
-Se l'esito sarà positivo verrà stampata la stringa &ldquo;Sequence found!&quot;.</p>
+Se l'esito sarà positivo verrà stampato &ldquo;Sequence found!&quot;.</p>
 <p><img src="https://i.postimg.cc/44V2nPcK/Screenshot-from-2019-11-29-22-09-00.png" alt="C work"></p>
 <p>L'array nel quale verranno salvati tutti i caratteri sarà della stessa dimensione della stringa da trovare
 di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.</p>
 <h3 id="codice-e-spiegazione1">Codice e spiegazione</h3>
 <p>Il codice è abbastanza semplice e formato da 68 righe (ottimizzabili rimuovendo i commenti)</p>
-<p>La costante <mark>STRING</mark> definisce la stringa da controllare nella sequenza di input.</p>
-<p><mark>STRING_LENGTH</mark> invece rappresenta la lunghezza della stringa (<strong>Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa</strong>).</p>
+<p>La costante <mark>STRING</mark> definisce la stringa da controllare nella sequenza di input.<br>
+<mark>STRING_LENGTH</mark> invece rappresenta la sua lunghezza (<strong>Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa</strong>).</p>
 <p>Nel metodo main() vengono richiesti, di volta in volta, i parametri e inseriti all'interno dell'array con la relativa funzione <mark>pushArray(char)</mark>, la quale sposta di 1 l'array a sinistra per inserire il nuovo carattere.</p>
-<p>La funzione <mark>resetArray()</mark> pulisce l'array e viene usata anche per inizializzarlo.</p>
+<p>La funzione <mark>resetArray()</mark> pulisce e inizializza l'array.</p>
 <p>La funzione <mark>checkArray()</mark> controlla la stringa all'interno dell'array e ne stampa l'esito.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">/**
 </span><span style="color:#75715e">    * AUTHOR: Condrache Marco Mihai
@@ -529,9 +529,9 @@ di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.</p>
 <p><img src="https://i.postimg.cc/hPLsgXY9/Screenshot-from-2019-11-30-11-24-14.png" alt="Java work"></p>
 <h3 id="codice-e-spiegazione2">Codice e spiegazione</h3>
 <p>Il codice dovrebbe essere molto più corto ma viene allargato dai commenti della documentazione</p>
-<p>La classe <mark>TuringAutomaton</mark> è la classe dove sono definiti i metodi per il funzionamento dell&rsquo;<strong>automa</strong>
+<p>La classe <mark>TuringAutomaton</mark> è la classe dove sono definiti i metodi per il funzionamento dell&rsquo;<strong>automa</strong>.
 Il metodo <mark>main</mark> contiene l'inzio del programma quindi deve essere richiamato per inizializzare il programma. È di tipo statico e pubblico.</p>
-<p>Nella variabile costante <mark>STRING_TO_FIND</mark> è riportata la stringa da controllare nella sequenza di input.</p>
+<p>Nella costante <mark>STRING_TO_FIND</mark> è riportata la stringa da controllare nella sequenza di input.</p>
 <p>Il metodo <mark>pushInArray</mark> viene richiamato per inserire il carattere all'interno dell'array secondo il concetto LIFO.</p>
 <p>Il metodo <mark>checkArray</mark> viene richiamato per controllare nell'array la stringa e ne restituisce l'esito.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
@@ -608,12 +608,11 @@ Il metodo <mark>main</mark> contiene l'inzio del programma quindi deve essere ri
 <p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java">Github</a></p>
 <h1 id="implementazione-in-python">Implementazione in Python</h1>
 <h3 id="funzionamento4">Funzionamento</h3>
-<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta.
-Se l'esito sarà positivo verra stampata la stringa &ldquo;Sequence found&rdquo;.</p>
+<p>Il funzionamento è simile ai precedenti</p>
 <p><img src="https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png" alt="Python work"></p>
 <h3 id="codice-e-spiegazione3">Codice e spiegazione</h3>
 <p>Di seguito è riportato il codice sorgente.</p>
-<p>Nella variabile costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input.</p>
+<p>Nella costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input.</p>
 <p>Vengono richiesti di volta in volta i parametri e inseriti all'interno dell'array con la relativa funzione <mark>push_array(char)</mark> la quale sposta di 1 l'array a sinistra.</p>
 <p>La funzione <mark>check_array()</mark> controlla la stringa all'interno dell'array e ne restituisce l'esito.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
@@ -669,12 +668,11 @@ current <span style="color:#f92672">=</span> STRING[<span style="color:#ae81ff">
 <p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java">Github</a></p>
 <h1 id="implementazione-in-dart">Implementazione in Dart</h1>
 <h3 id="funzionamento5">Funzionamento</h3>
-<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta.
-Se l'esito è positivo verra stampata la stringa &ldquo;Sequence found&rdquo;.</p>
+<p>Il funzionamento è simile ai precedenti.</p>
 <p><img src="https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png" alt="Dart work"></p>
 <h3 id="codice-e-spiegazione4">Codice e spiegazione</h3>
 <p>Il codice non può essere compilato con dartpad a causa della mancaza del metodo .readLineSync();</p>
-<p>Nella variabile costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input.</p>
+<p>Nella costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input.</p>
 <p>La funzione <mark>check_array()</mark> controlla la stringa all'interno dell'array e ne restituisce l'esito.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;dart:io&#39;</span>;
 
