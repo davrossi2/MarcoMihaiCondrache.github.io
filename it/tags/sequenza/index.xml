@@ -24,15 +24,15 @@
 &lt;p&gt;&lt;strong&gt;TuringAutomaton&lt;/strong&gt; è un progetto open source disponibile sotto licenza &lt;strong&gt;GNU General Public License v3.0&lt;/strong&gt;.&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Questo progetto si basa sugli automi, e per cominciare, è meglio dire qualcosa a riguardo.&lt;/p&gt;
 &lt;p&gt;In teoria dei sistemi dinamici, un &lt;strong&gt;automa&lt;/strong&gt; è un sistema dinamico discreto (nella scansione del tempo e nella descrizione del suo stato) e tempo-invariante (il sistema si comporta alla stessa maniera indipendentemente dall&#39;istante di tempo in cui agisce).&lt;/p&gt;
-&lt;p&gt;È quindi un&#39;apparato che si evolve nel tempo, cambiando la sua condizione in relazione a quella attuale.
+&lt;p&gt;È quindi un apparato che si evolve nel tempo, cambiando la sua condizione in relazione a quella attuale.
 La sua evoluzione parte da una particolare situazione detta &amp;ldquo;stato iniziale&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Quando l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova in un certo stato, esso lo può cambiare solo ricevendo un sottoinsieme dei simboli del suo &lt;a href=&#34;#insiemi&#34;&gt;alfabeto&lt;/a&gt;, cioè quel insieme che contiene gli elementi che esso può accettare.&lt;/p&gt;
-&lt;p&gt;In genere gli automi sono deterministici, proprio come TuringAutomaton, ovvero dato uno stato ed un simbolo in ingresso è possibile una sola transizione. Esistono comunque i non deterministici, o stocastici.&lt;/p&gt;
+&lt;p&gt;Quando l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova in un certo stato, esso lo può cambiare solo ricevendo un sottoinsieme dei simboli del suo &lt;a href=&#34;#insiemi&#34;&gt;alfabeto&lt;/a&gt;, cioè quell&#39;insieme che contiene gli elementi che esso può accettare.&lt;/p&gt;
+&lt;p&gt;In genere gli automi sono deterministici, proprio come TuringAutomaton, ovvero dato uno stato ed un simbolo in ingresso è possibile una sola transizione. Esistono comunque i non deterministici o stocastici.&lt;/p&gt;
 &lt;p&gt;Una macchina a stati finiti è un tipo di &lt;strong&gt;automa&lt;/strong&gt; che permette di descrivere con precisione e, in maniera formale, il comportamento di molti sistemi.&lt;br&gt;Grazie alla sua semplicità e chiarezza, questo modello è molto diffuso nell&#39;ingegneria e nelle scienze, soprattutto nel campo dell&#39;informatica e della ricerca operativa.&lt;br&gt;&lt;br&gt;
 Un &lt;strong&gt;automa&lt;/strong&gt; a stati finiti può essere utilizzato sia per modellare un sistema esistente, che per modellare un nuovo sistema formale in grado di risolvere alcuni problemi esistenti.&lt;br&gt;La sua rappresentazione grafica è detta grafo.&lt;/p&gt;
-&lt;p&gt;Una loro applicazione tipica è il riconoscimento di sequenze di simboli, come avviene per esempio nei compilatori e negli interpreti dei linguaggi di programmazione, per riconoscere la correttezza sintattica delle istruzioni.&lt;/p&gt;
-&lt;p&gt;TuringAutomaton è proprio un &lt;strong&gt;automa&lt;/strong&gt; riconoscitore di sequenza, che prende forma dalle basi della &lt;a href=&#34;https://it.wikipedia.org/wiki/Macchina_di_Turing&#34;&gt;Macchina di Turing&lt;/a&gt; per svolgere le sue operazioni.
-Analizza infatti carattere per carattere, costruendo una stringa che confronta con quella impostata per trovare la sequenza.&lt;/p&gt;
+&lt;p&gt;Una loro applicazione tipica è il riconoscimento di sequenze di simboli come avviene, per esempio, nei compilatori e negli interpreti dei linguaggi di programmazione per riconoscere la correttezza sintattica delle istruzioni.&lt;/p&gt;
+&lt;p&gt;TuringAutomaton è proprio un &lt;strong&gt;automa&lt;/strong&gt; riconoscitore di sequenza che prende forma dalle basi della &lt;a href=&#34;https://it.wikipedia.org/wiki/Macchina_di_Turing&#34;&gt;Macchina di Turing&lt;/a&gt; per svolgere le sue operazioni.
+Analizza infatti carattere per carattere costruendo una stringa che confronta con quella impostata per trovare la sequenza.&lt;/p&gt;
 &lt;p&gt;Quest&#39;ultimo è disponibile in C, Java, Python, Dart, MicroBit (Javascript), Calc e in UML.&lt;br&gt;La documentazione è adoperabile sia in Italiano che in Inglese.&lt;/p&gt;
 &lt;p&gt;Tutti i programmi sono stati ottimizzati e preparati per rispecchiare il funzionamento dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;È possibile contribuire e trovare i file del progetto su &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
@@ -200,7 +200,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;In quest&#39;altra tabella invece troviamo la trasformazione delle uscite cioè quale valore il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso ricevuto.&lt;/p&gt;
+&lt;p&gt;In quest&#39;altro schema troviamo invece la trasformazione delle uscite cioè quale valore il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso ricevuto.&lt;/p&gt;
 &lt;p&gt;Per esempio se l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt; esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perchè l&#39;ingresso inserito non permette l&#39;individuazione della stringa.&lt;/p&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML&lt;/h2&gt;
 &lt;p&gt;Per descrivere al meglio l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; è stato creato un modello UML nel quale vengono riportati i 5 stati dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; (nodi) e le relative transizioni, segnate dall&#39;ingresso e dalle uscite
@@ -301,7 +301,7 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
     }
 })
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente&#34;&gt;Codice sorgente&lt;/h4&gt;
-&lt;p&gt;Il codice precompilato e pronto a essere eseguito e&amp;rsquo; disponibile sulla repo di github.&lt;/p&gt;
+&lt;p&gt;Il codice precompilato, pronto ad essere eseguito, e&amp;rsquo; disponibile sulla repo di github.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/MicroBit&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-c&#34;&gt;Implementazione in C&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento2&#34;&gt;Funzionamento&lt;/h3&gt;
@@ -386,7 +386,7 @@ di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&
     }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente1&#34;&gt;Codice sorgente&lt;/h4&gt;
-&lt;p&gt;Il codice precompilato e pronto a essere eseguito è disponibile sulla repo di github.&lt;/p&gt;
+&lt;p&gt;Il codice precompilato, pronto ad essere eseguito, è disponibile sulla repo di github.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/C&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-java&#34;&gt;Implementazione in Java&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento3&#34;&gt;Funzionamento&lt;/h3&gt;
@@ -469,12 +469,12 @@ Il metodo &lt;mark&gt;main&lt;/mark&gt; contiene l&#39;inzio del programma quind
     &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente2&#34;&gt;Codice sorgente&lt;/h4&gt;
-&lt;p&gt;Il codice precompilato e pronto a essere eseguito è disponibile sulla repo di github.&lt;/p&gt;
+&lt;p&gt;Il codice precompilato, pronto ad essere eseguito, è disponibile sulla repo di github.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-python&#34;&gt;Implementazione in Python&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento4&#34;&gt;Funzionamento&lt;/h3&gt;
 &lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta.
-Se l&#39;esito è positivo verra stampata la stringa &amp;ldquo;Sequence found&amp;rdquo;.&lt;/p&gt;
+Se l&#39;esito sarà positivo verra stampata la stringa &amp;ldquo;Sequence found&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png&#34; alt=&#34;Python work&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione3&#34;&gt;Codice e spiegazione&lt;/h3&gt;
 &lt;p&gt;Di seguito è riportato il codice sorgente.&lt;/p&gt;
@@ -530,7 +530,7 @@ current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STRING[&lt;span
 &lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Invalid char&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente3&#34;&gt;Codice sorgente&lt;/h4&gt;
-&lt;p&gt;Il codice precompilato e pronto a essere eseguito è disponibile sulla repo di github.&lt;/p&gt;
+&lt;p&gt;Il codice precompilato, pronto ad essere eseguito, è disponibile sulla repo di github.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Java&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-dart&#34;&gt;Implementazione in Dart&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento5&#34;&gt;Funzionamento&lt;/h3&gt;
@@ -577,7 +577,7 @@ Se l&#39;esito è positivo verra stampata la stringa &amp;ldquo;Sequence found&a
   &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;array&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;join&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;STRING&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;codice-sorgente4&#34;&gt;Codice sorgente&lt;/h4&gt;
-&lt;p&gt;Il codice precompilato e pronto a essere eseguito è disponibile sulla repo di github.&lt;/p&gt;
+&lt;p&gt;Il codice precompilato, pronto ad essere eseguito, è disponibile sulla repo di github.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Dart&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;considerazioni-finali&#34;&gt;Considerazioni finali&lt;/h1&gt;
 &lt;p&gt;Il progetto si conclude qui, non resta dunque che prendere in autonomia quello che si trova su questa pagina e usarlo secondo i propri interessi per provare l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; e verificarne il funzionamento (Sempre rispettando la licenza).&lt;/p&gt;
