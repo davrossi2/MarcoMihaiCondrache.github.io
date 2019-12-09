@@ -208,8 +208,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/qvDZD9X0/staruml-model-image.png&#34; alt=&#34;staruml-model-image.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;modello-calc&#34;&gt;Modello Calc&lt;/h1&gt;
 &lt;p&gt;Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.&lt;/p&gt;
-&lt;p&gt;Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML.
-L&#39;altro invece mostra l&#39;evoluzione del sistema nel tempo in seguito all&#39;ingresso.&lt;/p&gt;
+&lt;p&gt;Sono stati creati due fogli di calcolo; uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML, l&#39;altro invece mostra l&#39;evoluzione del sistema nel tempo in seguito all&#39;ingresso.&lt;/p&gt;
 &lt;p&gt;Attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) sono stati presi i valori nelle tabelle della descrizione per la formazione della tabella con l&#39;evoluzione dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png&#34; alt=&#34;Modello Calc&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Il file Calc è disponibile sulla repo di &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Calc&#34;&gt;Github&lt;/a&gt; oppure è scaricabile &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/archive/master.zip&#34;&gt;qui&lt;/a&gt;&lt;/p&gt;
@@ -240,7 +239,7 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;p&gt;Il codice sorgente è formato da 59 righe (inclusi i commenti) che possono essere ulteriormente ridotte;&lt;/p&gt;
 &lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input che come da regole è &amp;ldquo;AACBB&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;In &lt;mark&gt;outputType&lt;/mark&gt; sono accettati due valori &amp;ldquo;string&amp;rdquo; o &amp;ldquo;stringCount&amp;rdquo; che determinano il tipo di output.&lt;/p&gt;
-&lt;p&gt;L&#39;array rappresenta lo stato del sistema infatti ogni volta che viene inserito un valore cambia secondo il suo valore precedente.&lt;/p&gt;
+&lt;p&gt;L&#39;array rappresenta lo stato del sistema infatti, ogni volta che viene inserito un valore, cambia secondo il suo valore precedente.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * AUTHOR: Condrache Marco Mihai
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * CLASS: 3^A DATE: 28/11/2019
@@ -304,11 +303,11 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/MicroBit&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-c&#34;&gt;Implementazione in C&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento2&#34;&gt;Funzionamento&lt;/h3&gt;
-&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che sarà esaminato per trovare la stringa richiesta.
-Se l&#39;esito sarà positivo verrà stampato &amp;ldquo;Sequence found!&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verra inserito in un array che sarà esaminato per trovare la stringa richiesta.
+Se l&#39;esito sarà positivo verra stampato &amp;ldquo;Sequence found!&amp;quot;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/44V2nPcK/Screenshot-from-2019-11-29-22-09-00.png&#34; alt=&#34;C work&#34;&gt;&lt;/p&gt;
 &lt;p&gt;L&#39;array nel quale verranno salvati tutti i caratteri sarà della stessa dimensione della stringa da trovare
-di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&gt;
+di conseguenza piu la stringa sarà lunga e più memoria verra occupata.&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione1&#34;&gt;Codice e spiegazione&lt;/h3&gt;
 &lt;p&gt;Il codice è abbastanza semplice e formato da 68 righe (ottimizzabili rimuovendo i commenti)&lt;/p&gt;
 &lt;p&gt;La costante &lt;mark&gt;STRING&lt;/mark&gt; definisce la stringa da controllare nella sequenza di input.&lt;br&gt;

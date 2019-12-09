@@ -344,8 +344,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 <p><img src="https://i.postimg.cc/qvDZD9X0/staruml-model-image.png" alt="staruml-model-image.png"></p>
 <h1 id="modello-calc">Modello Calc</h1>
 <p>Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.</p>
-<p>Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML.
-L'altro invece mostra l'evoluzione del sistema nel tempo in seguito all'ingresso.</p>
+<p>Sono stati creati due fogli di calcolo; uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML, l'altro invece mostra l'evoluzione del sistema nel tempo in seguito all'ingresso.</p>
 <p>Attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) sono stati presi i valori nelle tabelle della descrizione per la formazione della tabella con l'evoluzione dell&rsquo;<strong>automa</strong>.</p>
 <p><img src="https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png" alt="Modello Calc"></p>
 <p>Il file Calc è disponibile sulla repo di <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Calc">Github</a> oppure è scaricabile <a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/archive/master.zip">qui</a></p>
@@ -376,7 +375,7 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 <p>Il codice sorgente è formato da 59 righe (inclusi i commenti) che possono essere ulteriormente ridotte;</p>
 <p>Nella variabile costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input che come da regole è &ldquo;AACBB&rdquo;.</p>
 <p>In <mark>outputType</mark> sono accettati due valori &ldquo;string&rdquo; o &ldquo;stringCount&rdquo; che determinano il tipo di output.</p>
-<p>L'array rappresenta lo stato del sistema infatti ogni volta che viene inserito un valore cambia secondo il suo valore precedente.</p>
+<p>L'array rappresenta lo stato del sistema infatti, ogni volta che viene inserito un valore, cambia secondo il suo valore precedente.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">/**
 </span><span style="color:#75715e"> * AUTHOR: Condrache Marco Mihai
 </span><span style="color:#75715e"> * CLASS: 3^A DATE: 28/11/2019
@@ -440,11 +439,11 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 <p><a href="https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/MicroBit">Github</a></p>
 <h1 id="implementazione-in-c">Implementazione in C</h1>
 <h3 id="funzionamento2">Funzionamento</h3>
-<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che sarà esaminato per trovare la stringa richiesta.
-Se l'esito sarà positivo verrà stampato &ldquo;Sequence found!&quot;.</p>
+<p>Il programma ti chiederà di volta in volta di inserire un carattere, il quale verra inserito in un array che sarà esaminato per trovare la stringa richiesta.
+Se l'esito sarà positivo verra stampato &ldquo;Sequence found!&quot;.</p>
 <p><img src="https://i.postimg.cc/44V2nPcK/Screenshot-from-2019-11-29-22-09-00.png" alt="C work"></p>
 <p>L'array nel quale verranno salvati tutti i caratteri sarà della stessa dimensione della stringa da trovare
-di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.</p>
+di conseguenza piu la stringa sarà lunga e più memoria verra occupata.</p>
 <h3 id="codice-e-spiegazione1">Codice e spiegazione</h3>
 <p>Il codice è abbastanza semplice e formato da 68 righe (ottimizzabili rimuovendo i commenti)</p>
 <p>La costante <mark>STRING</mark> definisce la stringa da controllare nella sequenza di input.<br>
