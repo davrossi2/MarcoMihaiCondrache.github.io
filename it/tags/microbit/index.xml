@@ -237,10 +237,10 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;/div&gt;
 
 &lt;h3 id=&#34;codice-e-spiegazione&#34;&gt;Codice e spiegazione&lt;/h3&gt;
-&lt;p&gt;Qui sotto è presente il codice sorgente del meccanismo usato per far funzionare microbit.&lt;/p&gt;
+&lt;p&gt;Il codice sorgente è formato da 59 righe (inclusi i commenti) che possono essere ulteriormente ridotte;&lt;/p&gt;
 &lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input che come da regole è &amp;ldquo;AACBB&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Nella variabile &lt;mark&gt;outputType&lt;/mark&gt; sono accettati due valori &amp;ldquo;string&amp;rdquo; o &amp;ldquo;stringCount&amp;rdquo; che determinano il tipo di output.&lt;/p&gt;
-&lt;p&gt;L&#39;array rappresenta lo stato dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; infatti ogni volta che viene inserito un valore cambia secondo il suo valore precedente.&lt;/p&gt;
+&lt;p&gt;In &lt;mark&gt;outputType&lt;/mark&gt; sono accettati due valori &amp;ldquo;string&amp;rdquo; o &amp;ldquo;stringCount&amp;rdquo; che determinano il tipo di output.&lt;/p&gt;
+&lt;p&gt;L&#39;array rappresenta lo stato del sistema infatti ogni volta che viene inserito un valore cambia secondo il suo valore precedente.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * AUTHOR: Condrache Marco Mihai
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * CLASS: 3^A DATE: 28/11/2019
@@ -305,16 +305,16 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;h1 id=&#34;implementazione-in-c&#34;&gt;Implementazione in C&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento2&#34;&gt;Funzionamento&lt;/h3&gt;
 &lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che sarà esaminato per trovare la stringa richiesta.
-Se l&#39;esito è positivo verrà stampata la stringa &amp;ldquo;Sequence found!&amp;quot;.&lt;/p&gt;
+Se l&#39;esito sarà positivo verrà stampata la stringa &amp;ldquo;Sequence found!&amp;quot;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/44V2nPcK/Screenshot-from-2019-11-29-22-09-00.png&#34; alt=&#34;C work&#34;&gt;&lt;/p&gt;
 &lt;p&gt;L&#39;array nel quale verranno salvati tutti i caratteri sarà della stessa dimensione della stringa da trovare
 di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione1&#34;&gt;Codice e spiegazione&lt;/h3&gt;
-&lt;p&gt;Qui è riportato il codice sorgente.&lt;/p&gt;
-&lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input.&lt;/p&gt;
-&lt;p&gt;Nella variabile &lt;mark&gt;STRING_LENGTH&lt;/mark&gt; è definita la lunghezza della stringa (&lt;strong&gt;Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa&lt;/strong&gt;).&lt;/p&gt;
-&lt;p&gt;Nel metodo main() vengono richiesti di volta in volta i parametri e inseriti all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;pushArray(char)&lt;/mark&gt; la quale sposta di 1 l&#39;array a sinistra per inserire il nuovo carattere.&lt;/p&gt;
-&lt;p&gt;La funzione &lt;mark&gt;resetArray()&lt;/mark&gt; pulisce l&#39;array e può anche essere utilizzata per inizializzarlo.&lt;/p&gt;
+&lt;p&gt;Il codice è abbastanza semplice e formato da 68 righe (ottimizzabili rimuovendo i commenti)&lt;/p&gt;
+&lt;p&gt;La costante &lt;mark&gt;STRING&lt;/mark&gt; definisce la stringa da controllare nella sequenza di input.&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;STRING_LENGTH&lt;/mark&gt; invece rappresenta la lunghezza della stringa (&lt;strong&gt;Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Nel metodo main() vengono richiesti, di volta in volta, i parametri e inseriti all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;pushArray(char)&lt;/mark&gt;, la quale sposta di 1 l&#39;array a sinistra per inserire il nuovo carattere.&lt;/p&gt;
+&lt;p&gt;La funzione &lt;mark&gt;resetArray()&lt;/mark&gt; pulisce l&#39;array e viene usata anche per inizializzarlo.&lt;/p&gt;
 &lt;p&gt;La funzione &lt;mark&gt;checkArray()&lt;/mark&gt; controlla la stringa all&#39;interno dell&#39;array e ne stampa l&#39;esito.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;    * AUTHOR: Condrache Marco Mihai
@@ -389,10 +389,10 @@ di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/C&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;implementazione-in-java&#34;&gt;Implementazione in Java&lt;/h1&gt;
 &lt;h3 id=&#34;funzionamento3&#34;&gt;Funzionamento&lt;/h3&gt;
-&lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verrà inserito in un array che verrà a sua volta esaminato per trovare la stringa richiesta. Se l&#39;esito è positivo verrà stampata la stringa “Sequence found!”.&lt;/p&gt;
+&lt;p&gt;Il seguente programma funziona esattamente come il precedente ma è implementato su una programmazione ad oggetti.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/hPLsgXY9/Screenshot-from-2019-11-30-11-24-14.png&#34; alt=&#34;Java work&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione2&#34;&gt;Codice e spiegazione&lt;/h3&gt;
-&lt;p&gt;Di seguito è riportato il codice sorgente.&lt;/p&gt;
+&lt;p&gt;Il codice dovrebbe essere molto più corto ma viene allargato dai commenti della documentazione&lt;/p&gt;
 &lt;p&gt;La classe &lt;mark&gt;TuringAutomaton&lt;/mark&gt; è la classe dove sono definiti i metodi per il funzionamento dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;
 Il metodo &lt;mark&gt;main&lt;/mark&gt; contiene l&#39;inzio del programma quindi deve essere richiamato per inizializzare il programma. È di tipo statico e pubblico.&lt;/p&gt;
 &lt;p&gt;Nella variabile costante &lt;mark&gt;STRING_TO_FIND&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input.&lt;/p&gt;
@@ -537,7 +537,7 @@ current &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; STRING[&lt;span
 Se l&#39;esito è positivo verra stampata la stringa &amp;ldquo;Sequence found&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/TY4p5Vgb/Screenshot-from-2019-11-29-22-26-44.png&#34; alt=&#34;Dart work&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione4&#34;&gt;Codice e spiegazione&lt;/h3&gt;
-&lt;p&gt;Di seguito è riportato il codice sorgente.&lt;/p&gt;
+&lt;p&gt;Il codice non può essere compilato con dartpad a causa della mancaza del metodo .readLineSync();&lt;/p&gt;
 &lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input.&lt;/p&gt;
 &lt;p&gt;La funzione &lt;mark&gt;check_array()&lt;/mark&gt; controlla la stringa all&#39;interno dell&#39;array e ne restituisce l&#39;esito.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;dart:io&amp;#39;&lt;/span&gt;;
