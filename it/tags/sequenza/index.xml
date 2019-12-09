@@ -227,7 +227,7 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/ZRWp6dsy/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png&#34; alt=&#34;MicroBit Input&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Il tipo di output può essere a &amp;ldquo;numero&amp;rdquo; identificando il numero di volte che la sequenza viene distinta all&#39;interno dell&#39;array.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/LsdqYWKL/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-1-remove.png&#34; alt=&#34;MicroBit Output 1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;oppure può essere a &amp;ldquo;stringa&amp;rdquo; ovvero viene mostrato a schermo l&#39;intero array, più precisamente, l&#39;intera stringa e si mostra con l&#39;avanzamento dei caratteri una faccina sorridente a stringa identificata.&lt;/p&gt;
+&lt;p&gt;oppure può essere a &amp;ldquo;stringa&amp;rdquo; mostrando a schermo l&#39;intero array, più precisamente, l&#39;intera stringa e si mostra con l&#39;avanzamento dei caratteri una faccina sorridente a stringa identificata.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/50KbvHYT/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png&#34; alt=&#34;MicroBit Output 1&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;video&#34;&gt;Video&lt;/h3&gt;
 &lt;p&gt;Di seguito è riportato un breve video nel quale viene mostrato il comportamento dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; su microbit.&lt;/p&gt;
