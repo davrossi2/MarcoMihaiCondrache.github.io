@@ -35,7 +35,7 @@ In fact, it analyzes character by character by constructing a string that compar
 &lt;p&gt;You can contribute and find the project files on &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;documentation-index&#34;&gt;Documentation Index:&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#project&#34;&gt;Project&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;#how-does-it-work&#34;&gt;How does it work?&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#sets&#34;&gt;Sets&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#state-transition-table&#34;&gt;Transition of States&lt;/a&gt;&lt;/li&gt;
@@ -98,15 +98,18 @@ In fact, it analyzes character by character by constructing a string that compar
 &lt;li&gt;PHP implementation (cooming soon)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#final-consideration&#34;&gt;Final consideration&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;project&#34;&gt;Project&lt;/h1&gt;
-&lt;p&gt;Our project was to create an automaton based on the concept of the Turing Machine with the input elements &lt;code&gt; A B C &lt;/code&gt; for the formation of the sequences.
-The sequence to be recognized is &lt;mark&gt; AACBB &lt;/mark&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;An &lt;strong&gt;automaton&lt;/strong&gt; is a discrete dynamic system (in the time and description of its state) and time-invariant (the system behaves in the same way regardless of the instant of time in which it acts).
-When the automaton is in a given state, it can accept only a subset of the symbols of its alphabet.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h1 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;automaton&lt;/strong&gt; needs some primary information to do its job. &lt;br&gt;
+In fact, it requires 5 sets and tables that define its behavior. &lt;br&gt;
+The &lt;strong&gt;automaton&lt;/strong&gt; in question has the &lt;code&gt;  A B C  &lt;/code&gt; for the formation of sequences and as a sequence from specification &lt;mark&gt; AACBB &lt;/mark&gt;&lt;/p&gt;
 &lt;h2 id=&#34;sets&#34;&gt;Sets&lt;/h2&gt;
-&lt;p&gt;We then started to define the different sets and the different transition / transformation tables that represent the features and the behaviour of the automaton.&lt;/p&gt;
+&lt;p&gt;The 5 sets that are respectively initially defined are:
+Input set, Input values ​​set, Output set, Output values ​​set and States set.&lt;/p&gt;
+&lt;p&gt;The first set defines the type of input accepted by the &lt;strong&gt;automaton&lt;/strong&gt; which in this case is &lt;strong&gt;lettera&lt;/strong&gt; because &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo;, and &amp;ldquo;C&amp;rdquo; are all letters.&lt;/p&gt;
+&lt;p&gt;The Input Values ​​set contains the values ​​that the input can assume, that is, as already said, the values ​​&amp;quot;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; and &amp;ldquo;C&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The Output set instead indicates the type of output that the &lt;strong&gt;automaton&lt;/strong&gt; will send to the output.&lt;/p&gt;
+&lt;p&gt;The Set Values ​​Output represents instead the values ​​that can flow in Ouput&lt;/p&gt;
+&lt;p&gt;The last set, ie that of the states, contains the various &amp;ldquo;moments&amp;rdquo; that change according to the input received and that the &lt;strong&gt;automaton&lt;/strong&gt; must cross to identify the sequence.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;I&lt;/strong&gt; = { char }&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;V&lt;sub&gt;I&lt;/sub&gt;&lt;/strong&gt; = { A, B, C }&lt;/li&gt;
@@ -153,8 +156,8 @@ When the automaton is in a given state, it can accept only a subset of the symbo
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Here are the various steps that the automaton makes based on the state it is in and the input received.&lt;/p&gt;
-&lt;p&gt;For example, if the automaton is in the &lt;strong&gt;aac&lt;/strong&gt; state and receives an input &lt;strong&gt;c&lt;/strong&gt; it returns to the initial state because that input is not part of the string to be detected&lt;/p&gt;
+&lt;p&gt;This table describes how the &lt;strong&gt;automaton&lt;/strong&gt; changes its state based on the input received.&lt;/p&gt;
+&lt;p&gt;For example, if the &lt;strong&gt;automaton&lt;/strong&gt; is in the &lt;strong&gt;aac&lt;/strong&gt; state and receives an input &lt;strong&gt;c&lt;/strong&gt; it returns to the initial state because that input is not part of the string to be detected.&lt;/p&gt;
 &lt;h2 id=&#34;output-transformation-table&#34;&gt;Output Transformation Table&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -194,24 +197,24 @@ When the automaton is in a given state, it can accept only a subset of the symbo
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;In this other table, instead, it shows what value the automaton will send as a result of the state it is in and the input received&lt;/p&gt;
-&lt;p&gt;For example, if the automaton is in the &lt;strong&gt;aac&lt;/strong&gt; state and receives an &lt;strong&gt;c&lt;/strong&gt; input, the automaton will output the string &lt;em&gt;no&lt;/em&gt; because the input entered does not allow to identify the string.&lt;/p&gt;
+&lt;p&gt;In this other table instead we find the transformation of the outputs that is what value the &lt;strong&gt;automaton&lt;/strong&gt; will send in output following the state in which it is found and to the received input.&lt;/p&gt;
+&lt;p&gt;For example, if the &lt;strong&gt;automaton&lt;/strong&gt; is in the &lt;strong&gt;aac&lt;/strong&gt; state and receives an &lt;strong&gt;c&lt;/strong&gt; input, the &lt;strong&gt;automaton&lt;/strong&gt; will output the string &lt;em&gt;no&lt;/em&gt; because the input entered does not allow the string to be identified.&lt;/p&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML&lt;/h2&gt;
-&lt;p&gt;To get a clearer and searchable idea we have created a UML model for automating the automaton&lt;/p&gt;
-&lt;p&gt;The 5 states of the automaton (nodes) and the relative transitions marked by the input and the outputs are shown
+&lt;p&gt;To best describe the &lt;strong&gt;automaton&lt;/strong&gt; a UML model has been created where the 5 states of the &lt;strong&gt;automaton&lt;/strong&gt; (nodes) and the relative transitions marked by the entrance and exits are reported
 according to the tables built above.&lt;/p&gt;
-&lt;p&gt;For example, the transition - A - NO starting from the WAIT node and going to node A indicates that A has been received at input and the automaton returns NO at the output&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;WAIT&amp;rdquo; is also referred to as the initial state ie the state from which the &lt;strong&gt;automaton&lt;/strong&gt; will begin to evolve.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/CKx4GCGD/staruml-model-image-en.png&#34; alt=&#34;staruml-model-image.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;calc-model&#34;&gt;Calc Model&lt;/h1&gt;
-&lt;p&gt;Everything was put together and we created a model in calc so that we could test its functionality.&lt;/p&gt;
-&lt;p&gt;Two spreadsheets have been created. One for the description where the various tables have been implemented and the visual description in Uml.
-Another sheet shows the evolution of the automaton over time following the input received.&lt;/p&gt;
-&lt;p&gt;We went, thanks to special functions (CERCA.ORIZZ, CERCA.VERT and INDIRETTO), to get the values ​​in the description tables based on what was provided on the evolution sheet.&lt;/p&gt;
+&lt;p&gt;Everything has been put together to create a calc model so that you can test its functionality.&lt;/p&gt;
+&lt;p&gt;Two spreadsheets have been created. One for the description in which the various tables and the UML graph have been implemented.
+The other sheet instead shows the evolution of the &lt;strong&gt;automaton&lt;/strong&gt; in time following the input received.&lt;/p&gt;
+&lt;p&gt;Through special functions (SEARCH.HORIZ, SEARCH.VERT and INDIRECT) we have taken the values ​​in the tables of the description for the formation of the table with the evolution of &lt;strong&gt;automaton&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/9fV4GxCF/Screenshot-from-2019-12-03-21-09-21.png&#34; alt=&#34;Calc Model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The Calc file is available on the &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Calc&#34;&gt;Github&lt;/a&gt; repo or can be downloaded &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/archive/master.zip&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;microbit-implementation&#34;&gt;Microbit implementation&lt;/h1&gt;
-&lt;p&gt;The same program was implemented on a physical device: MicroBit.
-A programmable card, simple and intuitive to use that allowed us to test the functioning of the automaton&lt;/p&gt;
-&lt;p&gt;The code has been optimized to make any sequence recognizable with up to three characters for the string formation (&lt;strong&gt;limited by microbit functionality. In the future it will perhaps be possible to extend this limit&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;The same program was implemented on a physical device: MicroBit. &lt;br&gt;
+A programmable, simple and intuitive to use card on which the &lt;strong&gt;automaton&lt;/strong&gt; has been tested&lt;/p&gt;
+&lt;p&gt;The code has been optimized to make any sequence recognizable with a maximum of three characters for the formation of the string (Limited by microbit functionality. In the future it will perhaps be possible to extend this limit).&lt;/p&gt;
 &lt;h3 id=&#34;operation&#34;&gt;Operation&lt;/h3&gt;
 &lt;p&gt;The operation of the program is quite simple:&lt;/p&gt;
 &lt;ul&gt;
@@ -573,11 +576,10 @@ If the result is positive, the string &amp;ldquo;Sequence found&amp;rdquo; will 
 &lt;p&gt;The pre-filled code ready to be uploaded is available on the github repo&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton/tree/master/Dart&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;final-consideration&#34;&gt;Final consideration&lt;/h1&gt;
-&lt;p&gt;The project ends here and we believe that the scope of use is very wide.
-We have done our best to ensure complete compatibility with all languages ​​and allow a physical test.&lt;/p&gt;
-&lt;p&gt;We therefore conclude by saying that the project was beautiful and challenging but brought us so much satisfaction.&lt;/p&gt;
-&lt;p&gt;Everything was done with open source software to guarantee full support from the community.&lt;/p&gt;
-&lt;p&gt;All the files can therefore be downloaded from &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The project ends here, all that remains is to take autonomously what is on this page and use it according to one&#39;s own interests to test the &lt;strong&gt;automaton&lt;/strong&gt; and verify its functioning (Always respecting the license).&lt;/p&gt;
+&lt;p&gt;Everything was done primarily with open source software to ensure support from the community.&lt;/p&gt;
+&lt;p&gt;All the files can therefore be downloaded from &lt;a href=&#34;https://github.com/MarcoMihaiCondrache/TuringAutomaton&#34;&gt;Github&lt;/a&gt;. &lt;br&gt;
+We accept Pull Request.&lt;/p&gt;
 &lt;h2 id=&#34;used-software&#34;&gt;Used Software&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;SO: &lt;strong&gt;&lt;a href=&#34;https://www.archlinux.org/&#34;&gt;Arch Linux&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -591,8 +593,8 @@ We have done our best to ensure complete compatibility with all languages ​​
 &lt;/ul&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Automaton definition: &lt;strong&gt;&lt;a href=&#34;https://wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Images: The images has been uploaded on &lt;strong&gt;&lt;a href=&#34;https://postimages.org&#34;&gt;PostImages&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://wikipedia.org&#34;&gt;Wikipedia&lt;/a&gt;&lt;/strong&gt;: Some definitions of Automa.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://postimages.org&#34;&gt;PostImages&lt;/a&gt;&lt;/strong&gt;: Host images.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
             
