@@ -104,7 +104,7 @@ Analizza infatti carattere per carattere costruendo una stringa che confronta co
 &lt;h1 id=&#34;funzionamento&#34;&gt;Funzionamento&lt;/h1&gt;
 &lt;p&gt;L&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; ha bisogno di alcune informazioni primarie per svolgere il suo compito,
 richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.&lt;br&gt;
-È stato definito come alfabeto da gestire, l&#39;insieme &lt;code&gt; A B C &lt;/code&gt;  e per la formazione delle sequenze è stata presa in considerazione &lt;mark&gt; AACBB &lt;/mark&gt; come sequenza da riconoscere.&lt;/p&gt;
+È stato definito come alfabeto da gestire, l&#39;insieme &lt;code&gt; A B C &lt;/code&gt; per la formazione delle sequenze ed è stata presa in considerazione &lt;mark&gt; AACBB &lt;/mark&gt; come sequenza da riconoscere.&lt;/p&gt;
 &lt;h2 id=&#34;insiemi&#34;&gt;Insiemi&lt;/h2&gt;
 &lt;p&gt;Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.&lt;/p&gt;
@@ -160,7 +160,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Questa tabella descrive come l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; cambi il suo stato in base all&#39;ingresso ricevuto.&lt;/p&gt;
-&lt;p&gt;Per esempio, se si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso ritorna nello stato iniziale perché quell&#39;ingresso non fa parte della stringa da rilevare.&lt;/p&gt;
+&lt;p&gt;Per esempio, se si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso ritorna nello stato iniziale poiché quell&#39;ingresso non fa parte della stringa da rilevare.&lt;/p&gt;
 &lt;h2 id=&#34;tabella-trasformazione-delle-uscite&#34;&gt;Tabella Trasformazione delle Uscite&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -200,7 +200,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;In quest&#39;altro schema troviamo invece la trasformazione delle uscite, ovvero il valore che il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso ricevuto.&lt;/p&gt;
+&lt;p&gt;In quest&#39;altro schema troviamo invece la trasformazione delle uscite, ovvero il valore che il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso.&lt;/p&gt;
 &lt;p&gt;Per esempio, se si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perché l&#39;ingresso recepito non permette l&#39;individuazione della stringa.&lt;/p&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML&lt;/h2&gt;
 &lt;p&gt;Per descrivere al meglio l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; è stato creato un modello UML, nel quale vengono riportate le 5 situazioni (nodi) e le relative transizioni, segnate dall&#39;ingresso e dalle uscite secondo le tabelle costruite sopra.&lt;/p&gt;
