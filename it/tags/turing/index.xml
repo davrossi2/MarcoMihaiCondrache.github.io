@@ -306,8 +306,8 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;p&gt;Il programma ti chiederà di volta in volta di inserire un carattere, il quale verra inserito in un array che sarà esaminato per trovare la stringa richiesta.
 Se l&#39;esito sarà positivo verra stampato &amp;ldquo;Sequence found!&amp;quot;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/44V2nPcK/Screenshot-from-2019-11-29-22-09-00.png&#34; alt=&#34;C work&#34;&gt;&lt;/p&gt;
-&lt;p&gt;L&#39;array nel quale verranno salvati tutti i caratteri sarà della stessa dimensione della stringa da trovare
-di conseguenza piu la stringa sarà lunga e più memoria verra occupata.&lt;/p&gt;
+&lt;p&gt;L&#39;array, nel quale verranno salvati tutti i caratteri, sarà della stessa dimensione della stringa da trovare
+di conseguenza piu la essa sarà lunga e più memoria verra occupata.&lt;/p&gt;
 &lt;h3 id=&#34;codice-e-spiegazione1&#34;&gt;Codice e spiegazione&lt;/h3&gt;
 &lt;p&gt;Il codice è abbastanza semplice e formato da 68 righe (ottimizzabili rimuovendo i commenti)&lt;/p&gt;
 &lt;p&gt;La costante &lt;mark&gt;STRING&lt;/mark&gt; definisce la stringa da controllare nella sequenza di input.&lt;br&gt;
