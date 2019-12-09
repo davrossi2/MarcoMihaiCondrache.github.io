@@ -167,7 +167,7 @@ La sua evoluzione parte da una particolare situazione detta &ldquo;stato inizial
 <p>Una macchina a stati finiti è un tipo di <strong>automa</strong> che permette di descrivere con precisione e, in maniera formale, il comportamento di molti sistemi.<br>Grazie alla sua semplicità e chiarezza, questo modello è molto diffuso nell'ingegneria e nelle scienze, soprattutto nel campo dell'informatica e della ricerca operativa.<br><br>
 Un <strong>automa</strong> a stati finiti può essere utilizzato sia per modellare un sistema esistente, che per modellare un nuovo sistema formale in grado di risolvere alcuni problemi esistenti.<br>La sua rappresentazione grafica è detta grafo.</p>
 <p>Una loro applicazione tipica è il riconoscimento di sequenze di simboli come avviene, per esempio, nei compilatori e negli interpreti dei linguaggi di programmazione per riconoscere la correttezza sintattica delle istruzioni.</p>
-<p>TuringAutomaton è proprio un <strong>automa</strong> riconoscitore di sequenza che prende forma dalle basi della <a href="https://it.wikipedia.org/wiki/Macchina_di_Turing">Macchina di Turing</a> per svolgere le sue operazioni.
+<p>TuringAutomaton è proprio un riconoscitore di sequenza che prende forma dalle basi della <a href="https://it.wikipedia.org/wiki/Macchina_di_Turing">Macchina di Turing</a> per svolgere le sue operazioni.
 Analizza infatti carattere per carattere costruendo una stringa che confronta con quella impostata per trovare la sequenza.</p>
 <p>Quest'ultimo è disponibile in C, Java, Python, Dart, MicroBit (Javascript), Calc e in UML.<br>La documentazione è adoperabile sia in Italiano che in Inglese.</p>
 <p>Tutti i programmi sono stati ottimizzati e preparati per rispecchiare il funzionamento dell&rsquo;<strong>automa</strong>.</p>
@@ -240,15 +240,15 @@ Analizza infatti carattere per carattere costruendo una stringa che confronta co
 <h1 id="funzionamento">Funzionamento</h1>
 <p>L&rsquo;<strong>automa</strong> ha bisogno di alcune informazioni primarie per svolgere il suo compito,
 richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.<br>
-L&rsquo;<strong>automa</strong> in questione, ha come alfabeto da gestire gli elementi <code> A B C </code> per la formazione delle sequenze e, come sequenza da riconoscere, è stata presa in considerazione <mark> AACBB </mark>.</p>
+È stato definito come alfabeto da gestire, l'insieme <code> A B C </code> per la formazione delle sequenze e, come sequenza da riconoscere, è stata presa in considerazione <mark> AACBB </mark>.</p>
 <h2 id="insiemi">Insiemi</h2>
 <p>Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.</p>
-<p>Il primo insieme definisce il tipo di ingresso accettato dall&rsquo;<strong>automa</strong> che in questo caso è <strong>lettera</strong> perchè &ldquo;A&rdquo;, &ldquo;B&rdquo;, e &ldquo;C&rdquo; sono tutte lettere.</p>
+<p>Il primo insieme definisce il tipo di ingresso accettato dall&rsquo;<strong>automa</strong> che in questo caso è <strong>lettera</strong> perché &ldquo;A&rdquo;, &ldquo;B&rdquo;, e &ldquo;C&rdquo; sono tutte lettere.</p>
 <p>L'insieme Valori Input contiene i valori che l'ingresso può assumere cioè, come già detto, i valori &ldquo;A&rdquo;, &ldquo;B&rdquo; e &ldquo;C&rdquo;.</p>
-<p>L'insieme Output invece indica il tipo di output che l&rsquo;<strong>automa</strong> invierà in uscita.</p>
-<p>L'insieme Valori Output rappresenta invece i valori che possono fluire in Ouput.</p>
-<p>L'ultimo insieme cioè quello degli Stati contiene i vari &ldquo;momenti&rdquo; che cambiano in base all'ingresso ricevuto e che l&rsquo;<strong>automa</strong> deve attraversare per identificare la sequenza.</p>
+<p>L'insieme Output invece indica il tipo di output che il sistema invierà in uscita.</p>
+<p>L'insieme Valori Output rappresenta invece i valori che possono fluire in Output.</p>
+<p>L'ultimo insieme cioè quello degli Stati contiene i vari &ldquo;momenti&rdquo; che cambiano in base all'ingresso ricevuto e che l'apparato deve attraversare per identificare la sequenza.</p>
 <ul>
 <li><strong>I</strong> = { lettera }</li>
 <li><strong>V<sub>I</sub></strong> = { A, B, C }</li>
@@ -296,7 +296,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 </tbody>
 </table>
 <p>Questa tabella descrive come l&rsquo;<strong>automa</strong> cambi il suo stato in base all'ingresso ricevuto.</p>
-<p>Per esempio se l&rsquo;<strong>automa</strong> si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong>, esso ritorna nello stato iniziale perchè quell'ingresso non fa parte della stringa da rilevare.</p>
+<p>Per esempio se l&rsquo;<strong>automa</strong> si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong>, esso ritorna nello stato iniziale perché quell'ingresso non fa parte della stringa da rilevare.</p>
 <h2 id="tabella-trasformazione-delle-uscite">Tabella Trasformazione delle Uscite</h2>
 <table>
 <thead>
@@ -337,7 +337,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 </tbody>
 </table>
 <p>In quest'altro schema troviamo invece la trasformazione delle uscite cioè quale valore il sistema manderà in uscita in seguito allo stato in cui si trova e all'ingresso ricevuto.</p>
-<p>Per esempio se l&rsquo;<strong>automa</strong> si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong> esso manderà in output la stringa <em>no</em> perchè l'ingresso inserito non permette l'individuazione della stringa.</p>
+<p>Per esempio se l&rsquo;<strong>automa</strong> si trova nello stato <strong>aac</strong> e riceve in ingresso una <strong>c</strong> esso manderà in output la stringa <em>no</em> perché l'ingresso inserito non permette l'individuazione della stringa.</p>
 <h2 id="uml">UML</h2>
 <p>Per descrivere al meglio l&rsquo;<strong>automa</strong> è stato creato un modello UML nel quale vengono riportati i 5 stati dell&rsquo;<strong>automa</strong> (nodi) e le relative transizioni, segnate dall'ingresso e dalle uscite
 secondo le tabelle costruite sopra.</p>
@@ -345,7 +345,7 @@ secondo le tabelle costruite sopra.</p>
 <p><img src="https://i.postimg.cc/qvDZD9X0/staruml-model-image.png" alt="staruml-model-image.png"></p>
 <h1 id="modello-calc">Modello Calc</h1>
 <p>Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.</p>
-<p>Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate la varie tabelle e il grafo in UML.
+<p>Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML.
 L'altro foglio invece mostra l'evoluzione dell&rsquo;<strong>automa</strong> nel tempo in seguito all'ingresso ricevuto.</p>
 <p>Attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) sono stati presi i valori nelle tabelle della descrizione per la formazione della tabella con l'evoluzione dell&rsquo;<strong>automa</strong>.</p>
 <p><img src="https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png" alt="Modello Calc"></p>
@@ -353,7 +353,7 @@ L'altro foglio invece mostra l'evoluzione dell&rsquo;<strong>automa</strong> nel
 <h1 id="implementazione-microbit">Implementazione Microbit</h1>
 <p>Lo stesso programma è stato implementato su un dispositivo fisico: MicroBit.<br>
 Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata testata l&rsquo;<strong>automa</strong>.</p>
-<p>Il codice è stato ottimizato per rendere riconoscibile qualsiasi sequenza con un massimo di tre caratteri per la formazione della stringa (Limitati dalle funzionalita di microbit. In futuro sarà magari possibile estendere questo limite).</p>
+<p>Il codice è stato ottimizzato per rendere riconoscibile qualsiasi sequenza con un massimo di tre caratteri per la formazione della stringa (Limitati dalle funzionalità di microbit. In futuro sarà magari possibile estendere questo limite).</p>
 <h3 id="funzionamento1">Funzionamento</h3>
 <p>Il funzionamento del programma è piuttosto semplice:</p>
 <ul>
@@ -362,9 +362,9 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 <li>Con il movimento è associata la terza lettere in questo caso <strong>&ldquo;C&rdquo;</strong></li>
 </ul>
 <p><img src="https://i.postimg.cc/ZRWp6dsy/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png" alt="MicroBit Input"></p>
-<p>Il tipo di output può essere a &ldquo;numero&rdquo; (come nell'immagine che seguira) cioè viene identificato il numero di volte che la sequenza viene riconosciuta all'interno dell'array.</p>
+<p>Il tipo di output può essere a &ldquo;numero&rdquo; (come nell'immagine che seguirà) cioè viene identificato il numero di volte che la sequenza viene riconosciuta all'interno dell'array.</p>
 <p><img src="https://i.postimg.cc/LsdqYWKL/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-1-remove.png" alt="MicroBit Output 1"></p>
-<p>oppure può essere a &ldquo;stringa&rdquo; (come nell'immagine che seguira) ovvero viene mostrato a schermo l'intero array, più precisamente, l'intera stringa e si mostra con l'avanzamento dei caratteri una faccina sorridente a stringa indetificata.</p>
+<p>oppure può essere a &ldquo;stringa&rdquo; (come nell'immagine che seguirà) ovvero viene mostrato a schermo l'intero array, più precisamente, l'intera stringa e si mostra con l'avanzamento dei caratteri una faccina sorridente a stringa identificata.</p>
 <p><img src="https://i.postimg.cc/50KbvHYT/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png" alt="MicroBit Output 1"></p>
 <h3 id="video">Video</h3>
 <p>Di seguito è riportato un breve video nel quale viene mostrato il comportamento dell&rsquo;<strong>automa</strong> su microbit.</p>
@@ -450,7 +450,7 @@ di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.</p>
 <p>Qui è riportato il codice sorgente.</p>
 <p>Nella variabile costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input.</p>
 <p>Nella variabile <mark>STRING_LENGTH</mark> è definita la lunghezza della stringa (<strong>Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa</strong>).</p>
-<p>Nel metodo main() vengono richiesti di volta in volta i parametri e pushati all'interno dell'array con la relativa funzione <mark>pushArray(char)</mark> la quale shifta di 1 l'array a sinistra per inserire il nuovo carattere.</p>
+<p>Nel metodo main() vengono richiesti di volta in volta i parametri e inseriti all'interno dell'array con la relativa funzione <mark>pushArray(char)</mark> la quale sposta di 1 l'array a sinistra per inserire il nuovo carattere.</p>
 <p>La funzione <mark>resetArray()</mark> pulisce l'array e può anche essere utilizzata per inizializzarlo.</p>
 <p>La funzione <mark>checkArray()</mark> controlla la stringa all'interno dell'array e ne stampa l'esito.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">/**
@@ -615,7 +615,7 @@ Se l'esito sarà positivo verra stampata la stringa &ldquo;Sequence found&rdquo;
 <h3 id="codice-e-spiegazione3">Codice e spiegazione</h3>
 <p>Di seguito è riportato il codice sorgente.</p>
 <p>Nella variabile costante <mark>STRING</mark> è riportata la stringa da controllare nella sequenza di input.</p>
-<p>Vengono richiesti di volta in volta i parametri e pushati all'interno dell'array con la relativa funzione <mark>push_array(char)</mark> la quale shifta di 1 l'array a sinistra.</p>
+<p>Vengono richiesti di volta in volta i parametri e inseriti all'interno dell'array con la relativa funzione <mark>push_array(char)</mark> la quale sposta di 1 l'array a sinistra.</p>
 <p>La funzione <mark>check_array()</mark> controlla la stringa all'interno dell'array e ne restituisce l'esito.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">    * AUTHOR: Condrache Marco Mihai</span><span style="color:#e6db74">

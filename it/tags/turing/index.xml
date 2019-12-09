@@ -31,7 +31,7 @@ La sua evoluzione parte da una particolare situazione detta &amp;ldquo;stato ini
 &lt;p&gt;Una macchina a stati finiti è un tipo di &lt;strong&gt;automa&lt;/strong&gt; che permette di descrivere con precisione e, in maniera formale, il comportamento di molti sistemi.&lt;br&gt;Grazie alla sua semplicità e chiarezza, questo modello è molto diffuso nell&#39;ingegneria e nelle scienze, soprattutto nel campo dell&#39;informatica e della ricerca operativa.&lt;br&gt;&lt;br&gt;
 Un &lt;strong&gt;automa&lt;/strong&gt; a stati finiti può essere utilizzato sia per modellare un sistema esistente, che per modellare un nuovo sistema formale in grado di risolvere alcuni problemi esistenti.&lt;br&gt;La sua rappresentazione grafica è detta grafo.&lt;/p&gt;
 &lt;p&gt;Una loro applicazione tipica è il riconoscimento di sequenze di simboli come avviene, per esempio, nei compilatori e negli interpreti dei linguaggi di programmazione per riconoscere la correttezza sintattica delle istruzioni.&lt;/p&gt;
-&lt;p&gt;TuringAutomaton è proprio un &lt;strong&gt;automa&lt;/strong&gt; riconoscitore di sequenza che prende forma dalle basi della &lt;a href=&#34;https://it.wikipedia.org/wiki/Macchina_di_Turing&#34;&gt;Macchina di Turing&lt;/a&gt; per svolgere le sue operazioni.
+&lt;p&gt;TuringAutomaton è proprio un riconoscitore di sequenza che prende forma dalle basi della &lt;a href=&#34;https://it.wikipedia.org/wiki/Macchina_di_Turing&#34;&gt;Macchina di Turing&lt;/a&gt; per svolgere le sue operazioni.
 Analizza infatti carattere per carattere costruendo una stringa che confronta con quella impostata per trovare la sequenza.&lt;/p&gt;
 &lt;p&gt;Quest&#39;ultimo è disponibile in C, Java, Python, Dart, MicroBit (Javascript), Calc e in UML.&lt;br&gt;La documentazione è adoperabile sia in Italiano che in Inglese.&lt;/p&gt;
 &lt;p&gt;Tutti i programmi sono stati ottimizzati e preparati per rispecchiare il funzionamento dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;.&lt;/p&gt;
@@ -104,15 +104,15 @@ Analizza infatti carattere per carattere costruendo una stringa che confronta co
 &lt;h1 id=&#34;funzionamento&#34;&gt;Funzionamento&lt;/h1&gt;
 &lt;p&gt;L&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; ha bisogno di alcune informazioni primarie per svolgere il suo compito,
 richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.&lt;br&gt;
-L&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; in questione, ha come alfabeto da gestire gli elementi &lt;code&gt; A B C &lt;/code&gt; per la formazione delle sequenze e, come sequenza da riconoscere, è stata presa in considerazione &lt;mark&gt; AACBB &lt;/mark&gt;.&lt;/p&gt;
+È stato definito come alfabeto da gestire, l&#39;insieme &lt;code&gt; A B C &lt;/code&gt; per la formazione delle sequenze e, come sequenza da riconoscere, è stata presa in considerazione &lt;mark&gt; AACBB &lt;/mark&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;insiemi&#34;&gt;Insiemi&lt;/h2&gt;
 &lt;p&gt;Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.&lt;/p&gt;
-&lt;p&gt;Il primo insieme definisce il tipo di ingresso accettato dall&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; che in questo caso è &lt;strong&gt;lettera&lt;/strong&gt; perchè &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo;, e &amp;ldquo;C&amp;rdquo; sono tutte lettere.&lt;/p&gt;
+&lt;p&gt;Il primo insieme definisce il tipo di ingresso accettato dall&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; che in questo caso è &lt;strong&gt;lettera&lt;/strong&gt; perché &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo;, e &amp;ldquo;C&amp;rdquo; sono tutte lettere.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Valori Input contiene i valori che l&#39;ingresso può assumere cioè, come già detto, i valori &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;L&#39;insieme Output invece indica il tipo di output che l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; invierà in uscita.&lt;/p&gt;
-&lt;p&gt;L&#39;insieme Valori Output rappresenta invece i valori che possono fluire in Ouput.&lt;/p&gt;
-&lt;p&gt;L&#39;ultimo insieme cioè quello degli Stati contiene i vari &amp;ldquo;momenti&amp;rdquo; che cambiano in base all&#39;ingresso ricevuto e che l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; deve attraversare per identificare la sequenza.&lt;/p&gt;
+&lt;p&gt;L&#39;insieme Output invece indica il tipo di output che il sistema invierà in uscita.&lt;/p&gt;
+&lt;p&gt;L&#39;insieme Valori Output rappresenta invece i valori che possono fluire in Output.&lt;/p&gt;
+&lt;p&gt;L&#39;ultimo insieme cioè quello degli Stati contiene i vari &amp;ldquo;momenti&amp;rdquo; che cambiano in base all&#39;ingresso ricevuto e che l&#39;apparato deve attraversare per identificare la sequenza.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;I&lt;/strong&gt; = { lettera }&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;V&lt;sub&gt;I&lt;/sub&gt;&lt;/strong&gt; = { A, B, C }&lt;/li&gt;
@@ -160,7 +160,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Questa tabella descrive come l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; cambi il suo stato in base all&#39;ingresso ricevuto.&lt;/p&gt;
-&lt;p&gt;Per esempio se l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso ritorna nello stato iniziale perchè quell&#39;ingresso non fa parte della stringa da rilevare.&lt;/p&gt;
+&lt;p&gt;Per esempio se l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso ritorna nello stato iniziale perché quell&#39;ingresso non fa parte della stringa da rilevare.&lt;/p&gt;
 &lt;h2 id=&#34;tabella-trasformazione-delle-uscite&#34;&gt;Tabella Trasformazione delle Uscite&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -201,7 +201,7 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;In quest&#39;altro schema troviamo invece la trasformazione delle uscite cioè quale valore il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso ricevuto.&lt;/p&gt;
-&lt;p&gt;Per esempio se l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt; esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perchè l&#39;ingresso inserito non permette l&#39;individuazione della stringa.&lt;/p&gt;
+&lt;p&gt;Per esempio se l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt; esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perché l&#39;ingresso inserito non permette l&#39;individuazione della stringa.&lt;/p&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML&lt;/h2&gt;
 &lt;p&gt;Per descrivere al meglio l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; è stato creato un modello UML nel quale vengono riportati i 5 stati dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; (nodi) e le relative transizioni, segnate dall&#39;ingresso e dalle uscite
 secondo le tabelle costruite sopra.&lt;/p&gt;
@@ -209,7 +209,7 @@ secondo le tabelle costruite sopra.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/qvDZD9X0/staruml-model-image.png&#34; alt=&#34;staruml-model-image.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;modello-calc&#34;&gt;Modello Calc&lt;/h1&gt;
 &lt;p&gt;Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.&lt;/p&gt;
-&lt;p&gt;Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate la varie tabelle e il grafo in UML.
+&lt;p&gt;Sono stati creati due fogli di calcolo; Uno per la descrizione nel quale sono state implementate le varie tabelle e il grafo in UML.
 L&#39;altro foglio invece mostra l&#39;evoluzione dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; nel tempo in seguito all&#39;ingresso ricevuto.&lt;/p&gt;
 &lt;p&gt;Attraverso funzioni speciali (CERCA.ORIZZ, CERCA.VERT e INDIRETTO) sono stati presi i valori nelle tabelle della descrizione per la formazione della tabella con l&#39;evoluzione dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/zX2nsW3Z/Screenshot-from-2019-11-27-18-25-38.png&#34; alt=&#34;Modello Calc&#34;&gt;&lt;/p&gt;
@@ -217,7 +217,7 @@ L&#39;altro foglio invece mostra l&#39;evoluzione dell&amp;rsquo;&lt;strong&gt;a
 &lt;h1 id=&#34;implementazione-microbit&#34;&gt;Implementazione Microbit&lt;/h1&gt;
 &lt;p&gt;Lo stesso programma è stato implementato su un dispositivo fisico: MicroBit.&lt;br&gt;
 Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata testata l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Il codice è stato ottimizato per rendere riconoscibile qualsiasi sequenza con un massimo di tre caratteri per la formazione della stringa (Limitati dalle funzionalita di microbit. In futuro sarà magari possibile estendere questo limite).&lt;/p&gt;
+&lt;p&gt;Il codice è stato ottimizzato per rendere riconoscibile qualsiasi sequenza con un massimo di tre caratteri per la formazione della stringa (Limitati dalle funzionalità di microbit. In futuro sarà magari possibile estendere questo limite).&lt;/p&gt;
 &lt;h3 id=&#34;funzionamento1&#34;&gt;Funzionamento&lt;/h3&gt;
 &lt;p&gt;Il funzionamento del programma è piuttosto semplice:&lt;/p&gt;
 &lt;ul&gt;
@@ -226,9 +226,9 @@ Una schedina programmabile, semplice e intuitiva da utilizzare su cui è stata t
 &lt;li&gt;Con il movimento è associata la terza lettere in questo caso &lt;strong&gt;&amp;ldquo;C&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/ZRWp6dsy/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png&#34; alt=&#34;MicroBit Input&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Il tipo di output può essere a &amp;ldquo;numero&amp;rdquo; (come nell&#39;immagine che seguira) cioè viene identificato il numero di volte che la sequenza viene riconosciuta all&#39;interno dell&#39;array.&lt;/p&gt;
+&lt;p&gt;Il tipo di output può essere a &amp;ldquo;numero&amp;rdquo; (come nell&#39;immagine che seguirà) cioè viene identificato il numero di volte che la sequenza viene riconosciuta all&#39;interno dell&#39;array.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/LsdqYWKL/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-1-remove.png&#34; alt=&#34;MicroBit Output 1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;oppure può essere a &amp;ldquo;stringa&amp;rdquo; (come nell&#39;immagine che seguira) ovvero viene mostrato a schermo l&#39;intero array, più precisamente, l&#39;intera stringa e si mostra con l&#39;avanzamento dei caratteri una faccina sorridente a stringa indetificata.&lt;/p&gt;
+&lt;p&gt;oppure può essere a &amp;ldquo;stringa&amp;rdquo; (come nell&#39;immagine che seguirà) ovvero viene mostrato a schermo l&#39;intero array, più precisamente, l&#39;intera stringa e si mostra con l&#39;avanzamento dei caratteri una faccina sorridente a stringa identificata.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/50KbvHYT/Screenshot-2019-11-28-Microsoft-Make-Code-for-micro-bit-3-remove.png&#34; alt=&#34;MicroBit Output 1&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;video&#34;&gt;Video&lt;/h3&gt;
 &lt;p&gt;Di seguito è riportato un breve video nel quale viene mostrato il comportamento dell&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; su microbit.&lt;/p&gt;
@@ -314,7 +314,7 @@ di conseguenza piu la stringa sarà lunga e più memoria verrà occupata.&lt;/p&
 &lt;p&gt;Qui è riportato il codice sorgente.&lt;/p&gt;
 &lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input.&lt;/p&gt;
 &lt;p&gt;Nella variabile &lt;mark&gt;STRING_LENGTH&lt;/mark&gt; è definita la lunghezza della stringa (&lt;strong&gt;Attenzione questa costante deve sempre essere definita e deve corrispondere alla lunghezza della stringa&lt;/strong&gt;).&lt;/p&gt;
-&lt;p&gt;Nel metodo main() vengono richiesti di volta in volta i parametri e pushati all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;pushArray(char)&lt;/mark&gt; la quale shifta di 1 l&#39;array a sinistra per inserire il nuovo carattere.&lt;/p&gt;
+&lt;p&gt;Nel metodo main() vengono richiesti di volta in volta i parametri e inseriti all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;pushArray(char)&lt;/mark&gt; la quale sposta di 1 l&#39;array a sinistra per inserire il nuovo carattere.&lt;/p&gt;
 &lt;p&gt;La funzione &lt;mark&gt;resetArray()&lt;/mark&gt; pulisce l&#39;array e può anche essere utilizzata per inizializzarlo.&lt;/p&gt;
 &lt;p&gt;La funzione &lt;mark&gt;checkArray()&lt;/mark&gt; controlla la stringa all&#39;interno dell&#39;array e ne stampa l&#39;esito.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
@@ -479,7 +479,7 @@ Se l&#39;esito sarà positivo verra stampata la stringa &amp;ldquo;Sequence foun
 &lt;h3 id=&#34;codice-e-spiegazione3&#34;&gt;Codice e spiegazione&lt;/h3&gt;
 &lt;p&gt;Di seguito è riportato il codice sorgente.&lt;/p&gt;
 &lt;p&gt;Nella variabile costante &lt;mark&gt;STRING&lt;/mark&gt; è riportata la stringa da controllare nella sequenza di input.&lt;/p&gt;
-&lt;p&gt;Vengono richiesti di volta in volta i parametri e pushati all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;push_array(char)&lt;/mark&gt; la quale shifta di 1 l&#39;array a sinistra.&lt;/p&gt;
+&lt;p&gt;Vengono richiesti di volta in volta i parametri e inseriti all&#39;interno dell&#39;array con la relativa funzione &lt;mark&gt;push_array(char)&lt;/mark&gt; la quale sposta di 1 l&#39;array a sinistra.&lt;/p&gt;
 &lt;p&gt;La funzione &lt;mark&gt;check_array()&lt;/mark&gt; controlla la stringa all&#39;interno dell&#39;array e ne restituisce l&#39;esito.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    * AUTHOR: Condrache Marco Mihai&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
