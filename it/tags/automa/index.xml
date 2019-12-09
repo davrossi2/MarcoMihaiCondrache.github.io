@@ -203,8 +203,8 @@ insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e ins
 &lt;p&gt;In quest&#39;altro schema troviamo invece la trasformazione delle uscite, ovvero il valore che il sistema manderà in uscita in seguito allo stato in cui si trova e all&#39;ingresso ricevuto.&lt;/p&gt;
 &lt;p&gt;Per esempio, se si trova nello stato &lt;strong&gt;aac&lt;/strong&gt; e riceve in ingresso una &lt;strong&gt;c&lt;/strong&gt;, esso manderà in output la stringa &lt;em&gt;no&lt;/em&gt; perché l&#39;ingresso recepito non permette l&#39;individuazione della stringa.&lt;/p&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML&lt;/h2&gt;
-&lt;p&gt;Per descrivere al meglio l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; è stato creato un modello UML, nel quale vengono riportati le 5 situazioni (nodi) e le relative transizioni, segnate dall&#39;ingresso e dalle uscite secondo le tabelle costruite sopra.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;ATTESA&amp;rdquo;, in questo caso, è indicato come stato iniziale.&lt;/p&gt;
+&lt;p&gt;Per descrivere al meglio l&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; è stato creato un modello UML, nel quale vengono riportate le 5 situazioni (nodi) e le relative transizioni, segnate dall&#39;ingresso e dalle uscite secondo le tabelle costruite sopra.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;ATTESA&amp;rdquo; è indicato come stato iniziale.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.postimg.cc/qvDZD9X0/staruml-model-image.png&#34; alt=&#34;staruml-model-image.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;modello-calc&#34;&gt;Modello Calc&lt;/h1&gt;
 &lt;p&gt;Il tutto è stato messo insieme per creare un modello in calc in modo da poterne testare le funzionalità.&lt;/p&gt;
