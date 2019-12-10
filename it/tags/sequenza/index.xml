@@ -108,9 +108,9 @@ richiede infatti 5 insiemi e delle tabelle che definiscono il suo comportamento.
 &lt;h2 id=&#34;insiemi&#34;&gt;Insiemi&lt;/h2&gt;
 &lt;p&gt;Sono stati inizialmente definiti i 5 insiemi che sono rispettivamente:
 insieme Input, insieme Valori Input, insieme Output, insieme Valori Output e insieme Stati.&lt;/p&gt;
-&lt;p&gt;Il primo definisce il tipo di ingresso accettato dall&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; che in questo caso è &lt;strong&gt;lettera&lt;/strong&gt; perché &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo; sono tutte lettere.&lt;/p&gt;
+&lt;p&gt;Il primo definisce l&#39;ingresso accettato dall&amp;rsquo;&lt;strong&gt;automa&lt;/strong&gt; che in questo caso è &lt;strong&gt;lettera&lt;/strong&gt; perché &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo; sono tutte lettere.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Valori Input contiene i valori che l&#39;ingresso può assumere cioè, come già detto, i valori &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; e &amp;ldquo;C&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;L&#39;insieme Output invece indica il tipo di output che il sistema invierà in uscita.&lt;/p&gt;
+&lt;p&gt;L&#39;insieme Output invece indica l&#39;output che il sistema invierà in uscita.&lt;/p&gt;
 &lt;p&gt;L&#39;insieme Valori Output rappresenta invece i valori che possono fluire in Output.&lt;/p&gt;
 &lt;p&gt;L&#39;ultimo insieme cioè quello degli Stati contiene i vari &amp;ldquo;momenti&amp;rdquo; che cambiano in base all&#39;ingresso ricevuto e che l&#39;apparato deve attraversare per identificare la sequenza.&lt;/p&gt;
 &lt;ul&gt;
